@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <title>Crosscodes</title>
+   <meta charset="UTF-8"> 
+   <head>
+      <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="mystyle.css">
+   </head>
+   
+   <!-- Styles and scripts -->
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+   <script src="sidebar.js"></script>
+
+   <body>
+      <!-- Header -->
+      <div class="header" align="middle">
+         <a href="index.html"><img src="logo.png" width="50%" height="130px"></a>
+      </div>
+
+      <!-- Nav bar -->
+      <ul class="nav">
+         <li><a href='index.html'>About</a></li>
+         <li><a href='experience.html'>Experience</a></li>
+         <li><a href='projects.html'>Projects</a></li>
+         <li><a href='contact.html'>Contact</a></li>
+         <li><a href='blog.html'>Blog</a></li>
+      </ul>
+      
+      <!-- Content -->
+      <div style="margin-left:0%">
+         <div class="w3-sidebar w3-light-blue w3-bar-block" style="width:100%"> 
+             <div style="font-size:30px;cursor:pointer"><a href='projects.html' style="text-decoration:none">&#9776; GO BACK TO PROJECTS</a></div>
+             <div class="w3-container w3-animate-opacity">
+               <center><p><b><font size="20px" style="color:darkblue">Applets</font></b></p></center>
+               
+               <br/>
+               
+               <center><font size="5px" style="color:blue"><a href='https://github.com/jdc011/StatApp' style="text-decoration:none">Basic stats calculator</a></font></center>
+               <center><applet
+                  code="DataWindow.class"
+                  archive="objectdraw.jar"
+                  height="500"
+                  width="500">
+               </applet></center>
+ 
+               <br/>
+               <br/>
+               
+               <center><font size="5px" style="color:blue"><a href='https://github.com/jdc011/Classifier' style="text-decoration:none">Machine learning GUI classifier</a></font></center>
+               <center><applet
+                  code="Init.class"
+                  archive="objectdraw.jar"
+                  height="500"
+                  width="500">
+               </applet></center>
+
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+
+            </div>
+         </div>
+      </div>
+      </div>
+   </body>
+</html>
