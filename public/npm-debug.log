@@ -1,0 +1,196 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'firebase-cli' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose cache add [ 'firebase-cli', null ]
+5 verbose cache add name=undefined spec="firebase-cli" args=["firebase-cli",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'firebase-cli',
+6 verbose parsed url   path: 'firebase-cli',
+6 verbose parsed url   href: 'firebase-cli' }
+7 silly lockFile 00ee28a6-firebase-cli firebase-cli
+8 verbose lock firebase-cli /home/cubic/.npm/00ee28a6-firebase-cli.lock
+9 silly lockFile 00ee28a6-firebase-cli firebase-cli
+10 silly lockFile 00ee28a6-firebase-cli firebase-cli
+11 verbose addNamed [ 'firebase-cli', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 9c4e88e1-firebase-cli firebase-cli@
+14 verbose lock firebase-cli@ /home/cubic/.npm/9c4e88e1-firebase-cli.lock
+15 silly addNameRange { name: 'firebase-cli', range: '*', hasData: false }
+16 verbose request where is /firebase-cli
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id beccb4097bc5f6b8
+19 verbose url raw /firebase-cli
+20 verbose url resolving [ 'https://registry.npmjs.org/', './firebase-cli' ]
+21 verbose url resolved https://registry.npmjs.org/firebase-cli
+22 verbose request where is https://registry.npmjs.org/firebase-cli
+23 info trying registry request attempt 1 at 11:56:19
+24 verbose etag "59ecd6ec-918c"
+25 http GET https://registry.npmjs.org/firebase-cli
+26 http 304 https://registry.npmjs.org/firebase-cli
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Tue, 02 Jan 2018 19:56:20 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     etag: '"59ecd6ec-918c"',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-mdw17328-MDW',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1514922980.013581,VS0,VE89',
+27 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+28 verbose etag https://registry.npmjs.org/firebase-cli from cache
+29 silly addNameRange number 2 { name: 'firebase-cli', range: '*', hasData: true }
+30 silly addNameRange versions [ 'firebase-cli',
+30 silly addNameRange   [ '0.0.4',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.1.4',
+30 silly addNameRange     '0.1.5',
+30 silly addNameRange     '0.1.6',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.5.0',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.0.1',
+30 silly addNameRange     '1.0.2',
+30 silly addNameRange     '1.0.3',
+30 silly addNameRange     '1.0.4',
+30 silly addNameRange     '1.0.5',
+30 silly addNameRange     '1.0.6',
+30 silly addNameRange     '1.1.0',
+30 silly addNameRange     '1.1.1',
+30 silly addNameRange     '1.1.2',
+30 silly addNameRange     '1.1.3',
+30 silly addNameRange     '1.1.4',
+30 silly addNameRange     '1.1.5',
+30 silly addNameRange     '1.1.6',
+30 silly addNameRange     '1.2.0' ] ]
+31 verbose addNamed [ 'firebase-cli', '1.2.0' ]
+32 verbose addNamed [ '1.2.0', '1.2.0' ]
+33 silly lockFile 44e29959-firebase-cli-1-2-0 firebase-cli@1.2.0
+34 verbose lock firebase-cli@1.2.0 /home/cubic/.npm/44e29959-firebase-cli-1-2-0.lock
+35 warn deprecated firebase-cli@1.2.0: Deprecated. Please use firebase-tools instead.
+36 silly lockFile 44e29959-firebase-cli-1-2-0 firebase-cli@1.2.0
+37 silly lockFile 44e29959-firebase-cli-1-2-0 firebase-cli@1.2.0
+38 silly lockFile 9c4e88e1-firebase-cli firebase-cli@
+39 silly lockFile 9c4e88e1-firebase-cli firebase-cli@
+40 silly resolved [ { name: 'firebase-cli',
+40 silly resolved     description: 'Firebase command line tools',
+40 silly resolved     version: '1.2.0',
+40 silly resolved     author:
+40 silly resolved      { name: 'Firebase',
+40 silly resolved        email: 'support@firebase.com',
+40 silly resolved        url: 'https://www.firebase.com/' },
+40 silly resolved     homepage: 'https://github.com/firebase/firebase-cli/',
+40 silly resolved     repository:
+40 silly resolved      { type: 'git',
+40 silly resolved        url: 'https://github.com/firebase/firebase-cli.git' },
+40 silly resolved     bugs: { url: 'https://github.com/firebase/firebase-cli/issues' },
+40 silly resolved     licenses: [ [Object] ],
+40 silly resolved     keywords:
+40 silly resolved      [ 'cdn',
+40 silly resolved        'cli',
+40 silly resolved        'ssl',
+40 silly resolved        'cloud',
+40 silly resolved        'hosting',
+40 silly resolved        'firebase',
+40 silly resolved        'realtime',
+40 silly resolved        'websockets',
+40 silly resolved        'synchronization' ],
+40 silly resolved     preferGlobal: true,
+40 silly resolved     bin: { firebase: './bin/firebase' },
+40 silly resolved     engines: { node: '>=0.10.0' },
+40 silly resolved     engineStrict: true,
+40 silly resolved     files: [ 'bin/**', 'lib/**', 'LICENSE', 'README.md', 'package.json' ],
+40 silly resolved     dependencies:
+40 silly resolved      { chalk: '0.5.x',
+40 silly resolved        filesize: '3.1.2',
+40 silly resolved        firebase: '2.2.x',
+40 silly resolved        'fstream-ignore': '1.0.x',
+40 silly resolved        open: '0.0.x',
+40 silly resolved        optimist: '0.6.x',
+40 silly resolved        progress: '1.1.x',
+40 silly resolved        prompt: '0.2.x',
+40 silly resolved        request: '2.51.x',
+40 silly resolved        'source-map-support': '0.2.7',
+40 silly resolved        'source-processor': '0.0.7',
+40 silly resolved        tar: '1.0.x',
+40 silly resolved        when: '3.6.x' },
+40 silly resolved     devDependencies:
+40 silly resolved      { chai: '^1.10.0',
+40 silly resolved        coveralls: '2.11.2',
+40 silly resolved        gulp: '3.8.10',
+40 silly resolved        'gulp-exit': '0.0.2',
+40 silly resolved        'gulp-istanbul': '0.5.0',
+40 silly resolved        'gulp-jshint': '1.9.0',
+40 silly resolved        'gulp-mocha': '2.0.0',
+40 silly resolved        'jshint-stylish': '1.0.0' },
+40 silly resolved     scripts: { test: 'gulp test', travis: 'gulp' },
+40 silly resolved     gitHead: '539faf6b0871142371ed03af574d2052356fe804',
+40 silly resolved     _id: 'firebase-cli@1.2.0',
+40 silly resolved     _shasum: 'd6003bae9016c0b8beeeb815eae3474efdc91eec',
+40 silly resolved     _from: 'firebase-cli@',
+40 silly resolved     _npmVersion: '2.7.5',
+40 silly resolved     _nodeVersion: '0.10.38',
+40 silly resolved     _npmUser: { name: 'firebase', email: 'operations@firebase.com' },
+40 silly resolved     maintainers: [ [Object], [Object] ],
+40 silly resolved     dist:
+40 silly resolved      { shasum: 'd6003bae9016c0b8beeeb815eae3474efdc91eec',
+40 silly resolved        tarball: 'https://registry.npmjs.org/firebase-cli/-/firebase-cli-1.2.0.tgz' },
+40 silly resolved     deprecated: 'Deprecated. Please use firebase-tools instead.',
+40 silly resolved     directories: {},
+40 silly resolved     _resolved: 'https://registry.npmjs.org/firebase-cli/-/firebase-cli-1.2.0.tgz',
+40 silly resolved     readme: 'ERROR: No README data found!' } ]
+41 info install firebase-cli@1.2.0 into /usr/local/lib
+42 info installOne firebase-cli@1.2.0
+43 verbose lib/node_modules/firebase-cli unbuild
+44 verbose tar unpack /home/cubic/.npm/firebase-cli/1.2.0/package.tgz
+45 silly lockFile 604234d7-al-lib-node-modules-firebase-cli tar:///usr/local/lib/node_modules/firebase-cli
+46 verbose lock tar:///usr/local/lib/node_modules/firebase-cli /home/cubic/.npm/604234d7-al-lib-node-modules-firebase-cli.lock
+47 silly lockFile 4bbf2614-m-firebase-cli-1-2-0-package-tgz tar:///home/cubic/.npm/firebase-cli/1.2.0/package.tgz
+48 verbose lock tar:///home/cubic/.npm/firebase-cli/1.2.0/package.tgz /home/cubic/.npm/4bbf2614-m-firebase-cli-1-2-0-package-tgz.lock
+49 silly gunzTarPerm modes [ '775', '664' ]
+50 error Error: EACCES, mkdir '/usr/local/lib/node_modules/firebase-cli'
+50 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/firebase-cli']
+50 error   errno: 3,
+50 error   code: 'EACCES',
+50 error   path: '/usr/local/lib/node_modules/firebase-cli',
+50 error   fstream_type: 'Directory',
+50 error   fstream_path: '/usr/local/lib/node_modules/firebase-cli',
+50 error   fstream_class: 'DirWriter',
+50 error   fstream_stack:
+50 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+50 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+50 error      'Object.oncomplete (fs.js:107:15)' ] }
+51 error Please try running this command again as root/Administrator.
+52 error System Linux 3.10.0-693.5.2.el7.x86_64
+53 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "firebase-cli"
+54 error cwd /home/cubic/tmp/public
+55 error node -v v0.10.30
+56 error npm -v 1.4.21
+57 error path /usr/local/lib/node_modules/firebase-cli
+58 error fstream_path /usr/local/lib/node_modules/firebase-cli
+59 error fstream_type Directory
+60 error fstream_class DirWriter
+61 error code EACCES
+62 error errno 3
+63 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/firebase-cli'
+64 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+64 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+64 error fstream_stack Object.oncomplete (fs.js:107:15)
+65 verbose exit [ 3, true ]
