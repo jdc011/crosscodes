@@ -1,5 +1,5 @@
 function openNav() {
-   document.getElementById("sidebar").style.width = "30%";
+   document.getElementById("sidebar").style.width = "25%";
 }
 
 function closeNav() {
