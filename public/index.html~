@@ -13,18 +13,17 @@
 
    <body>
       <!-- Header -->
-      <div class="company">   
-         <div class="header" align="middle">
-            <center><a href="index.html"><img src="logo.png" width="30%" height="90px"></a></center>
-         </div>
+      <div class="header" align="middle">
+        <center><a href="index.html"><img src="logo.png" width="30%" height="90px"></a></center>
       </div>
 
       <!-- Nav bar -->
+      
       <ul class="nav">
-         <li><a href='index.html'>About</a></li>
+         <li><a class="active" href='index.html'>About</a></li>
          <li><a href='experience.html'>Experience</a></li>
          <li><a href='projects.html'>Projects</a></li>
-         <li><a class="active" href='contact.html'>Contact</a></li>
+         <li><a href='contact.html'>Contact</a></li>
          <li><a href='blog.html'>Blog</a></li>
       </ul>
       
@@ -33,27 +32,33 @@
          <div class="w3-sidebar w3-light-blue w3-bar-block" style="width:100%"> 
             <div style="font-size:30px;cursor:pointer"><span onclick="openNav()">&#9776; VIEW LINKS AND UPDATES</span></div>
             <div class="w3-container w3-animate-opacity">
-               <center>
-                  <p><font size="20px" style="color:blue"><b>SEND ME A MESSAGE</b></font></p>
+               <p><center>
+                  <b><font size="50px" style="color:blue">Hello World!<br/></b></font>
+                  <font size="30px" style="color:darkblue">Jeremy Cruz at your service.<br/></font>
+                  <font size="20px" style="color:white">How can I make a difference?<br/></font>
+               </center></p>
+               
+               <br/>
+               <br/>
+               
+               <div class="picture" align="middle">   
+                  <center><img src="jeremy.png"></center>
+               </div>
 
-                  <form action="test.php" method="post">
-                     <p><b><font style="color:darkblue">Name</font></b></p> <input type="text" Name="name">
-                     
-                     <br/>
-                     <br/>
-                     <br/>
-                     
-                     <p><b><font style="color:darkblue">Message</font></b></p> <textarea name="Message" rows="20" cols="40"></textarea>
-                     
-                     <br/>
-                     <br/>
-                     <br/>
-                     <br/>
+               <br/>
+               <br/>
 
-                     <input type="submit" value="Send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear">
-                  </form>
-               </center>
-            
+               <div id="content1">
+                  <b><font size="20px"><center>PROFESSIONAL SUMMARY</center></font></b>
+               </div>
+               
+               <center><font size="5px">
+                  Software engineer intern at Cubic Corporation; Lead programmer at Engineers for a Sustainable World;<br/> 
+		            Experience in defense software utilizing ARFL frameworks and TCP/ IP programming; Utilized Android<br/> 
+		            Programming and Bluetooth communications in global sustainability related projects; Familiar with<br/> 
+		            digital design, verilog simulations and computer architecture; Certified in computerized graphic<br/> 
+		            design and web design
+               </font></center>
                <br/>
                <br/>
                <br/>
@@ -62,7 +67,7 @@
                <br/>
                <br/>
                <br/>
-            
+               </div>
             </div>
          </div>
       </div>

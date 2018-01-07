@@ -13,10 +13,8 @@
 
    <body>
       <!-- Header -->
-      <div class="company">   
-         <div class="header" align="middle">
-            <center><a href="index.html"><img src="logo.png" width="30%" height="90px"></a></center>
-         </div>
+      <div class="header" align="middle">
+         <center><a href="index.html"><img src="logo.png" width="30%" height="90px"></a></center>
       </div>
 
       <!-- Nav bar -->
