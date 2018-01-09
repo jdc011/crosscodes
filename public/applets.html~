@@ -37,7 +37,7 @@
                
                <br/>
                
-               <center><font size="5px" style="color:blue">Basic stats calculator</font></center>
+               <center><font size="5px" style="color:blue"><a href='https://github.com/jdc011/StatApp' style="text-decoration:none" target="_blank">Basic stats calculator</a></font></center>
 
 	       <center><applet
                   code="DataWindow.class"
@@ -45,19 +45,11 @@
                   height="500"
                   width="500">
                </applet></center>
-
-               <br/>
-
-               <div class="click">
-                  <center><font size="5px" style="color:blue"><a href='https://github.com/jdc011/StatApp' style="text-decoration:none" target="_blank">
-                     View code
-                  </a></font></center>
-               </div>
-               
+ 
                <br/>
                <br/>
                
-               <center><font size="5px" style="color:blue">Machine learning GUI classifier</font></center>
+               <center><font size="5px" style="color:blue"><a href='https://github.com/jdc011/Classifier' style="text-decoration:none" target="_blank">Machine learning GUI classifier</a></font></center>
 
 	       <center><applet
                   code="Init.class"
@@ -65,16 +57,8 @@
                   height="500"
                   width="500">
                </applet></center>
-               
-               <br/>
 
-               <div class="click">
-                  <center><font size="5px" style="color:blue"><a href='https://github.com/jdc011/Classifier' style="text-decoration:none" target="_blank">
-                     View code
-                  </a></font></center>
-               </div>
-	       
-          <br/>
+	       <br/>
 	       <br/>
 	       <br/>
 
