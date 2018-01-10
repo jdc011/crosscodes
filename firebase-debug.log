@@ -1,0 +1,23 @@
+[debug] [2018-01-10T20:36:51.254Z] ----------------------------------------------------------------------
+[debug] [2018-01-10T20:36:51.256Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-01-10T20:36:51.257Z] CLI Version:   3.15.3
+[debug] [2018-01-10T20:36:51.257Z] Platform:      linux
+[debug] [2018-01-10T20:36:51.257Z] Node Version:  v9.2.0
+[debug] [2018-01-10T20:36:51.257Z] Time:          Wed Jan 10 2018 12:36:51 GMT-0800 (PST)
+[debug] [2018-01-10T20:36:51.257Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-10T20:36:51.266Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-10T20:36:51.266Z] > authorizing via signed-in user
+[debug] [2018-01-10T20:36:51.269Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-4ce09  
+ Wed Jan 10 2018 12:36:51 GMT-0800 (PST)
+[debug] [2018-01-10T20:36:54.803Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-10T20:36:54.804Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-4ce09/tokens  
+ Wed Jan 10 2018 12:36:54 GMT-0800 (PST)
+[debug] [2018-01-10T20:36:56.081Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-4ce09'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-01-10T20:36:57.178Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-4ce09/uploads/-L2WmYzZUgxS8LEaCKnk?fileCount=66&message=  
+ Wed Jan 10 2018 12:36:57 GMT-0800 (PST)

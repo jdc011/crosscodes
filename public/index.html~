@@ -21,11 +21,11 @@
 
       <!-- Nav bar -->
       <ul class="nav">
-         <li><a href='index.html'>About</a></li>
+         <li><a class="active" href='index.html'>About</a></li>
          <li><a href='experience.html'>Experience</a></li>
          <li><a href='projects.html'>Projects</a></li>
          <li><a href='contact.html'>Contact</a></li>
-         <li><a class="active" href='blog.html'>Blog</a></li>
+         <li><a href='blog.html'>Blog</a></li>
       </ul>
       
       <!-- Content -->
@@ -33,48 +33,43 @@
          <div class="w3-sidebar w3-light-blue w3-bar-block" style="width:100%"> 
             <div style="font-size:30px;cursor:pointer"><span onclick="openNav()">&#9776; VIEW LINKS AND UPDATES</span></div>
             <div class="w3-container w3-animate-opacity">
-               <center><font size="20px" style="color:darkblue"><b>University vs. Industry</b></font></center>
-               <center><font size="5px" style="color:blue">
-	          I have always had this burning question before I got into the industry. With CS being<br/>
-		  a rather abstract field of study, what does one actually do in the work force with all<br/>
-		  the abstract concepts in mind? First of all, I would like to make very clear that<br/>
-		  EVERYTHING one does in their course work is vital to their career. While some aspect<br/>
-		  in college may be directly or indirectly beneficial, every task is tied to each other<br/>
-		  and builds on itself. Any curriculum is built in its own unique way to educate aspiring<br/>
-		  engineers through time, addressing specific goals. To answer the question of what happens<br/>
-		  in the industry, expect projects as far as the eye can see to come under way, as well as<br/>
-		  the expectation of teamwork to accomplish large scale projects. Whether it is a basic<br/>
-		  application, some back end database, or complicated network system, a CS degree's worth<br/>
-		  of skills to be used as one's toolbox is more than enough to answer an endless array<br/>
-		  of problems. To put it simply, college curriculums aim to allow engineers to grow<br/>
-		  overtime with the expectation that all information will be tied together in the end<br/>
-		  and can be recalled and utilized in some fashion to answer the consumer's need.<br/>
-		  College is all building, and practicing, with due dates simulating a consumer's<br/> 
-		  actual time of need for a product, and one's grade simulating how the consumer reacts<br/> 
-		  to one's work. Also, studying is aquiring one's unique engineering toolbox while<br/>
-		  working is applying that toolbox to address a consumer's problem. However, what is<br/>
-		  physically done in school, one can expect it to be done in the industry as well.<br/>
+               <p><center>
+                  <b><font size="50px" style="color:blue">Hello World!<br/></b></font>
+                  <font size="30px" style="color:darkblue">Jeremy Cruz at your service.<br/></font>
+                  <font size="20px" style="color:white">How can I make a difference?<br/></font>
+               </center></p>
+               
+               <br/>
+               <br/>
+               
+               <div class="picture" align="middle">   
+                  <center><img src="jeremy.png"></center>
+               </div>
+
+               <br/>
+               <br/>
+
+               <div id="content1">
+                  <b><font size="20px"><center>PROFESSIONAL SUMMARY</center></font></b>
+               </div>
+               
+               <center><font size="5px">
+                  Software engineer intern at Cubic Corporation; Lead programmer at Engineers for a Sustainable World;<br/> 
+		            Experience in defense software utilizing ARFL frameworks and TCP/ IP programming; Utilized Android<br/> 
+		            Programming and Bluetooth communications in global sustainability related projects; Familiar with<br/> 
+		            digital design, verilog simulations and computer architecture; Certified in computerized graphic<br/> 
+		            design and web design
                </font></center>
-
-	       <!--
-          <br/>
-	       <hr style="border-color:darkblue"></hr>
-	       <br/>
-	       <br/>
-               
-	       <center><font size="20px" style="color:darkblue"><b>The study of Computer Science</b></font></center>
-               <center><font size="5px" style="color:blue">
-               
-	       </font></center>
-          -->
-
-	       <br/>
-	       <br/>
-	       <br/>
-	       <br/>
-	       <br/>
-	       <br/>
-	    </div>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               </div>
+            </div>
          </div>
       </div>
       
@@ -134,7 +129,7 @@
       Applets have been fixed.
     </center>
     </a></font></div>
-
+    
     <br/>
 
     <div class="click"><font size="5px" style="color:blue"><a href='blog.html' style="text-decoration:none">
@@ -142,6 +137,7 @@
       New blog post on the industry versus university
     </center>
     </a></font></div>
+
 	 <br/>
 	 <br/>
 	 <br/>
