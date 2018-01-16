@@ -1,0 +1,39 @@
+[debug] [2018-01-16T05:39:40.022Z] ----------------------------------------------------------------------
+[debug] [2018-01-16T05:39:40.024Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-01-16T05:39:40.024Z] CLI Version:   3.15.3
+[debug] [2018-01-16T05:39:40.024Z] Platform:      linux
+[debug] [2018-01-16T05:39:40.024Z] Node Version:  v9.2.0
+[debug] [2018-01-16T05:39:40.024Z] Time:          Mon Jan 15 2018 21:39:40 GMT-0800 (PST)
+[debug] [2018-01-16T05:39:40.024Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-16T05:39:40.034Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-16T05:39:40.034Z] > authorizing via signed-in user
+[debug] [2018-01-16T05:39:40.036Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-4ce09  
+ Mon Jan 15 2018 21:39:40 GMT-0800 (PST)
+[info] 
+[warn] ⚠  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] ⚠  Please run firebase login --reauth
+[info] 
+[debug] [2018-01-16T05:40:00.080Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-01-16T05:40:00.080Z] > authorizing via signed-in user
+[debug] [2018-01-16T05:40:00.081Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-16T05:40:00.081Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/F_8ZlHfXni3NYwEIG0aBKxgjm7a34nNejDhP8ORzC7qzM3fRT3WARZiSOfsZz55R',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jan 15 2018 21:40:00 GMT-0800 (PST)
+[debug] [2018-01-16T05:40:05.614Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T05:40:05.638Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-4ce09  
+ Mon Jan 15 2018 21:40:05 GMT-0800 (PST)
+[debug] [2018-01-16T05:40:06.634Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T05:40:06.634Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-4ce09/tokens  
+ Mon Jan 15 2018 21:40:06 GMT-0800 (PST)
+[debug] [2018-01-16T05:40:07.657Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-4ce09'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-01-16T05:40:09.690Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-4ce09/uploads/-L2xTpq3H1Z2ER4aXjlV?fileCount=75&message=  
+ Mon Jan 15 2018 21:40:09 GMT-0800 (PST)
