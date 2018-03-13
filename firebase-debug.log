@@ -1,0 +1,137 @@
+[debug] [2018-03-13T18:33:25.497Z] ----------------------------------------------------------------------
+[debug] [2018-03-13T18:33:25.501Z] Command:       /usr/local/bin/node /usr/bin/firebase deploy
+[debug] [2018-03-13T18:33:25.501Z] CLI Version:   3.17.6
+[debug] [2018-03-13T18:33:25.501Z] Platform:      linux
+[debug] [2018-03-13T18:33:25.501Z] Node Version:  v9.8.0
+[debug] [2018-03-13T18:33:25.501Z] Time:          Tue Mar 13 2018 11:33:25 GMT-0700 (PDT)
+[debug] [2018-03-13T18:33:25.502Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-13T18:33:25.522Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-13T18:33:25.522Z] > attempting to authenticate via app default credentials
+[debug] [2018-03-13T18:33:25.569Z] ! auto-auth error: Could not load the default credentials. Browse to https://developers.google.com/accounts/docs/application-default-credentials for more information.
+[debug] [2018-03-13T18:33:25.569Z] > no credentials could be found or automatically retrieved
+[info] 
+[warn] ⚠  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] ⚠  Please run firebase login --reauth
+[info] 
+[debug] [2018-03-13T18:33:25.570Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-03-13T18:33:25.570Z] > attempting to authenticate via app default credentials
+[debug] [2018-03-13T18:33:25.601Z] ! auto-auth error: Could not load the default credentials. Browse to https://developers.google.com/accounts/docs/application-default-credentials for more information.
+[debug] [2018-03-13T18:33:25.601Z] > no credentials could be found or automatically retrieved
+[error] 
+[error] Error: Command requires authentication, please run firebase login
+[debug] [2018-03-13T18:33:25.860Z] Error: ETXTBSY: text file is busy, unlink '/media/sf_Shared/Portfolio/firebase-debug.log'
+    at Object.fs.unlinkSync (fs.js:1085:18)
+    at process.<anonymous> (/usr/lib/node_modules/firebase-tools/bin/firebase:64:8)
+    at process.emit (events.js:185:15)
+    at process.emit (domain.js:421:20)
+    at process.exit (internal/process.js:147:15)
+    at Timeout._onTimeout (/usr/lib/node_modules/firebase-tools/lib/errorOut.js:17:13)
+    at ontimeout (timers.js:466:11)
+    at tryOnTimeout (timers.js:304:5)
+    at Timer.listOnTimeout (timers.js:267:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-03-13T18:33:38.329Z] ----------------------------------------------------------------------
+[debug] [2018-03-13T18:33:38.332Z] Command:       /usr/local/bin/node /usr/bin/firebase login reauth
+[debug] [2018-03-13T18:33:38.332Z] CLI Version:   3.17.6
+[debug] [2018-03-13T18:33:38.332Z] Platform:      linux
+[debug] [2018-03-13T18:33:38.332Z] Node Version:  v9.8.0
+[debug] [2018-03-13T18:33:38.332Z] Time:          Tue Mar 13 2018 11:33:38 GMT-0700 (PDT)
+[debug] [2018-03-13T18:33:38.332Z] ----------------------------------------------------------------------
+[debug] 
+[error] 
+[error] Error: Too many arguments. Run firebase help login for usage instructions
+[debug] [2018-03-13T18:33:38.601Z] Error: ETXTBSY: text file is busy, unlink '/media/sf_Shared/Portfolio/firebase-debug.log'
+    at Object.fs.unlinkSync (fs.js:1085:18)
+    at process.<anonymous> (/usr/lib/node_modules/firebase-tools/bin/firebase:64:8)
+    at process.emit (events.js:185:15)
+    at process.emit (domain.js:421:20)
+    at process.exit (internal/process.js:147:15)
+    at Timeout._onTimeout (/usr/lib/node_modules/firebase-tools/lib/errorOut.js:17:13)
+    at ontimeout (timers.js:466:11)
+    at tryOnTimeout (timers.js:304:5)
+    at Timer.listOnTimeout (timers.js:267:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-03-13T18:33:47.224Z] ----------------------------------------------------------------------
+[debug] [2018-03-13T18:33:47.227Z] Command:       /usr/local/bin/node /usr/bin/firebase login --reauth
+[debug] [2018-03-13T18:33:47.227Z] CLI Version:   3.17.6
+[debug] [2018-03-13T18:33:47.227Z] Platform:      linux
+[debug] [2018-03-13T18:33:47.227Z] Node Version:  v9.8.0
+[debug] [2018-03-13T18:33:47.227Z] Time:          Tue Mar 13 2018 11:33:47 GMT-0700 (PDT)
+[debug] [2018-03-13T18:33:47.228Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=229392260&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2018-03-13T18:34:18.059Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAAm5qr4B8cciPtUwb-s_X1y6ar4ROG0EPZ3yaaHK0HZflveaAQcHJRD-F8bq950QftA465Df2H4mTaW4XSU7j4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Tue Mar 13 2018 11:34:18 GMT-0700 (PDT)
+[debug] [2018-03-13T18:34:18.461Z] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Success! Logged in as jere.cruz519@gmail.com
+[debug] [2018-03-13T18:34:21.193Z] Error: ETXTBSY: text file is busy, unlink '/media/sf_Shared/Portfolio/firebase-debug.log'
+    at Object.fs.unlinkSync (fs.js:1085:18)
+    at process.<anonymous> (/usr/lib/node_modules/firebase-tools/bin/firebase:64:8)
+    at process.emit (events.js:185:15)
+    at process.emit (domain.js:421:20)
+    at process.topLevelDomainCallback (domain.js:101:23)
+[debug] [2018-03-13T18:34:29.099Z] ----------------------------------------------------------------------
+[debug] [2018-03-13T18:34:29.101Z] Command:       /usr/local/bin/node /usr/bin/firebase deploy
+[debug] [2018-03-13T18:34:29.101Z] CLI Version:   3.17.6
+[debug] [2018-03-13T18:34:29.101Z] Platform:      linux
+[debug] [2018-03-13T18:34:29.101Z] Node Version:  v9.8.0
+[debug] [2018-03-13T18:34:29.102Z] Time:          Tue Mar 13 2018 11:34:29 GMT-0700 (PDT)
+[debug] [2018-03-13T18:34:29.102Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-13T18:34:29.117Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-13T18:34:29.117Z] > authorizing via signed-in user
+[debug] [2018-03-13T18:34:29.118Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-13T18:34:29.118Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/8_U5fUyKQy3lTyUosoQaN6WkngpB_wERuluPxArDIN0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Mar 13 2018 11:34:29 GMT-0700 (PDT)
+[debug] [2018-03-13T18:34:29.489Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-13T18:34:29.491Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-4ce09  
+  
+ Tue Mar 13 2018 11:34:29 GMT-0700 (PDT)
+[debug] [2018-03-13T18:34:30.448Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-13T18:34:30.449Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-4ce09/tokens  
+  
+ Tue Mar 13 2018 11:34:30 GMT-0700 (PDT)
+[debug] [2018-03-13T18:34:30.869Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-4ce09'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-03-13T18:34:32.117Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-4ce09/uploads/-L7Vd6HnkCHCtLfOqHgW?fileCount=79&message=  
+  
+ Tue Mar 13 2018 11:34:32 GMT-0700 (PDT)
+[debug] [2018-03-13T18:34:36.156Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-13T18:34:36.156Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] ✔  hosting: 79 files uploaded successfully
+[debug] [2018-03-13T18:34:42.228Z] >>> HTTP REQUEST POST https://deploy.firebase.com/v1/projects/portfolio-4ce09/releases  
+ { hosting: 
+   { public: 'public',
+     ignore: [ 'firebase.json', '**/.*', '**/node_modules/**' ],
+     version: '-L7Vd6HnkCHCtLfOqHgW',
+     prefix: '-L7Vd6HnkCHCtLfOqHgW/',
+     manifest: [] } } 
+ Tue Mar 13 2018 11:34:42 GMT-0700 (PDT)
+[debug] [2018-03-13T18:34:43.291Z] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/portfolio-4ce09/overview
+[info] Hosting URL: https://portfolio-4ce09.firebaseapp.com
