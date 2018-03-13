@@ -178,3 +178,46 @@
 [info] 
 [info] Project Console: https://console.firebase.google.com/project/portfolio-4ce09/overview
 [info] Hosting URL: https://portfolio-4ce09.firebaseapp.com
+[debug] [2018-03-13T18:43:03.188Z] ----------------------------------------------------------------------
+[debug] [2018-03-13T18:43:03.192Z] Command:       /usr/local/bin/node /usr/bin/firebase deploy
+[debug] [2018-03-13T18:43:03.192Z] CLI Version:   3.17.6
+[debug] [2018-03-13T18:43:03.192Z] Platform:      linux
+[debug] [2018-03-13T18:43:03.192Z] Node Version:  v9.8.0
+[debug] [2018-03-13T18:43:03.192Z] Time:          Tue Mar 13 2018 11:43:03 GMT-0700 (PDT)
+[debug] [2018-03-13T18:43:03.192Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-13T18:43:03.208Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-13T18:43:03.208Z] > authorizing via signed-in user
+[debug] [2018-03-13T18:43:03.210Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-4ce09  
+  
+ Tue Mar 13 2018 11:43:03 GMT-0700 (PDT)
+[debug] [2018-03-13T18:43:03.716Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-13T18:43:03.717Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-4ce09/tokens  
+  
+ Tue Mar 13 2018 11:43:03 GMT-0700 (PDT)
+[debug] [2018-03-13T18:43:04.214Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-4ce09'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-03-13T18:43:05.347Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-4ce09/uploads/-L7Vf3afNGSXoPMOJNok?fileCount=79&message=  
+  
+ Tue Mar 13 2018 11:43:05 GMT-0700 (PDT)
+[debug] [2018-03-13T18:43:19.207Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-13T18:43:19.207Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] ✔  hosting: 79 files uploaded successfully
+[debug] [2018-03-13T18:43:20.064Z] >>> HTTP REQUEST POST https://deploy.firebase.com/v1/projects/portfolio-4ce09/releases  
+ { hosting: 
+   { public: 'public',
+     ignore: [ 'firebase.json', '**/.*', '**/node_modules/**' ],
+     version: '-L7Vf3afNGSXoPMOJNok',
+     prefix: '-L7Vf3afNGSXoPMOJNok/',
+     manifest: [] } } 
+ Tue Mar 13 2018 11:43:20 GMT-0700 (PDT)
+[debug] [2018-03-13T18:43:21.099Z] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/portfolio-4ce09/overview
+[info] Hosting URL: https://portfolio-4ce09.firebaseapp.com
