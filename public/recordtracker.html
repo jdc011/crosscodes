@@ -3,91 +3,112 @@
    <title>Crosscodes</title>
    <meta charset="UTF-8"> 
    <head>
+      <!-- Bootstrap for mobile devices -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1, user-scalable=no">
+
       <!-- CSS -->
       <link rel="stylesheet" type="text/css" href="mystyle.css">
    </head>
    
    <!-- Styles and scripts -->
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-   <script src="sidebar.js"></script>
+   <link rel="icon" href="icon.png">
+   <link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous"></script>
+   <script src="nav.js"></script>
 
-   <body>
-      <!-- Header -->
-      <div class="header" align="middle">
-         <center><a href="index.html"><img src="logo.png" width="30%" height="90px"></a></center>
-      </div>
+   <body background="background.jpg">
+      <!-- Nav bar -->        
+      <nav>
+         <a href="index.html">
+            <img src="logo.png"></img>
+         </a>
+         
+         <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+         </ul>
+      </nav>
 
-      <!-- Nav bar -->
-      <ul class="nav">
-         <li><a href='index.html'>About</a></li>
-         <li><a href='experience.html'>Experience</a></li>
-         <li><a href='projects.html'>Projects</a></li>
-         <li><a href='contact.html'>Contact</a></li>
-         <li><a href='blog.html'>Blog</a></li>
-      </ul>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       
       <!-- Content -->
       <div style="margin-left:0%">
-         <div class="w3-sidebar w3-light-blue w3-bar-block" style="width:100%"> 
-            <div style="font-size:30px;cursor:pointer"><a href='software.html' style="text-decoration:none">&#9776; GO BACK TO SOFTWARE DEVELOPMENT</a></div>
-            <div class="w3-container w3-animate-opacity">
-               <center><p><b><font size="20px" style="color:darkblue">Record Tracker</font></b></p></center>
-            
-	    <br/>
+         <center>
+         <div class="w3-container w3-animate-opacity">
+            <div class="box">
+               <div class="title">
+               <center><p><b><font size="7px" style="color:white;font-family:Georgia">Record Tracker</font></b></p></center>
+               </div>
+
+	            <br/>
 	    
-	    <center><font size="5px">
-	       <b>Synopsis</b><br/>
-	       This is a command line application designed for UNIX platforms. A user will be able to store<br/>
-	       and retrieve recorded information. Information is saved to the hard disk. A user also has<br/>
-	       the option to clear all saved information. This app is a very basic data storage implementation<br/>
-	       that can be extended to other applications.<br/>
+	            <font size="4px">
+                  <b>Synopsis</b><br/>
+                  <div style="text-align:left">
+                  This is a command line application designed for UNIX platforms. A user will be able to store
+                  and retrieve recorded information. Information is saved to the hard disk. A user also has
+                  the option to clear all saved information. This app is a very basic data storage implementation
+                  that can be extended to other applications.<br/>
+                  </div>
 
-	       <br/>
+                  <br/>
 
-	       <b>Details</b><br/>
-	       Written in C++ along with file I/O capability, a user can create, store, and delete information<br/>
-	       on the hard disk. This file I/O implementation is used for the information saving feature so a<br/>
-	       a user is able to retrieve written information after the application has been turned off. Information<br/>
-	       is written to a file that is read by the application with a real-time updating occupancy status.<br/>
-	       A developer can extend this basic implementation of data storage and retrieval via linked list to<br/>
-	       more complex database style applications.<br/>
+                  <b>Details</b><br/>
+                  <div style="text-align:left">
+                  Written in C++ along with file I/O capability, a user can create, store, and delete information
+                  on the hard disk. This file I/O implementation is used for the information saving feature so a
+                  a user is able to retrieve written information after the application has been turned off. Information
+                  is written to a file that is read by the application with a real-time updating occupancy status.
+                  A developer can extend this basic implementation of data storage and retrieval via linked list to
+                  more complex database style applications.<br/>
+                  </div>
 
-	       <br/>
-	       
-	       <b>Example usage</b><br/>
-	       <img src="terminal.png" height="600px" width="1300px"></img><br/><br/>
-	       <b>Read file</b><br/>
-               <img src="out.png" height="60px" width="700px"></img>
+                  <br/>
+                  
+                  <b>Example usage</b><br/>
+                  <img src="terminal.png" height="600px" width="90%"></img><br/><br/>
+                  <b>Read file</b><br/>
+                        <img src="out.png" height="60px" width="90%"></img>
 
-	       <br/>
-	       <br/>
+                  <br/>
+                  <br/>
 
-	       <a href='https://github.com/jdc011/DataBase' target="_blank" style="text-decoration:none">
-	          <div class="click"><font size="5px" color="blue">
-		     View code
-		  </font></div>
-	       </a>
-	       
-	       <br/>
-	       <br/>
-	       <br/>
-	       
-	       <a href='software.html' style="text-decoration:none">
-	          <div class="click"><font size="5px" color="blue">
-		     Go back to software development
-		  </font></div>
-	       </a>
-
-	       <br/>
-	       <br/>
-	       <br/>
-	       <br/>
-	       <br/>
-	    </font></center>
-
-            </div>
+	               <a href='https://github.com/jdc011/DataBase' target="_blank">
+	                  <font size="4px">
+		                  View repository<br/>
+                     <img src="octo.png" height="150vw" width="150vw"></img>
+		               </font>
+	               </a>
+               </font>
+            </div>         
+            
+            <br/>
+            <br/>
+            <br/>
+         
+            <p><font size="4px" style="color:white">© Copyright 2018 Jeremy Cruz</p>
          </div>
-      </div>
-      </div>
+      </center>
    </body>
 </html>

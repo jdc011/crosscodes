@@ -3,212 +3,247 @@
    <title>Crosscodes</title>
    <meta charset="UTF-8"> 
    <head>
+      <!-- Bootstrap for mobile devices -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1, user-scalable=no">
+
       <!-- CSS -->
       <link rel="stylesheet" type="text/css" href="mystyle.css">
    </head>
    
    <!-- Styles and scripts -->
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-   <script src="sidebar.js"></script>
+   <link rel="icon" href="icon.png">
+   <link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous"></script>
+   <script src="nav.js"></script>
 
-   <body>
-      <!-- Header -->
-      <div class="company">   
-         <div class="header" align="middle">
-            <center><a href="index.html"><img src="logo.png" width="30%" height="90px"></a></center>
-         </div>
-      </div>
+   <body background="background.jpg">
+      <!-- Nav bar -->        
+      <nav>
+         <a href="index.html">
+            <img src="logo.png"></img>
+         </a>
+         
+         <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html" style="font-weight:bold;font-size:1.5vw">Projects</a></a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+         </ul>
+      </nav>
 
-      <!-- Nav bar -->
-      <ul class="nav">
-         <li><a href='index.html'>About</a></li>
-         <li><a href='experience.html'>Experience</a></li>
-         <li><a class="active" href='projects.html'>Projects</a></li>
-         <li><a href='contact.html'>Contact</a></li>
-         <li><a href='blog.html'>Blog</a></li>
-      </ul>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       
       <!-- Content -->
-      <div style="margin-left:0%">
-         <div class="w3-sidebar w3-light-blue w3-bar-block" style="width:100%"> 
-            <div style="font-size:30px;cursor:pointer"><span onclick="openNav()">&#9776; VIEW LINKS AND UPDATES</span></div>
-            <div class="w3-container w3-animate-opacity">
-               <center>
-                  <center><p><b><font size="20px" style="color:darkblue">Everybody loves 
-		  <img src="raspberrypi.png"></img>
-		  </font></b></p></center>
-	       </center>
-	       
-	       <br/>
-	       <br/>
-	       <br/>
+      <div class="w3-container w3-animate-opacity">
+         <b><font size="7px" color="white" style="font-family:Geogia">Software Development</font></b>
+         <hr class="style">
 
-	       <center>
-	       <div class="projecticon"><div class="click">
-                  <a href='software.html' style="text-decoration:none">
-                     <p><font size="5px" style="color:darkblue">Software development</font></p>
-                     <br/>
-                     <br/>
-                     <img src="dev.png" height="400px" width="400px"></img><br/><br/>
-                  </a>
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <center>
+                     <a href="http://eswucsd.weebly.com/solar-chill.html" target="_blank">
+                     <b><font size="5px" style="font-family:Geogia">Solar Chill<br/></font></b>
+                     <img src="eswicon.png" height="250wv" width="250vw"></img><br/>
+                     <font size="5px" style="font-family:Geogia">Solar powered charging station and bus stop</font>
+                     </a>
+                  </center>
                </div>
-               </div>
-               </center>
                
-               <br/>
-               <br/>
-               <br/>
+               <div class="col">
+                  <center>
+                     <a href="recordtracker.html" target="_blank">
+                     <b><font size="5px" style="font-family:Geogia">Record Tracker<br/></font></b>
+                     <img src="cpp.png" height="250wv" width="250vw"></img><br/>
+                     <font size="5px" style="font-family:Geogia">C++ implemented data record storage</font>
+                     </a>
+                  </center>        
+               </div>
+            </div>
 
-               <center>
-	       <div class="projecticon"><div class="click">
-                  <a href='applets.html' style="text-decoration:none">
-                     <p><font size="5px" style="color:darkblue">Applets</font></p>
-                     <br/>
-                     <br/>
-                     <img src="java-icon.png" height="500px" width="400px"></img><br/><br/>
-                  </a>
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+               <div class="col">
+                  <center>
+                     <a href="shiftassign.html" target="_blank">
+                     <b><font size="5px" style="font-family:Geogia">Shift Assign<br/></font></b>
+                     <img src="android.png" height="250wv" width="250vw"></img><br/>
+                     <font size="5px" style="font-family:Geogia">Restuarant managerial Android app</font>
+                     </a>
+                  </center>        
                </div>
-               </div>
-               </center>
                
-               <br/>
-               <br/>
-               <br/>
-
-               <center>
-	       <div class="projecticon"><div class="click">
-                  <a href='graphics.html' style="text-decoration:none">
-                     <p><font size="5px" style="color:darkblue">Graphic design</font></p>
-                     <br/>
-                     <br/>
-                     <img src="adobeCS.png" height="200px" width="500px"></img><br/><br/>
-                  </a>
+               <div class="col">
+                  <center>
+                     <a href="solarinteract.html" target="_blank">
+                     <b><font size="5px" style="font-family:Geogia">Solar Interact<br/></font></b>
+                     <img src="eswicon.png" height="250wv" width="250vw"></img><br/>
+                     <font size="5px" style="font-family:Geogia">Solar powered educational game and exhibit</font>
+                     </a>
+                  </center>        
                </div>
-               </div>
-	       </center>
+            </div>
             
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
+            <br/>
+            <br/>
+            <br/>
 
+            <div class="row">
+               <div class="col">
+                  <center>
+                     <a href="https://devpost.com/software/bubble-wrapped-ice-box-3000-5gm63l" target="_blank">
+                     <b><font size="5px" style="font-family:Geogia">IoT Smart Fridge<br/></font></b>
+                     <img src="sdhacks.png" height="250wv" width="250vw"></img><br/>
+                     <font size="5px" style="font-family:Geogia">Fridge capable of keeping inventory and texting user</font>
+                     </a>
+                  </center>        
+               </div>
+
+               <div class="col">
+                  <p></p>
+               </div>
             </div>
          </div>
-      </div>
-      
-      <!-- Side bar -->
-      <div id ="sidebar" class="w3-sidebar w3-cyan w3-bar-block" style="width:0%"> 
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="cursor:pointer">&times;</a>
-         <center> 
-	 <div class="sidehdr"><b><font style="font-size:2vw">Links</font></b></div>
-         </center>
-	 <br/>
- 
-	 <center>
-         <a class="w3-bar-item">   
-            <div id="putimage">
-               <img src="LinkedIn.png" height="45%" width="100%">
-               <input type="button" 
-                onclick="window.open('https://www.linkedin.com/in/jeremy-cruz-a6bb51110', '_blank')"
-                id="profile" 
-                value="View profile" 
-                style="background-color:#1E7CAF"/>
-               </img>
-	    </div>
-         </a>
-         </center>
-
+            
+         <br/>
+         <br/>
          <br/>
          
-	 <center>
-         <a class="w3-bar-item" href='https://github.com/jdc011' target="_blank">
-            <img src="Octocat.png" height="80%" width="100%">
-               <center><p><font size="5px">Github</font></p></center>
-            </img>
-         </a>
-	 </center>
-        
-         <br/>
-        
-	 <center>
-         <a href="PSEResume.pdf" target="_blank">
-            <img src="resumeicon.png" height="60%" width="100%">
-               <center><p><font size="5px">View resume</font></p></center>
-            </img>
-         </a>
-         </center>
+         <a id="applets"></a>
+         <b><font size="7px" color="white" style="font-family:Geogia">Applets</font></b>
+            <hr class="style">
+            
+            <center>
+            <div class=container>
+               <div class="row">
+                  <div class="col">
+                     <b><font size="5px" style="font-family:Geogia;color:white">Statistics calculator<br/></font></b>
+                     <div class="contain">
+                        <img src="stats.jpg" alt="Avatar" class="image2"></img>
+                        <div class="overlay2">
+                           <div class="text">
+                              <a href="stat.html">View Applet<br/></a> 
+                              <a href="http://github.com/jdc011/statapp" target="_blank">View Repository</a> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
 
-         <br/>
-	 
-	 <center>
-         <div class="sidehdr"><b><font style="font-size:2vw">Updates</font></b></div>
-	 </center>
-
- 	 <br/>
-	
-	 <!-- Updates -->
-    <div class="click"><font size="5px" style="color:blue"><a href='applets.html' style="text-decoration:none">
-    <center>
-      Applets have been fixed
-    </center>
-    </a></font></div>
-    
-    <br/>
-
-    <div class="click"><font size="5px" style="color:blue"><a href='blog.html#1' style="text-decoration:none">
-    <center>
-      New blog post on the industry versus university
-    </center>
-    </a></font></div>
-
-    <br/>
-
-    <div class="click"><font size="5px" style="color:blue"><a href='blog.html#2' style="text-decoration:none">
-    <center>
-      New blog post on what computer science is
-    </center>
-    </a></font></div>
-
-    <br/>
-
-    <div class="click"><font size="5px" style="color:blue"><a href='blog.html#3' style="text-decoration:none">
-    <center>
-      New blog post on resume growth and socio-economic ties
-    </center>
-    </a></font></div>
-
-    <br/>
-
-    <div class="click"><font size="5px" style="color:blue"><a href='blog.html#4' style="text-decoration:none">
-    <center>
-      New blog post on hackathon experience
-    </center>
-    </a></font></div>
-
-	 <br/>
-	 <br/>
-	 <br/>
-
-	 <center>
-            <button type="button" onclick="closeNav()" style="cursor:pointer">Close</button> 
-	 </center>
-
-         <script type="application/javascript">
-            document.getElementById("sidebar").style.width = "0%";
-         </script>
+                  <div class="col">
+                     <b><font size="5px" style="font-family:Geogia;color:white">GUI machine learning classifier<br/></font></b>
+                     <div class="contain">
+                        <img src="machinelearning.png" alt="Avatar" class="image2"></img>
+                        <div class="overlay2">
+                           <div class="text">
+                              <a href="machine.html">View Applet<br/></a> 
+                              <a href="http://github.com/jdc011/classifier" target="_blank">View Repository</a> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </center>
          
          <br/>
          <br/>
          <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
+         
+         <b><font size="7px" color="white" style="font-family:Geogia">Graphic Design</font></b>
+         <hr class="style">   
+         
+         <div class="container">
+            <center>
+            <div class="row">
+               <div class="col">
+                  <a href="Music Background.png" target="_blank">
+                  <b><font size="5px" style="font-family:Geogia">Music splash art poster<br/></font></b>
+                  <img src="Music Background.png" height="250wv" width="350vw"></img><br/>
+                  </a>
+               </div>
 
+               <div class="col">
+                  <a href="Cubic.png" target="_blank">
+                  <b><font size="5px" style="font-family:Geogia">Cubic internsip poster<br/></font></b>
+                  <img src="Cubic.png" height="250wv" width="350vw"></img><br/>
+                  </a>
+               </div>
+            </div>
+            </center>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <center>
+            <div class="row">
+               <div class="col">
+                  <a href="Apple.png" target="_blank">
+                  <b><font size="5px" style="font-family:Geogia">3D apple<br/></font></b>
+                  <img src="Apple.png" height="250wv" width="350vw"></img><br/>
+                  </a>
+               </div>
+               
+               <div class="col">
+                  <a href="Fantasy Land Project.png" target="_blank">
+                  <b><font size="5px" style="font-family:Geogia">Fantasy land photo manipulation<br/></font></b>
+                  <img src="Fantasy Land Project.png" height="250wv" width="350vw"></img><br/>
+                  </a>
+               </div>
+            </div> 
+            </center>
+            
+            <br/>
+            <br/>
+            <br/>
+
+            <center>
+            <div class="row">
+               <div class="col">
+                  <a href="Graffiti Wallpaper.png" target="_blank">
+                  <b><font size="5px" style="font-family:Geogia">Graffiti art<br/></font></b>
+                  <img src="Graffiti Wallpaper.png" height="250wv" width="350vw"></img><br/>
+                  </a>
+               </div>
+               
+               <div class="col">
+                  <a href="Flaming Person.png" target="_blank">
+                  <b><font size="5px" style="font-family:Geogia">Flame photo filter<br/></font></b>
+                  <img src="Flaming Person.png" height="250wv" width="350vw"></img><br/>
+                  </a>
+               </div>
+            </div>
+            </center>
+         </div>
       </div>
+       
+      <br/>
+      <br/>
+      <br/>
+         
+      <center>
+         <p><font size="4px" style="color:white">© Copyright 2018 Jeremy Cruz</p>
+      </center>  
    </body>
 </html>

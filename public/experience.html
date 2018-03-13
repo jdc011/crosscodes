@@ -3,205 +3,158 @@
    <title>Crosscodes</title>
    <meta charset="UTF-8"> 
    <head>
+      <!-- Bootstrap for mobile devices -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1, user-scalable=no">
+
       <!-- CSS -->
       <link rel="stylesheet" type="text/css" href="mystyle.css">
    </head>
    
    <!-- Styles and scripts -->
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-   <script src="sidebar.js"></script>
+   <link rel="icon" href="icon.png">
+   <link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous"></script>
+   <script src="nav.js"></script>
 
-   <body>
-      <!-- Header -->
-      <div class="company">   
-         <div class="header" align="middle">
-            <center><a href="index.html"><img src="logo.png" width="30%" height="90px"></a></center>
-         </div>
-      </div>
+   <body background="background.jpg">
+      <!-- Nav bar -->        
+      <nav>
+         <a href="index.html">
+            <img src="logo.png"></img>
+         </a>
+         
+         <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="experience.html" style="font-weight:bold;font-size:1.5vw">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+         </ul>
+      </nav>
 
-      <!-- Nav bar -->
-      <ul class="nav">
-         <li><a href='index.html'>About</a></li>
-         <li><a class="active" href='experience.html'>Experience</a></li>
-         <li><a href='projects.html'>Projects</a></li>
-         <li><a href='contact.html'>Contact</a></li>
-         <li><a href='blog.html'>Blog</a></li>
-      </ul>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       
       <!-- Content -->
-      <div style="margin-left:0%">
-         <div class="w3-sidebar w3-light-blue w3-bar-block" style="width:100%"> 
-         <div style="font-size:30px;cursor:pointer"><span onclick="openNav()">&#9776; VIEW LINKS AND UPDATES</span></div>
-            <div class="w3-container w3-animate-opacity">
-	       <div class="click">
-               <a href='https://www.cubic.com/' target="_blank" style="text-decoration:none">
-                  <div class="company" align="middle">
-                     <center><img src="logo-cubic.png" height="400px" width="1000px"></img></center>
-
-                  <br/>
-
-                  <p><center>
-                     <font size="20px" style="color:darkblue">
-                        Cubic Corporation<br/>
-                        <font style="color:blue">Specialty in global defense</font><br/>
-                     </font>
-                     <font size="12px" style="color:grey">
-                        <font style="color:black">Software Engineer Intern<br/></font>
-                        Combat training software development<br/>
-                        Utilization of TCP/IP programming, packet dissection, and Angular.js framework
-                     </font>
-                  </center></p>
-               </a>
-	       </div>
+      <div class="w3-container w3-animate-opacity">
+         <center>
+         <div class="container">
+            <div class="row">
+               <b><font size="7px" color="white" style="font-family:Geogia">EMPLOYMENT</font></b>
+               <div class="col">
+                  
+                  <div class="contain">
+                     <img src="logo-cubic.png" alt="Avatar" class="image">
+                     </img>
+                        
+                     <div class="overlay">
+                        <div class="text">
+                           Specialty: Global Defense Contractor<br/><br/>
+                           Position: Software Engineer Intern<br/><br/>
+                           Duties: implemented network programming for air combat 
+                           training system with <b>DIS</b> protocols using <b>KDIS</b> and
+                           <b>Socket.io</b>; designed combat tracking web interface using 
+                           <b>Angular.js</b>; implemented DIS <b>packet dissectors in
+                           Lua</b>; configured <b>DHCP server with static IP table</b> using
+                           <b>JunOS</b><br/><br/>
+                           Links:<br/> 
+                           <a href="http://www.cubic.com" target="_blank">Cubic Website</a><br/>
+                           <a href="http://www.airforce-technology.com/uncategorised/newsafrl-contracts-cubic-to-develop-lvc-system-for-air-combat-training-4686384/"target="_blank">Air Ranges Article</a><br/>
+                           <a href="https://wiki.wireshark.org/Lua/Dissectors" target="_blank">Wireshark Dissector Project</a>
+                        </div>
+                     </div>
+                  </div>
                </div>
+            </div>
 
-               <br/>
-               <br/>
-               <br/>
-	       
-	       <div class="click">
-               <a href='https://eswtritons.wordpress.com/' target="_blank" style="text-decoration:none">
-                  <div class="company" align="middle" href='https://eswtritons.wordpress.com/' target="_blank">
-                     <center><img src="ESW.png" height="300px" width="900px"></img></center>
-
-                  <br/>
-
-                  <p><center>
-                     <font size="20px" style="color:darkblue">
-                        <font style="color:blue">Engineers for a Sustainable World</font><br/>
-                        Specialty in global sustainability<br/>
-                     </font>
-                     <font size="12px" style="color:grey">
-                        <font style="color:black">Software Team Leader</font><br/>
-                        Global sustainability software development<br/>
-                        Utilization of Arduino, Android, and Bluetooth communication
-                     </font>
-                  </center></p>
-               </a>
-	       </div>
+            <br/>
+            <br/>
+            <br/>
+            
+            <div class="row">
+               <b><font size="7px" color="white" style="font-family:Geogia">ORGANIZATION</font></b>
+               <div class="col">
+                  <div class="contain">
+                     <img src="ESW.png" alt="Avatar" class="image">
+                     </img>
+                        
+                     <div class="overlay">
+                        <div class="text">
+                           Specialty: Global Sustainability Related Engineering
+                           Projects<br/><br/>
+                           Position: Software Team Leader<br/><br/>
+                           Duties: implemented <b>Android</b> communication with
+                           <b>Arduino</b> and solar panel using <b>Bluetooth</b>; 
+                           designed circuit for <b>arduino driven dot matrix</b> 
+                           output of carbon emissions minimized; coded API in <b>C</b> 
+                           for carbon emissions and energy tracking<br/><br/>
+                           Links:<br/>
+                           <a href="https://eswtritons.wordpress.com/" target="_blank">Engineers For A Sustainable World Website (UCSD Chapter)</a><br/>
+                           <a href="http://eswucsd.weebly.com/solar-chill.html" target="_blank">Solar Chill Project</a><br/>
+                           <a href="solarinteract.html" target="_blank">Solar Interact Project</a>
+                        </div>
+                     </div>
+                  </div>           
                </div>
+            </div>
+         
+            <br/>
+            <br/>
+            <br/>
 
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
+            <div class="row">
+               <b><font size="7px" color="white" style="font-family:Geogia">EDUCATION</font></b>
+               <div class="col">
+                  <div class="contain">
+                     <img src="UCSD" alt="Avatar" class="image">
+                     </img>
+                        
+                     <div class="overlay">
+                        <div class="text">
+                           Specialty: Educational Institution<br/><br/>
+                           Position: Computer Science and Engineering Student<br/><br/>
+                           Computer Science Specialties:<br/>
+                           Database Management<br/>
+                           Network Programming<br/>
+                           Machine Learning<br/>
+                           Data Mining<br/>
+                           Cryptography<br/>
+                           Web Development<br/>
+                           Computer Architecture<br/><br/>
+                           Links:<br/>
+                           <a href="http://www.ucsd.edu" target="_blank">UCSD Website</a><br/>
+                           <a href="http://jacobsschool.ucsd.edu" target="_blank">Jacob School Of Engineering Website</a><br/>
+                        </div>
+                     </div>
+                  </div>           
+               </div>
             </div>
          </div>
-      </div>
+         </center>
       
-      <!-- Side bar -->
-      <div id ="sidebar" class="w3-sidebar w3-cyan w3-bar-block" style="width:0%"> 
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="cursor:pointer">&times;</a>
-         <center> 
-	 <div class="sidehdr"><b><font style="font-size:2vw">Links</font></b></div>
+         <br/>
+         <br/>
+         <br/>
+            
+         <center>
+            <p><font size="4px" style="color:white">© Copyright 2018 Jeremy Cruz</p>
          </center>
-	 <br/>
- 
-	 <center>
-         <a class="w3-bar-item">   
-            <div id="putimage">
-               <img src="LinkedIn.png" height="45%" width="100%">
-               <input type="button" 
-                onclick="window.open('https://www.linkedin.com/in/jeremy-cruz-a6bb51110', '_blank')"
-                id="profile" 
-                value="View profile" 
-                style="background-color:#1E7CAF"/>
-               </img>
-	    </div>
-         </a>
-         </center>
-
-         <br/>
-         
-	 <center>
-         <a class="w3-bar-item" href='https://github.com/jdc011' target="_blank">
-            <img src="Octocat.png" height="80%" width="100%">
-               <center><p><font size="5px">Github</font></p></center>
-            </img>
-         </a>
-	 </center>
-        
-         <br/>
-        
-	 <center>
-         <a href="PSEResume.pdf" target="_blank">
-            <img src="resumeicon.png" height="60%" width="100%">
-               <center><p><font size="5px">View resume</font></p></center>
-            </img>
-         </a>
-         </center>
-
-         <br/>
-	 
-	 <center>
-         <div class="sidehdr"><b><font style="font-size:2vw">Updates</font></b></div>
-	 </center>
-
- 	 <br/>
-	
-	 <!-- Updates -->
-    <div class="click"><font size="5px" style="color:blue"><a href='applets.html' style="text-decoration:none">
-    <center>
-      Applets have been fixed
-    </center>
-    </a></font></div>
-    
-    <br/>
-
-    <div class="click"><font size="5px" style="color:blue"><a href='blog.html#1' style="text-decoration:none">
-    <center>
-      New blog post on the industry versus university
-    </center>
-    </a></font></div>
-
-    <br/>
-
-    <div class="click"><font size="5px" style="color:blue"><a href='blog.html#2' style="text-decoration:none">
-    <center>
-      New blog post on what computer science is
-    </center>
-    </a></font></div>
-
-    <br/>
-
-    <div class="click"><font size="5px" style="color:blue"><a href='blog.html#3' style="text-decoration:none">
-    <center>
-      New blog post on resume growth and socio-economic ties
-    </center>
-    </a></font></div>
-
-    <br/>
-
-    <div class="click"><font size="5px" style="color:blue"><a href='blog.html#4' style="text-decoration:none">
-    <center>
-      New blog post on hackathon experience
-    </center>
-    </a></font></div>
-
-	 <br/>
-	 <br/>
-	 <br/>
-
-	 <center>
-            <button type="button" onclick="closeNav()" style="cursor:pointer">Close</button> 
-	 </center>
-
-         <script type="application/javascript">
-            document.getElementById("sidebar").style.width = "0%";
-         </script>
-         
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-
-      </div>
+      </div>   
    </body>
 </html>
