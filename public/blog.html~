@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
    <title>Crosscodes</title>
    <meta charset="UTF-8"> 
@@ -45,7 +45,6 @@
          </ul>
       </nav>
 
-      <a name="1"></a>
       <br/>
       <br/>
       <br/>
@@ -61,7 +60,9 @@
          <a href="#top" style="position:fixed;font-size:20px">Back to top</a>
             <center>
             <div class="box">   
-            <!------------------------------------------------------------------------------------------------------------------------------------->           
+            <!------------------------------------------------------------------------------------------------------------------------------------->
+            <a name="1"></a>
+            
             <div class="title"><p align="right">
                <font size="4px" style="color:white"><b>9 January 2018</b></font><br/>
             </p>
@@ -77,14 +78,14 @@
                engineers through time, addressing specific goals. To answer the question of what happens
                in the industry, expect projects as far as the eye can see to come under way, as well as
                the expectation of teamwork to accomplish large scale projects. Whether it is a basic
-               application, some back-end database, or complicated network system, a CS degree's worth
+               application, some back end database, or complicated network system, a CS degree's worth
                of skills to be used as one's toolbox is more than enough to answer an endless array
                of problems. To put it simply, college curriculums aim to allow engineers to grow
                overtime with the expectation that all information will be tied together in the end
                and can be recalled and utilized in some fashion to answer the consumer's need.
                College is all building, and practicing, with due dates simulating a consumer's 
                actual time of need for a product, and one's grade simulating how the consumer reacts 
-               to one's work. Also, studying is acquiring  one's unique engineering toolbox while
+               to one's work. Also, studying is aquiring one's unique engineering toolbox while
                working is applying that toolbox to address a consumer's problem. However, what is
                physically done in school, one can expect it to be done in the industry as well.
             </font>
@@ -94,7 +95,6 @@
             </div>           
             </div>
 
-            <a name="2"></a>
             <br/>
             <br/>
             <br/>
@@ -102,6 +102,7 @@
             <br/>
             <div class="box">
             <!------------------------------------------------------------------------------------------------------------------------------------->
+            <a name="2"></a>
             <div class="title"><p align="right">
                <font size="4px" style="color:white"><b>12 January 2018</b></font><br/>
             </p>
@@ -114,7 +115,7 @@
                   the main take away I would like to point out is that software engineering is only
                   one out of many specific branches of computer science, one which is highly marketable 
                   in the industry. While one's expectation in a nutshell is that a CS degree leads to a
-                  six-figure career, one must understand that this is not the case GENERALLY speaking
+                  six figure career, one must understand that this is not the case GENERALLY speaking
                   of the field of computer science. I will discuss from my experience what this field
                   of study actually is in a general sense rather than it being associated to a high
                   paying job. As I have noted earlier, computer science is a scientific mean of
@@ -145,7 +146,6 @@
             </div>
             </div>
 
-            <a name="3"></a>
             <br/>
             <br/>
             <br/>
@@ -153,6 +153,7 @@
             <br/>
             <div class="box">
             <!------------------------------------------------------------------------------------------------------------------------------------->
+            <a name="3"></a>
             <div class="title"><p align="right">
                <font size="4px" style="color:white"><b>15 January 2018</b></font><br/>
             </p>
@@ -198,7 +199,7 @@
                   What I am about to explain is a theory that is not necessarily accurate nor is it by any
                   means proven to be true. Capitalism, or some like to call it, a means of opportunity; as
                   implied by "opportunity", there are those that achieve it while there are as those who 
-                  are exploited by it. A generic example to clarify this would be any competitive game, 
+                  are exploited by it. A generic example to clarify this would be any competative game, 
                   one that features a winner and a loser. That being said, capitalism has those whom are 
                   victorious and those who must work to make it up to victory. In a nutshell, to keep an economy 
                   that features free opportunity to socio-economic gain stable, there must be spenders in order to 
@@ -207,14 +208,14 @@
                   competencies. Generally, we only use 20% of what we learn in school as an application. After
                   13 years of school, one can only recall a handful of concepts but still competently live their
                   life. For example, out of math, the only means we use as an application are mathematical
-                  operations. From science, we indirectly use the scientific method. We learn some language 
-                  just enough to the point of useful communication. Specifically, as a CS student in college, one
-                  can theoretically get by in the industry as a software engineer with a decent knowledge in some
+                  oprations. From science, we indirectly use the scientific method. We learn some language 
+                  just enough to the point of useful communication. Specifically as a CS student in college, one
+                  can theoretically get by in the industry as a software engineer with a decent knoledge in some
                   programming languages, algorithms, and soft skills. Essentially, this can be achieved in a 
                   year rather than 4. One may argue that only those basic skills alone won't make one marketable. 
                   I will get to that later but theoretically, one can do the job of a software engineer with
                   those basic skills while the rest are only specific applications that one either happens to 
-                  know or can be looked up whenever needed. Why do we spend all this time in school possessing 
+                  know, or can be looked up whenever needed. Why do we spend all this time in school possesing 
                   a poor ratio of learned to applied concepts with what we study? One theory is economic 
                   stability. It is designed for a group of people, typically the younger ones, to be encouraged 
                   to spend money which will keep the economy moving and beneficial for those earning money. In 
@@ -222,7 +223,7 @@
                   encourages an extended amount of time for the youth to be in school and is independent of 
                   whether these individuals can win in the capitalistic nature of the economy by being 
                   industrially qualified. In other words, a lot of the college degree is a rite of passage, 
-                  the proof that one has spent their dues in school funds and is eligible for a role in the 
+                  the proof that one has spent their dues in school funds and is elligible for a role in the 
                   economy to finally make a good salary. To answer the argument that only knowing a limited 
                   amount of skills regardless of being applicable, will not make one a likely candidate for 
                   a job, this is an example of how the capitalistic economy urges one to spend money before 
@@ -234,7 +235,7 @@
 
                   <br/>
 
-                  The next thing I would like to discuss is an example that may assess this theory by 
+                  The next thing I would like to discuss is an example that may assess this thoery by 
                   explaining how my resume has evolved over time. To clarify, I will not be talking 
                   about how my resume got better in terms of its content moreover, I will be focusing 
                   on how my resume changed as I spent more tuition money to earn my right into a software 
@@ -252,7 +253,7 @@
                   &nbsp;- no employment; masked with "Professional Experience"<br/> 
                   &nbsp;- only containing volunteer work and extracurriculars<br/>
                   &nbsp;- awards only have to do with high school accomplishments<br/>
-                  &nbsp;- extracurricular activities is a section<br/>
+                  &nbsp;- extra curricular activities is a section<br/>
                   &nbsp;- references is a section<br/>
                
                   <br/>
@@ -281,14 +282,14 @@
                   &nbsp;- contains hyperlinks<br/>
                   &nbsp;- removed fast food job<br/>
                   &nbsp;- added internship experience<br/>
-                  &nbsp;- removed irrelevant certifications<br/>
+                  &nbsp;- removed irrelavant certifications<br/>
                   &nbsp;- projects are more large scale and specific<br/>
                   &nbsp;- format of skills changed to make space<br/>
 
                   <br/>
 
                   The trend I see here is that over time, I have been able to remove insignificant concepts
-                  from my resume to make space for more relevant and larger scale experiences as I invest
+                  from my resume to make space for more relavant and larger scale experiences as I invest
                   more time and money towards my degree. Once again, I would like to thank Daniel Quinn
                   for this idea.
                </font>
@@ -296,7 +297,6 @@
             </div>
             </div>
 
-            <a name="4"></a>
             <br/>
             <br/>
             <br/>
@@ -304,6 +304,7 @@
             <br/>
             <div class="box">
             <!------------------------------------------------------------------------------------------------------------------------------------->
+            <a name="4"></a>
             <div class="title"><p align="right">
                <font size="4px" style="color:white"><b>17 January 2018</b></font><br/>
             </p>
@@ -313,17 +314,17 @@
                   This was my very first hackathon experience and quite an eventful one, much more than
                   what I expected. To start off, my impression of these events lies on one far end of
                   the spectrum of whether one can appreciate this event as being a rather eventful
-                  challenge for highly aspiring engineers or feeling just about the opposite way
+                  challenge for highly aspiring engineers, or feeling just about the opposite way
                   strongly. For me, I saw it as a challenge in terms of time and expected innovation,
                   and opportunity on the count of the networking chances and a vast array of hacks.
                   I definitely took advantage of the networking opportunities gaining insight from
-                  multiple companies and exchanging ideas as well as offering my resume and professional 
+                  multiple companies and exchanging ideas as well as offering my resume and prefossional
                   online persona. I also took advantage of an API from Twilio in the hack that my team
                   came up with. From the networking opportunities to the handed challenge of coming up
                   with a hack that can become innovative, I also saw this experience as a convention for
                   many engineers to collaborate and exchange ideas from within a medium that everyone
-                  can gain more knowledge from each other. Of course, the crown jewel of this event was
-                  cranking out 2 all-nighters coming up with an innovative idea given ideas, hardware,
+                  can gain more knowledge from each other. Ofcourse, the crown jewel of this event was
+                  cranking out 2 all nighters coming up with an innovative idea given ideas, hardware,
                   and even open source code provided by companies. I surely gained an idea, technical
                   skills, and stamina from this event. Best of all, my team won the grand prize for our
                   implementation of an IoT smart fridge.<br/>
@@ -340,7 +341,6 @@
             </div>
          </div>
 
-            <a name="5"></a>
             <br/>
             <br/>
             <br/>
@@ -348,13 +348,14 @@
             <br/>
             <div class="box">
             <!------------------------------------------------------------------------------------------------------------------------------------->
+            <a name="5"></a>
             <div class="title"><p align="right">
                <font size="4px" style="color:white"><b>28 Februrary 2018</b></font><br/>
             </p>
             <font size="7px" style="color:grey;font-family:Georgia"><b>5 recruiters 1 question<br/></b></font></div>
             <div style="text-align:left">      
                <font size="4px" style="color:black">
-                  During the 2018 Winter Triton Career fair, I had the opportunity to show 5 companies my
+                  During the 2018 Winter Triton Career fair, I had the opportunity to show 4 companies my
                   blog and get their approval on posting their responses to about their hiring process. I
                   hope the following information serves any help to any aspiring engineers. Good luck with
                   your job searches!<br/>
@@ -372,8 +373,8 @@
                   I look for are any projects they have done outside of school. This shows me that the
                   applicant is interested in what he/ she is doing and willing to take it outside the scope
                   of their schooling. School related major projects are good but outside of school is a 
-                  plus. I'm not necessarily looking for any particular set of skills. Our framework is
-                  written on Ruby on Rails and me myself never used this before I started working for App
+                  plus. I'm not necesserily looking for any particular set of skills. Our framework is
+                  written on Ruby on Rails and I myself never used this before I started working for App
                   Folio. However, one's background knowledge and experience outside of school shows me
                   their learning potential that they can contribute to the company. Lastly, I look for
                   individuals who are excellent problem solvers and more importantly, those who can
@@ -383,15 +384,15 @@
 
                   <b>Stemonix:</b> As for technical skills, I look for one's ability to learn new technology
                   and specifically how well they can design. When it comes to education, those with a higher
-                  level background are always preferred. But more importantly, I look for what they can
-                  design and how good they are at what they do relative to their level education. I look for
+                  level bakground are always preferred. But more importantly, I look for what they can
+                  design and how good they are are what they do relative to their level education. I look for
                   critical thinkers, those who are efficient, and those who can learn fast given what their
-                  technical background has to offer them. Even though higher levels of education are preferred,
+                  technical background has to offer them. Even though higher levels of education is preferred,
                   I really care more about how they can harness what they have to offer. However, the more
                   important side is their attitude. I look up to individuals who have the character of a good
                   employee. This involves their punctuality, organization, work ethic, presentability, and
                   how well they can communicate. The technical side is moreover a tool to get the job done
-                  but what really makes a good employee is HOW they work regardless of what technical
+                  but what really makes a good employee is how they work regardless of what technical
                   knowledge they have to offer.<br/>
 
                   <br/>
@@ -418,7 +419,7 @@
                   one to sell themselves in their interview. However, I didn't know what I know now in terms of
                   technical skills before working at Aetna. The act of selling one's self, their ability to SHOW 
                   that they can perform the job given their technical background, that's a people skill. I like to 
-                  see those who are aggressive yet approachable in addition to having the rudimentary technical
+                  see those who are aggresive yet approachable in addition to having the rudamentary technical
                   qualifications. While the technical qualifications are also a factor, the determining factor is one's
                   ability to communicate given their technical background.<br/>
 
@@ -433,11 +434,11 @@
                   urgency to produce good work, their openness to communicate, ask questions, and take initiative, and 
                   their ability to take ownership for their work and coming up with original and clever ways to do what 
                   needs to be done to meet a deadline. Anything technical can be learned on the job but good work is
-                  presented in one who can communicate it, not necessarily  their technical background. The technical 
+                  presented in one who can communicate it, not necesserily their technical background. The technical 
                   aspect is just the candidate's toolbox that can be expanded with good communication skills. It is also
                   important to note that what will also impress your interviewer is your knowledge on the software
                   development models since these concepts are heavily used in the industry. Technical skills will not
-                  make one stand out as much as having the soft skills to back it up. The technical skills just get your
+                  make one stand out as much as having the soft skills to back it up. The technical skills just gets your
                   foot in the door.<br/>
 
                   <br/>
@@ -446,124 +447,26 @@
                   hiring process. Typically, an applicant will have a vast set of skills but will not perfectly match
                   the set of skills the company needs. These skills however can be learned on the job and what determines
                   how well a candidate can learn these skills is not just their technical background, but the addition of
-                  their work ethic displayed by how well they can communicate. There are several engineers out there with
-                  distinct technical skills. What makes one memorable on top of their technical skills set is their 
-                  ability to communicate effectively. It is an act of selling what one has to work with that can foreshadow 
+                  their work ethic displayed by how well they can communicate. There are several engineers out their with
+                  distinct technical skills. What makes one memberable on top of their technical skills set is their 
+                  ability to communicate effectively. It is an act of selling what one has to work with that can forshadow
                   how well they will work on a team given a qualified technical background.<br/>
 
                   <br/>
                   <center>
                      <b>Links to the provided companies<br/></b>
-                     <a href="http://www.appfolioinc.com/jobs" target="_blank">App Folio</a><br/>
-                     <a href="http://stemonix.com/" target="_blank">Stemonix</a><br/>
-                     <a href="https://www.synopsys.com/company/synopsys-careers.html" target="_blank">Sysnopsys<a/><br/>
-                     <a href="https://www.aetna.com/about-us/aetna-careers.html" target="_blank">Aetna</a><br/>
-                     <a href="http://cubic.com" target="_blank">Cubic</a><br/>
+                     <a href="" target="_blank">App Folio</a><br/>
+                     <a href="" target="_blank">Stemonix</a><br/>
+                     <a href="" target="_blank">Sysnopsys<a/><br/>
+                     <a href="" target="_blank">Aetna<a/><br/>
+                     <a href="" target="_blank">Cubic</a><br/>
                   </center>
             </font>
 
             </div>
          </div>
-         
-            <a name="6"></a>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <div class="box">
-            <!------------------------------------------------------------------------------------------------------------------------------------->
-               <div class="title">
-                  <p align="right">
-                     <font size="4px" style="color:white"><b>13 March 2018</b></font><br />
-                  </p>
-                  <font size="7px" style="color:grey;font-family:Georgia"><b>Juniper operating system<br /></b></font>
-               </div>
-               <div style="text-align:left">
-                   <font size="4px" style="color:black">
-                       I have recently been tasked with learning how to use the Juniper operating system (JunOS). I was
-                       given a device called a Juniper Firewall SRX-3OO. To put it simply, this device is a glorified
-                       switch that is meant to act like a firewall and can be configured into a server. In addition, this
-                       device differs from a traditional switch with its security policies. There are two ways to manage
-                       this device. The traditional way is through the CLI (JunOS). The practical way is through a web
-                       interface referred to as J-Web. Both ways are similar in functionality and both possess the pros
-                       and cons between working with a CLI and GUI. One thing to note is that JunOS is a networking OS.
-                       It reads from a config file that determines how it behaves. This config file is set from the
-                       factory and can be edited by the user. Modifying this file is typically the source of work with this OS.<br />
-
-                       <br />
-
-                       <b>CLI Mode:</b><br />
-                       There are 3 modes in JunOS. The first mode is your typical UNIX command line which I have not done
-                       much work in. If I learn a significant implementation that uses this mode, I will be sure to post about it in a later
-                       blog post. The other 2 modes are operational, accessed using the <font style="font-family:'Courier New'">cli</font>
-                       command, and configuration accessed using the <font style="font-family:'Courier New'">
-                           configure
-                       </font> command from operational mode. A lot of my work is done in
-                       configuration mode. This is where we are editing the config file. A generic example of this config
-                       file looks as follows:<br />
-
-                       <br />
-
-                       <font style="font-family:'Courier New'">
-                           field {
-                           subfield1 {
-                           subfield2 {
-                           ## subfieldN Note comments are made using ##
-                           value {
-                           1;
-                           }
-                           }
-                           }
-                           }<br />
-                       </font>
-
-                       <br />
-
-                       The config file is arranged in a hierarchy that is recursively traversed. To change or remove a value,
-                       we use the <font style="font-family:'Courier New'">set</font> and <font style="font-family:'Courier New'">delete</font>
-                       commands respectively. Respective examples include <font style="font-family:'Courier New'">set field subfield1 subfield2 value 2</font>
-                       and <font style="font-family:'Courier New'">delete field subfield1 subfield2 value 2</font>. The commands are also
-                       recursively parsed to check for syntax and whether a field exists in the config file. You can use the question mark (?)
-                       character to see an option of available commands. Tab shortcuts also apply which you will need because the
-                       hierarchical nature of the config file results in significantly long commands. You can also see the current
-                       parameters set using the <font style="font-family:'Courier New'">show</font> command. Things that run in
-                       operational mode will require <font style="font-family:'Courier New'">run show</font> in configuration mode
-                       such as <font style="font-family:'Courier New'">dhcp-local-server statistics</font> for example. To see the
-                       value 1 set in the example file, the command is <font style="font-family:'Courier New'">
-                       show field subfield1 subfield2 value</font>. If this were an operational task, the
-                       <font style="font-family:'Courier New'">run</font> command will need to be affixed. In operational mode however,
-                       it is not needed. You can also change what heiarchy you are in to shorten your commands. For example, after entering
-                       <font style="font-family:'Courier New'">edit field subfield1 subfield 2</font> you can simply enter the command
-                       <font style="font-family:'Courier New'">set value 2</font> since you are in that hierarchy level. To go a level up, use
-                       the <font style="font-family:'Courier New'">exit</font> command. In configure mode, after setting desired
-                       parameters, the <font style="font-family:'Courier New'">commit</font> command is required for the configuration to
-                       become operational. The <font style="font-family:'Courier New'">commit check</font> command checks to see whether the
-                       configurations are valid without committing them. This mode is accessible via serial connection.<br/>
-
-                       <br/>
-
-                       <b>J-Web:</b><br/>
-                       From here, you can simply edit the config file in edit mode without having to enter the commands.  A view mode is also available to
-                       see the config file in read only mode. There are also specific features located in the interface that can be used to
-                       configure a setting such as dhcp. Editing such settings automatically edits the config file. Committing then is made
-                       with a press of a button. This mode is accessible via Ethernet connection with the default IP of 192.168.1.1 like most
-                       routers. You must configure the IP address of the Ethernet port to a .1 network or .x for a 192.168.x.1 address.<br/>
-
-                       <br/>
-
-                       This is the bare basics of JunOS. I will likely be posting more advanced techniques and specific JunOS related
-                       tutorials in the future. Click <a href="https://www.juniper.net/us/en/" target="_blank">here</a> for the Juniper website to learn more.
-                   </font>
-                   </font>
-                   </font>
-                   </font>
-                   </font>
-                   </font>
-                  </font>
-               </div>
-            </div>       
          </div>
+
 
          </center>
          
