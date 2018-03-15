@@ -359,3 +359,55 @@
 [info] 
 [info] Project Console: https://console.firebase.google.com/project/portfolio-4ce09/overview
 [info] Hosting URL: https://portfolio-4ce09.firebaseapp.com
+[debug] [2018-03-13T21:00:17.869Z] ----------------------------------------------------------------------
+[debug] [2018-03-13T21:00:17.874Z] Command:       /usr/local/bin/node /usr/bin/firebase deploy
+[debug] [2018-03-13T21:00:17.874Z] CLI Version:   3.17.6
+[debug] [2018-03-13T21:00:17.874Z] Platform:      linux
+[debug] [2018-03-13T21:00:17.874Z] Node Version:  v9.8.0
+[debug] [2018-03-13T21:00:17.874Z] Time:          Tue Mar 13 2018 14:00:17 GMT-0700 (PDT)
+[debug] [2018-03-13T21:00:17.875Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-13T21:00:17.891Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-13T21:00:17.891Z] > authorizing via signed-in user
+[debug] [2018-03-13T21:00:17.892Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-13T21:00:17.892Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/8_U5fUyKQy3lTyUosoQaN6WkngpB_wERuluPxArDIN0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Mar 13 2018 14:00:17 GMT-0700 (PDT)
+[debug] [2018-03-13T21:00:18.300Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-13T21:00:18.302Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-4ce09  
+  
+ Tue Mar 13 2018 14:00:18 GMT-0700 (PDT)
+[debug] [2018-03-13T21:00:19.417Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-13T21:00:19.417Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-4ce09/tokens  
+  
+ Tue Mar 13 2018 14:00:19 GMT-0700 (PDT)
+[debug] [2018-03-13T21:00:19.802Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-4ce09'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-03-13T21:00:21.100Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-4ce09/uploads/-L7W9UF_I0VhzqlzqIaR?fileCount=79&message=  
+  
+ Tue Mar 13 2018 14:00:21 GMT-0700 (PDT)
+[debug] [2018-03-13T21:00:32.958Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-13T21:00:32.959Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] ✔  hosting: 79 files uploaded successfully
+[debug] [2018-03-13T21:00:33.959Z] >>> HTTP REQUEST POST https://deploy.firebase.com/v1/projects/portfolio-4ce09/releases  
+ { hosting: 
+   { public: 'public',
+     ignore: [ 'firebase.json', '**/.*', '**/node_modules/**' ],
+     version: '-L7W9UF_I0VhzqlzqIaR',
+     prefix: '-L7W9UF_I0VhzqlzqIaR/',
+     manifest: [] } } 
+ Tue Mar 13 2018 14:00:33 GMT-0700 (PDT)
+[debug] [2018-03-13T21:00:35.185Z] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/portfolio-4ce09/overview
+[info] Hosting URL: https://portfolio-4ce09.firebaseapp.com

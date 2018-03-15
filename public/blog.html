@@ -506,15 +506,15 @@
                        <br />
 
                        <font style="font-family:'Courier New'">
-                           field {
-                           subfield1 {
-                           subfield2 {
-                           ## subfieldN Note comments are made using ##
-                           value {
-                           1;
-                           }
-                           }
-                           }
+                           field {<br/>
+                           &nbsp;&nbsp;&nbsp;subfield1 {<br/>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subfield2 {<br/>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;## subfieldN Note comments are made using ##<br/>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value {<br/>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1;<br/>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                           &nbsp;&nbsp;&nbsp;}<br/>
                            }<br />
                        </font>
 
@@ -562,7 +562,88 @@
                    </font>
                   </font>
                </div>
-            </div>       
+            </div>
+
+	    <a name="7"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="box">
+            <!------------------------------------------------------------------------------------------------------------------------------------->
+               <div class="title">
+                  <p align="right">
+                     <font size="4px" style="color:white"><b>14 March 2018</b></font><br />
+                  </p>
+                  <font size="7px" style="color:grey;font-family:Georgia"><b>Dual booting a Windows machine<br /></b></font>
+               </div>
+               <div style="text-align:left">
+                   <font size="4px" style="color:black">
+                      I can personally say that dual booting pretty much saved my life as a computer
+		      science student at UCSD having UNIX forced down my throat; not that it's a bad
+		      thing. As a programmer, you will need to know how to use the UNIX command line.
+		      Typically, students rely on ssh to access their Linux accounts. This has proven
+		      to be unreliable to me in a handful of times where connectivity was bad or the
+		      server had too many students logged on, normally during an assignment deadline.
+		      Also, since you need to know UNIX, why not have a copy of Linux handy on your
+		      machine? Today, I present a tutorial on how to dual boot your Windows computer.<br/>
+
+		      <br/>
+
+		      <b>What you will need:</b><br/>
+		      Flash drive with enough space<br/>
+		      <a href="" target="_blank">Universal USB installer</a><br/>
+		      <b>One</b> of the following ISO files:<br/>
+		      <a href="https://www.ubuntu.com/download" target="_blank">Ubuntu ISO file</a><br/>
+		      <a href="https://lubuntu.net/downloads/" target="_blank">Lubuntu ISO file</a><br/>
+		      <a href="https://xubuntu.org/download/" target="_blank">Xubuntu ISO file</a><br/>
+		      <a href="https://kubuntu.org/getkubuntu/" target="_blank">Kubuntu ISO file</a><br/>
+		      <a href="https://linuxmint.com/download.php" target="_blank">Mint ISO file</a><br/>
+		      **You can use whatever ISO file you want, these are just the one's that I know
+		      work for this tutorial.**<br/>
+		      Your Windows computer (if you don't already have it)<br/>
+		      <br/>
+
+		      If you already have Windows installed, then you're already half way there. If not,
+		      you will need to obtain an ISO file for Windows. Simply plug in your flash drive
+		      to a computer and drag the Windows ISO file to it. Again, make sure you actually
+		      have enough space to do this. Different OS's have different space requirements.
+		      Go head and run Universal USB installer once you've downloaded it. It's very straight
+		      forward. Select your flash drive by letter, your ISO file, and the appropriate OS
+		      from the list. Be sure to have the format hard drive option unchecked unless you want
+		      to delete everything from it prior to your installation. This process takes about 2-5
+		      minutes. When it's finished, you will notice that your flash drive label has been changed
+		      to UUI. When you open it, you will notice all the boot files. It is important you do
+		      not modify the locations of any files otherwise, it will not work. Your boot loader
+		      looks for the files in your flash drive's root directory. Reboot your computer with
+		      the flash drive plugged in. Check your BIOS to see whether you have the boot priority set
+		      to find your flash drive. You should then see the setup manager for the Windows installation.
+		      Follow directions and be sure to install Windows in an available partition in your hard
+		      drive. All you have to do is go through the wizard. When finished, you should have Windows 
+		      installed on your computer and should be able to boot into it once you remove your flash
+		      drive and reboot your machine. Notice, whenever you need to reformat your Windows partition,
+		      you basically have a rescue disk in your flash drive assuming you have backed up all your
+		      personal data. I recommend creating a folder in your flash drive and storing all the boot
+		      files in there. Whenever you need to install Windows again, simply copy all the files
+		      back to the root directory. You will do the same exact procedure to install Linux. If all
+		      goes well, you should see the Grub instead of Windows boot manager with a list of all your
+		      OS's every time you boot your machine. Typically, Windows must be installed first for this
+		      to work. You now have a dual booting machine with Linux natively installed. You also have
+		      rescue disks for both of your OS's.<br>
+
+		      <br/>
+
+		      <b>Steps summary:</b><br/>
+		      Step 1: Acquire the materials listed above.<br/>
+		      Step 2: Install the ISO file to the flash drive with UUI.<br/>
+		      Step 3: Reboot your machine with your flash drive plugged in. Check your BIOS if you need to
+		      configure your boot priorities.<br/>
+		      Step 4: Go through the installation wizard.
+
+		   </font>
+               </div>
+            </div>
          </div>
 
          </center>
