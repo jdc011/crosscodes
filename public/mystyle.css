@@ -13,6 +13,7 @@ body {
 
 html, body, .container-full, nav{    
       height:100%;
+      overflow-x: hidden; 
 }
 
 nav{
