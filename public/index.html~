@@ -81,27 +81,9 @@
                   </div>
                </div>
             </div>
+         </div>
 
-            <div class="row">
-            <p></p> 
-            </div>
-
-            <div class="row">
-            <p></p> 
-            </div>
-
-            <div class="row">
-            <p></p> 
-            </div>
-
-            <div class="row">
-            <p></p> 
-            </div>
-
-            <div class="row">
-            <p></p> 
-            </div>
-
+        <div class="container">
             <div class="row">
                <div class="col">
                   <div id="content1">
@@ -157,59 +139,29 @@
                         <b><font size="7px" color="white" style="font-family:Geogia">UPDATES</font></b>
                      </center>
                         <hr class="style">
-                           <p><font size="4px">New blog post on <a href="blog.html#5">question for recruiters<br/></a></font>
-                           <font size="4px">New blog post on <a href="blog.html#6">Junos<br/></a></font>
-                           <font size="4px">Updates on my <a href="IResume.pdf" target="_blank">resume<br/></a></font>
-                           <font size="4px">Outlook no longer required to <a href="contact.html">contact</a> me</font>
-                           <font size="4px">New blog post on <a href="blog.html#7">dual booting<br/></a></font>
-                           <font size="4px">Updates in <a href="http://crosscodes.biz/solarinteract.html">Solar Interact<br/></a></font></p>
+                           <p><font size="4px">New blog post on <a href="blog.html#8">NVIDIA<br/></a></font>
+                           <font size="4px">New blog post on <a href="blog.html#9">DHCP<br/></a></font>
+                           <font size="4px">New blog post on <a href="blog.html#10">Wireshark dissectors<br/></a></font>
+                           <font size="4px">Updated <a href="blog.html">blog</a></font> <font size="4px">&nbsp;interface</font>
+                           </p>
                   </div>
                </div>
             </div>
+         </div>
 
+         <div class="container">
             <div class="row">
-            <p></p> 
-            </div>
-            
-            <div class="row">
-            <p></p> 
-            </div>
-            
-            <div class="row">
-            <p></p> 
-            </div>
-
-            <div class="row">
-            <p></p> 
-            </div>
-
-            <div class="row">
-            <p></p> 
-            </div>
-
-            <div class="row">
-               <div class="col">
-                  <p></p>
-               </div>
-
                <div class="col">
                   <center>
                      <b><font size="6px" color="white" style="font-family:Geogia">JOIN MY NETWORK</font></b>
                   </center>
                   <hr class="style">
                </div>
-               
-               <div class="col">
-                  <p></p>
-               </div>
-
             </div>
-
-            <div class="row">
-               <div class="col">
-                  <p></p>
-               </div>
+         </div>
                
+         <div class="container">
+            <div class="row">
                <div class="col">
                   <div class="col">
                      <center>
@@ -240,10 +192,6 @@
                         <img src="resumeicon.png" height="150px" width="150px"></img> 
                      </a>
                   </center>
-               </div>
-               
-               <div class="col">
-                  <p></p>
                </div>
             </div>
          </div>
