@@ -15,6 +15,7 @@ html, body, .container-full, nav{
       height:100%;
 }
 
+
 nav{
        margin:0px;
 }
@@ -90,6 +91,7 @@ nav ul li a:hover {
 nav img:hover {
    cursor: pointer;
 }
+
 
 .contain {
    position: relative;
