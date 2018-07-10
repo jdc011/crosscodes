@@ -25,7 +25,7 @@ nav {
    top: 0;
    left: 0;
    width: 100%;
-   height: 7vw;
+   height: 150px;
    box-sizing: border-box;
    transition: .5s;
    z-index: 100;
@@ -37,7 +37,7 @@ nav {
 nav.scrl {
    transition: .5s;
    opacity: 1;
-   height: 5vw;
+   height: 120px;
    border-bottom: groove white 2px;
 }
 
@@ -53,20 +53,18 @@ nav ul li {
 }
 
 nav ul li a {
-   line-height: 7vw;
+   line-height: 70px;
    color: white;
    padding: 5px 20px;
    font-family: Roboto sans-serif;
    text-decoration: none;
    text-transform: uppercase;
    transition: .5s;
-   font-size: 1vw;
 }
 
 nav.scrl ul li a {
    transition: .5s;
-   line-height: 4.5vw;
-   font-size: .8vw;
+   line-height: 45px;
 }
 
 nav img {
@@ -84,7 +82,7 @@ nav.scrl img {
 
 nav ul li a.active,
 nav ul li a:hover {
-   color: grey;
+   color: gray;
    text-decoration: none;
 }
 

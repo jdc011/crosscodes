@@ -29,18 +29,24 @@
 
    <body background="background.jpg">
       <!-- Nav bar -->        
-      <nav>
-         <a href="index.html">
-            <img src="logo.png"></img>
-         </a>
-         
-         <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html" style="font-weight:bold;font-size:1.5vw">Blog</a></li>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed">
+         <ul class="navbar-nav mr-auto">
+            <li><a href="index.html" style="font-size: 70px; font-family:Verdana, Geneva, sans-serif;"><b>Cross Codes</b></a></li>
          </ul>
+
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         
+         <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto" style="font-size: 30px">
+               <li><a href="index.html">About</a></li>
+               <li><a href="experience.html">Experience</a></li>
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="blog.html" style="font-weight:bold;font-size: 50px;">Blog</a></li>
+            </ul>
+         </div>
       </nav>
       
       <br/>
@@ -223,8 +229,8 @@
 					upon the command <font style="font-family:'Courier New'">inxi -G</font> used to output system hardware status with the 'G' flag to specify graphics. I
 					was presented with the following output:<br/><br/>
 					<div class="codebox"><font style="font-family:'Courier New'" color="lime"><font color="lightblue"><b>Graphics:  Card-1:</font></b> Intel 4th Gen Core Processor Integrated Graphics Controller<br/>
-           			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="lightblue">Card-2:</font></b> NVIDIA GM204M [GeForce GTX 970M] <font color="red"><b>FAILED:</b></font> nouveau<br/>
-           			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="lightblue">Display Server:</font></b> X.Org 1.18.4 <b><font color="lightblue">drivers:</font></b> intel (unloaded: fbdev,vesa)<br/> 
+           			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="lightblue">Card-2:</font></b> NVIDIA GM204M [GeForce GTX 970M]<br/>
+           			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="lightblue">Display Server:</font></b> X.Org 1.18.4 <b><font color="lightblue">drivers:</font></b> intel (unloaded: fbdev,vesa) <font color="red"><b>FAILED:</b></font> nouveau<br/> 
            			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="lightblue">Resolution:</font></b> 1920x1080@60.02hz<br/>
            			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="lightblue">GLX Renderer:</font></b> Mesa DRI Intel Haswell<br/> 
            			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="lightblue">Mobile GLX Version:</font></b> 3.0 Mesa 11.2.0
