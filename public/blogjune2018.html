@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+   <title>Crosscodes</title>
+   <meta charset="UTF-8"> 
+   <head>
+      <!-- Bootstrap for mobile devices -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1, user-scalable=no">
+
+      <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="mystyle.css">
+   </head>
+   
+   <!-- Styles and scripts -->
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+   <link rel="icon" href="icon.png">
+   <link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous"></script>
+   <script src="nav.js"></script>
+
+   <body background="background.jpg">
+      <!-- Nav bar -->        
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed">
+         <ul class="navbar-nav mr-auto">
+            <li><a href="index.html" style="font-size: 40px; font-family:Verdana, Geneva, sans-serif;"><b>Cross Codes</b></a></li>
+         </ul>
+
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         
+         <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto" style="font-size: 25px">
+               <li><a href="index.html">About</a></li>
+               <li><a href="experience.html">Experience</a></li>
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="blog.html" style="font-weight:bold;font-size: 35px;">Blog</a></li>
+            </ul>
+         </div>
+      </nav>
+      
+      <br/>
+      <br/>
+      <br/>
+      
+      <!-- Content -->
+      <div style="margin-left:0%"> 
+         <div class="w3-container w3-animate-opacity">
+
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="title">
+                     <center><font size="7px" style="color:grey;font-family:Georgia"><b>Archive: June 2018<br /></b></font>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="container">
+         <div class="row">
+         <div class="col">
+            <br/>
+            
+            <div class="box">
+               <div class="title">
+                  <center>
+                     <font size="6px" style="color:grey;font-family:Georgia"><b>Cross Codes Blog<br /></b></font>
+                  </center>
+               </div>
+
+               <br/>
+               
+               <img src="jeremy2.png" height="100%" width="100%"\>
+               
+               <br/>
+               <br/>
+
+               <hr color="grey"/>
+           
+               <center><input placeholder="Search..." list="posts" name="post" id="search"><br/><br/> 
+               <input type="button" value="Search" onClick="javascript: 
+                  switch(document.getElementById('search').value) {
+                     case('Including multiple Lua scripts'):
+                        window.open('blog.html#11','_self');
+                        break;
+                     case('Introduction to Wireshark dissectors'):
+                        window.open('blog.html#10','_self');
+                        break;
+                     case('Implementing DHCP on Junos'):
+                        window.open('blog.html#9','_self');
+                        break;
+                     case('NVIDIA crashing on Linux'):
+                        window.open('blog.html#8','_self');
+                        break;
+                     case('Dual booting a Windows machine'):
+                        window.open('blog.html#7','_self');
+                        break;
+                     case('Juniper operating system'):
+                        window.open('blog.html#6','_self');
+                        break;
+                     case('Five recruiters one question'):
+                        window.open('blog.html#5','_self');
+                        break;
+                     case('SD Hacks experience'):
+                        window.open('blog.html#4','_self');
+                        break;
+                     case('Resume growth and socio-economic entitlement'):
+                        window.open('blog.html#3','_self');
+                        break;
+                     case('The study of Computer Science'):
+                        window.open('blog.html#2','_self');
+                        break;
+                     case('University vs. industry'):
+                        window.open('blog.html#1','_self');
+                        break;
+                     default:
+                        window.open('blog404.html','_self');
+                  }"/></center>
+               <datalist id="posts">
+                    <option value="Including multiple Lua scripts">
+                  <option value="Introduction to Wireshark dissectors">
+                  <option value="Implementing DHCP on Junos">
+                  <option value="NVIDIA crashing on Linux">
+                  <option value="Dual booting a Windows machine">
+                  <option value="Juniper operating system">
+                  <option value="Five recruiters one question">
+                  <option value="SD Hacks experience">
+                  <option value="Resume growth and socio-economic entitlement">
+                  <option value="The study of Computer Science">
+                  <option value="University vs. industry">
+               </datalist>
+
+               <hr color="grey"/>
+
+               <center>
+                  <font size="5px" style="color:black"><b>Recent Posts</b></font> 
+               </center>
+
+               <font size="4px">
+               <a href="blog.html#11">Including multiple Lua scripts</a><br/>
+               <a href="blog.html#10">Introduction to Wireshark dissectors</a><br/>
+               <hr color="grey"/>
+
+               <center>
+                  <font size="5px" style="color:black"><b>Categories</b></font> 
+               </center>
+
+               <font size="4px"><a href="blogengineering.html">Engineering</a><br/>
+               <a href="blogtechnical.html">Technical</a><br/>
+               <a href="blogexperience.html">Experience</a><br/>
+               <a href="blogindustry.html">Industry</a></font><br/>
+
+               <hr color="grey"/>
+
+               <center>
+                  <font size="5px" style="color:black"><b>Archives</b></font> 
+               </center>
+
+               <font size="4px"><a href="blogjan2018.html">January 2018</a><br/>
+               <a href="blogfeb2018.html">Februrary 2018</a><br/>
+               <a href="blogmar2018.html">March 2018</a><br/>
+               <a href="blogapr2018.html">April 2018</a><br/>
+               <a href="blogmay2018.html">May 2018</a><br/>
+               <a href="blogjune2018.html">June 2018</a><br/></font>
+
+               <hr color="grey"/>
+
+               <center>
+                  <font size="4px"><a href="blog.html">Blog home</a><br/></font>
+               </center>
+            </div>
+            
+         </div>
+         <div class="col-lg-9">
+            
+        <a name="11"></a>
+            <br />
+            <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+               <div class="title">
+                  <center><font size="7px" style="color:grey;font-family:Georgia"><b>Including multiple Lua scripts<br /></b></font>
+                  <p>
+                     <font size="4px" style="color:white"><b>2 June 2018 | Technical</b></font><br/>
+                  </p></center>
+               </div>
+               <div style="text-align:left">
+                   <font size="4px" style="color:black">
+                      I have recently posted about implementing Wireshark dissectors in Lua. You may have been wondering whether
+                      it is possible to include multiple Lua scripts in the main driver in order to keep your Lua code base more
+                      organized. This can be accomplished by storing variables and functions within a file to be treated as a class in a dictionary and
+                      returning that dictionary. Then from the driver, simply type the <font style="font-family:'Courier New'">require</font> statement and assign it to an alias
+                      that treats the calling file as an object and using the alias as an object reference, call the specific
+                      function or variable. The <font style="font-family:'Courier New'">require</font> function takes the directory
+                      of the file to include as parameter but with "." as a folder separator. <b>DO NOT</b> add ".lua" in the filename. See below for examples:<br/><br/>
+                      Calling file:<br/>
+                      <div class="codebox">
+                      <font style="font-family:'Courier New'">
+                        <font color="blue">-- dictionary to store fields and functions</font><br/>
+                            <font color="orange">local</font> <font color="lime">dict =</font> <font color="lightblue">{}</font><br/><br/>
+                            <font color="blue">-- values to store in dictionary</font><br/>
+                            <font color="orange">local</font> <font color="lime">variable =</font> <font color="lightblue">""</font><br/>
+                            <font color="orange">local function</font> <font color="lime">method(</font><font color="blue">-- parameters</font><font color="lime">)</font><br/>
+                            &nbsp;&nbsp;&nbsp;<font color="blue">-- function code</font><br/>
+                            <font color="orange">end</font><br/><br/>
+                            <font color="blue">-- store values in dictionary</font><br/>
+                            <font color="lime">dict.v = variable<br/>
+                            dict.m = method<br/><br/></font>
+                            <font color="blue">-- return the dictionary</font><br/>
+                            <font color="orange">return</font> <font color="lime">dict</font><br/>
+                      </font>
+                      </div>
+                      <br/>
+                      Driver file:<br/>
+                      <font style="font-family:'Courier New'"><div class="codebox">
+                      <font color="blue">-- require statement</font><br/>
+                      <font color="orange">local</font> <font color="lime">callee = require(</font><font color="lightblue">"path.to.filename.NOT.dot.lua"</font><font color="lime">)</font><br/><br/>
+                      <font color="blue">-- call fields using object reference</font><br/>
+                      <font color="lime">calle.m()<br/>
+                      print(callee.v)<br/></font>
+                      </div></font>                     
+               </div>
+            </div>
+
+                   </font>
+                   </font>
+                   </font>
+                   </font>
+                   </font>
+                   </font>
+                  </font>
+               
+         </div>
+         </div>
+         </div>
+         </div>
+         </div>
+
+         <br/>
+         <br/>
+         <br/>
+
+         <center>
+            <p><font size="4px" style="color:white">© Copyright 2018 Jeremy Cruz</p>
+         </center>
+      
+      </div>
+   </body>
+</html>

@@ -86,6 +86,9 @@
                <center><input placeholder="Search..." list="posts" name="post" id="search"><br/><br/> 
                <input type="button" value="Search" onClick="javascript: 
                   switch(document.getElementById('search').value) {
+                     case('Including multiple Lua scripts'):
+                        window.open('blog.html#11','_self');
+                        break;
                      case('Introduction to Wireshark dissectors'):
                         window.open('blog.html#10','_self');
                         break;
@@ -120,6 +123,7 @@
                         window.open('blog404.html','_self');
                   }"/></center>
                <datalist id="posts">
+               	  <option value="Including multiple Lua scripts">
                   <option value="Introduction to Wireshark dissectors">
                   <option value="Implementing DHCP on Junos">
                   <option value="NVIDIA crashing on Linux">
@@ -138,10 +142,9 @@
                   <font size="5px" style="color:black"><b>Recent Posts</b></font> 
                </center>
 
-               <font size="4px"><a href="blog.html#10">Introduction to Wireshark dissectors</a><br/>
-               <a href="blog.html#9">Implementing DHCP on Junos</a><br/>
-               <a href="blog.html#8">NVIDIA crashing on Linux</a><br/>
-
+               <font size="4px">
+               <a href="blog.html#11">Including multiple Lua scripts</a><br/>
+               <a href="blog.html#10">Introduction to Wireshark dissectors</a><br/>
                <hr color="grey"/>
 
                <center>
@@ -163,7 +166,8 @@
                <a href="blogfeb2018.html">Februrary 2018</a><br/>
                <a href="blogmar2018.html">March 2018</a><br/>
                <a href="blogapr2018.html">April 2018</a><br/>
-               <a href="blogmay2018.html">May 2018</a><br/></font>
+               <a href="blogmay2018.html">May 2018</a><br/>
+               <a href="blogjune2018.html">June 2018</a><br/></font>
 
                <hr color="grey"/>
 
@@ -174,26 +178,57 @@
             
          </div>
          <div class="col-lg-9">
-	    <!--<a name="11"></a>
+        <a name="11"></a>
             <br />
             <br />
             <br />
             <br />
             <br />
-            <div class="box">-->
+            <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
-               <!--<div class="title">
-                  <p align="right">
-                     <font size="4px" style="color:white"><b>2 June 2018</b></font><br/>
-                  </p>
-                  <font size="7px" style="color:grey;font-family:Georgia"><b>Bluetooth communication between Android and Arduino<br /></b></font>
+               <div class="title">
+                  <center><font size="7px" style="color:grey;font-family:Georgia"><b>Including multiple Lua scripts<br /></b></font>
+                  <p>
+                     <font size="4px" style="color:white"><b>2 June 2018 | Technical</b></font><br/>
+                  </p></center>
                </div>
                <div style="text-align:left">
                    <font size="4px" style="color:black">
-					FOOBAR
-		   </font>
+                      I have recently posted about implementing Wireshark dissectors in Lua. You may have been wondering whether
+                      it is possible to include multiple Lua scripts in the main driver in order to keep your Lua code base more
+                      organized. This can be accomplished by storing variables and functions within a file to be treated as a class in a dictionary and
+                      returning that dictionary. Then from the driver, simply type the <font style="font-family:'Courier New'">require</font> statement and assign it to an alias
+                      that treats the calling file as an object and using the alias as an object reference, call the specific
+                      function or variable. The <font style="font-family:'Courier New'">require</font> function takes the directory
+                      of the file to include as parameter but with "." as a folder separator. <b>DO NOT</b> add ".lua" in the filename. See below for examples:<br/><br/>
+                      Calling file:<br/>
+                      <div class="codebox">
+                      <font style="font-family:'Courier New'">
+                      	<font color="blue">-- dictionary to store fields and functions</font><br/>
+                            <font color="orange">local</font> <font color="lime">dict =</font> <font color="lightblue">{}</font><br/><br/>
+                            <font color="blue">-- values to store in dictionary</font><br/>
+                            <font color="orange">local</font> <font color="lime">variable =</font> <font color="lightblue">""</font><br/>
+                            <font color="orange">local function</font> <font color="lime">method(</font><font color="blue">-- parameters</font><font color="lime">)</font><br/>
+                            &nbsp;&nbsp;&nbsp;<font color="blue">-- function code</font><br/>
+                            <font color="orange">end</font><br/><br/>
+                            <font color="blue">-- store values in dictionary</font><br/>
+                            <font color="lime">dict.v = variable<br/>
+                            dict.m = method<br/><br/></font>
+                            <font color="blue">-- return the dictionary</font><br/>
+                            <font color="orange">return</font> <font color="lime">dict</font><br/>
+                      </font>
+                      </div>
+                      <br/>
+                      Driver file:<br/>
+                      <font style="font-family:'Courier New'"><div class="codebox">
+                      <font color="blue">-- require statement</font><br/>
+                      <font color="orange">local</font> <font color="lime">callee = require(</font><font color="lightblue">"path.to.filename.NOT.dot.lua"</font><font color="lime">)</font><br/><br/>
+                      <font color="blue">-- call fields using object reference</font><br/>
+                      <font color="lime">calle.m()<br/>
+                      print(callee.v)<br/></font>
+                      </div></font>                     
                </div>
-            </div>-->                                    
+            </div>
 
 	    <a name="10"></a>
             <br />
