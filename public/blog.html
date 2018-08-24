@@ -86,6 +86,9 @@
                <center><input placeholder="Search..." list="posts" name="post" id="search"><br/><br/> 
                <input type="button" value="Search" onClick="javascript: 
                   switch(document.getElementById('search').value) {
+                     case('Bad superblock remedy'):
+                        window.open('blog.html#15','_self');
+                        break;
                      case('Partitioning hard drives in Windows'):
                         window.open('blog.html#14','_self');
                         break;
@@ -132,6 +135,7 @@
                         window.open('blog404.html','_self');
                   }"/></center>
                <datalist id="posts">
+               	  <option value="Bad superblock remedy">
                	  <option value="Partitioning hard drives in Windows">
                   <option value="Resume tips">
                	  <option value="2 Arduino projects">
@@ -156,6 +160,7 @@
 
                <font size="4px">
 
+               <a href="blog.html#15">Bad superblock remedy</a><br/>	
                <a href="blog.html#14">Partitioning hard drives in Windows</a><br/>
                <a href="blog.html#13">Resume tips</a><br/>
                <a href="blog.html#12">2 Arduino projects</a><br/>
@@ -178,6 +183,7 @@
                </center>
 
                <font size="4px">
+               	  <a href="blogaug2018.html">August 2018</a><br/>
                	  <a href="blogjuly2018.html">July 2018</a><br/>
                	  <a href="blogjune2018.html">June 2018</a><br/>
                	  <a href="blogmay2018.html">May 2018</a><br/>
@@ -196,6 +202,82 @@
             
          </div>
          <div class="col-lg-9">
+         	<a name="15"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Bad superblock remedy<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>21 August 2018 | Technical</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">                    
+                	There have been multiple times where I have experienced Linux booting into the temporary root file system "initramfs". After
+                	doing some research, this seems to happen due to a bad superblock typically resulting from an unexpected shutdown. This was
+                	very prominent in Linux Mint 18.3 Sylvia when my laptop battery would die. In this blog post, I present a remedy for bad
+                	superblocks that has consistently worked for me. If the following cannot be done through the terminal when you boot, you will
+                	need to make a bootable flash drive with Linux and do the following from there. To learn how to make a bootable flash drive,
+                	please see my blog post <a href="blog.html#7">Dual booting a Windows machine</a>.<br/><br/>
+                	<b>Repairing the superblock:</b><br/>
+                	<div class="codebox">
+                      <font style="font-family:'Courier New'">
+                      	<font color="blue">#List all available partitions; '*' marks the partition of your Linux install<br/></font>
+                      	<font color="lime">
+                      	   sudo fdisk -l|grep Linux|grep -Ev 'swap'<br/>
+                      	   /dev/sda1            2048 204587007 204584960 97.6G 83 Linux<br/>
+                           /dev/sda2  *    204587008 214351871   9764864  4.7G 83 Linux<br/>
+                           /dev/sda4       224116736 419428351 195311616 93.1G 83 Linux<br/><br/>                     	
+                      	<font color="blue">#List all superblocks; '/dev/sda2' is my partition, replace that with where YOUR partition is<br/></font>
+                      	   sudo dumpe2fs /dev/sda2 | grep superblock<br/>
+                      	   Primary superblock at 0, Group descriptors at 1-6<br/>
+                           Backup superblock at 32768, Group descriptors at 32769-32774<br/>
+                           Backup superblock at 98304, Group descriptors at 98305-98310<br/>
+                           Backup superblock at 163840, Group descriptors at 163841-163846<br/>
+                           Backup superblock at 229376, Group descriptors at 229377-229382<br/>
+                           Backup superblock at 294912, Group descriptors at 294913-294918<br/>
+                           Backup superblock at 819200, Group descriptors at 819201-819206<br/>
+                           Backup superblock at 884736, Group descriptors at 884737-884742<br/>
+                           Backup superblock at 1605632, Group descriptors at 1605633-1605638<br/>
+                           Backup superblock at 2654208, Group descriptors at 2654209-2654214<br/>
+                           Backup superblock at 4096000, Group descriptors at 4096001-4096006<br/>
+                           Backup superblock at 7962624, Group descriptors at 7962625-7962630<br/>
+                           Backup superblock at 11239424, Group descriptors at 11239425-11239430<br/>
+                           Backup superblock at 20480000, Group descriptors at 20480001-20480006<br/>
+                           Backup superblock at 23887872, Group descriptors at 23887873-23887878<br/><br/>
+                        <font color="blue">#Choose alternate superblock and repair it; '-y' flag automatically answers 'yes' to all questions; I chose block 32768<br/></font>
+                           sudo fsck -b 32768 /dev/sda2 -y<br/>
+                           fsck 1.40.2 (12-Jul-2007)<br/>
+                           e2fsck 1.40.2 (12-Jul-2007)<br/>
+                           /dev/sda2 was not cleanly unmounted, check forced.<br/>
+                           Pass 1: Checking inodes, blocks, and sizes<br/>
+                           Pass 2: Checking directory structure<br/>
+                           Pass 3: Checking directory connectivity<br/>
+                           Pass 4: Checking reference counts<br/>
+                           Pass 5: Checking group summary information<br/>
+                           Free blocks count wrong for group #241 (32254, counted=32253).<br/>
+                           Fix? yes<br/>
+                           Free blocks count wrong for group #362 (32254, counted=32248).<br/>
+                           Fix? yes<br/>
+                           Free blocks count wrong for group #368 (32254, counted=27774).<br/>
+                           Fix? yes<br/>
+                           ..........<br/>
+                           /dev/sda2: ***** FILE SYSTEM WAS MODIFIED *****<br/>
+                           /dev/sda2: 59586/30539776 files (0.6% non-contiguous), 3604682/61059048 blocks<br/><br/>
+                        <font color="blue">#Finally mount the partition; remember to use YOUR partition, mine is '/dev/sda2'<br/></font>
+                           sudo mount /dev/sda2 /mnt<br/>
+                        </font>
+                      </font>
+                  </div><br/>
+                  Hopefully this was helpful to anyone that has ever experienced this problem. Feel free to <a href="contact.html" target="_blank">contact me</a> for any concerns.
+                </font>
+            </div>
+        </div>
 
          	<a name="14"></a>
             <br />
@@ -283,8 +365,11 @@
                    - anything you write on your resume is fair game for interview questions so STUDY; the point of your resume is to land 
                    the interview, once that is accomplished, the next step is making sure you are prepared to talk about everything in your resume<br/>
                    - keep resume up-to-date; in the unfortunate event you are unemployed for an extended period, do projects and put them in your resume<br/>
+                   - unless your relevant experience was temporary work, it's a rule of thumb to add relavant employment only if it lasted for at least a year<br/>
+                   - use generic words when labeling sections to make it easy for ATS to read resume (you should have terms such as skills, experience, employment, certifications etc.)<br/>
+                   - avoid naming your sections with obscure terms (ie. skills instead of competencies, work/ employment over professional)<br/>
+                   Here's a link I stumbled into that gave me <a href="https://www.topresume.com/resume-review" target="_blank">resume feedback</a> and my current <a href="IResume.pdf" target="_blank">resume</a>
                    <br/>
-                   Here's a link I stumbled into that gave me <a href="https://www.topresume.com/resume-review" target="_blank">resume feedback</a> and my current <a href="IResume.pdf" target="_blank">resume</a>.<br/>
 
 
                 </font>
