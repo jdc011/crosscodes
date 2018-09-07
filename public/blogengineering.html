@@ -98,6 +98,21 @@
                <center><input placeholder="Search..." list="posts" name="post" id="search"><br/><br/> 
                <input type="button" value="Search" onClick="javascript: 
                   switch(document.getElementById('search').value) {
+                  	 case('Introduction to Socket programming in C (part 3)'):
+                        window.open('blog.html#20','_self');
+                        break;
+                     case('Introduction to Socket programming in C (part 2)'):
+                        window.open('blog.html#19','_self');
+                        break;
+                     case('Introduction to Socket programming in C (part 1)'):
+                        window.open('blog.html#18','_self');
+                        break;
+                     case('Networking culture in software engineering'):
+                        window.open('blog.html#17','_self');
+                        break;
+                     case('Answering the salary question'):
+                        window.open('blog.html#16','_self');
+                        break;
                      case('Bad superblock remedy'):
                         window.open('blog.html#15','_self');
                         break;
@@ -147,6 +162,11 @@
                         window.open('blog404.html','_self');
                   }"/></center>
                <datalist id="posts">
+               	  <option value="Introduction to Socket programming in C (part 3)">
+                  <option value="Introduction to Socket programming in C (part 2)">
+               	  <option value="Introduction to Socket programming in C (part 1)">
+               	  <option value="Networking culture in software engineering">
+               	  <option value="Answering the salary question">	
                	  <option value="Bad superblock remedy">
                	  <option value="Partitioning hard drives in Windows">
                   <option value="Resume tips">
@@ -172,10 +192,12 @@
 
                <font size="4px">
 
-               <a href="blog.html#15">Bad superblock remedy</a><br/>	
-               <a href="blog.html#14">Partitioning hard drives in Windows</a><br/>
-               <a href="blog.html#13">Resume tips</a><br/>
-               <a href="blog.html#12">2 Arduino projects</a><br/>
+               <a href="blog.html#20">Introduction to Socket programming in C (part 3)</a><br/>
+               <a href="blog.html#19">Introduction to Socket programming in C (part 2)</a><br/>
+               <a href="blog.html#18">Introduction to Socket programming in C (part 1)</a><br/>
+               <a href="blog.html#17">Networking culture in software engineering</a><br/>
+               <a href="blog.html#16">Answering the salary question</a><br/>
+               <a href="blog.html#15">Bad superblock remedy</a><br/>
 
                <hr color="grey"/>
 
@@ -214,8 +236,221 @@
             
          </div>
          <div class="col-lg-9">
+         <a name="20"></a>
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Introduction to Socket programming in C (part 3)<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>30 August 2018 | Engineering</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                	Here is the <a href="socket.tar.gz">code</a> for this tutorial. Extract the compressed file with the command
+                	<font style="font-family:'Courier New'">tar -xzvf socket.tar.gz</font>. In the resulting socket directory, you will
+                	find source code for the server and client as well as a makefile to compile them. From the makefile, you have the option of the
+                	following commands:<br/><br/>
+                	<div class="codebox">   
+                	   <font style="font-family:'Courier New'">
+                		   <font color="lime">make</font> <font color="blue"># standard compile</font><br/>	
+                		   <font color="lime">make debug</font> <font color="blue"># compile with debugging symbols</font><br/>
+                		   <font color="lime">make clean</font> <font color="blue"># remove binary files</font><br/>
+                	   </font>
+                	</div><br/>
+                	After compiling the code, run the server using the command <font style="font-family:'Courier New'">./server&</font>. The
+                	'&' makes this run in the background. You can now run the client using the command
+                	<font style="font-family:'Courier New'">./client insert message here</font>. If done correctly, the server should
+                	print the message you specified via command line argument when running the client. The output should look like the
+                	following:<br/><br/>
+                	<center><img src="socketout.png" width="100%"/></center><br/><br/>
+                	<b>Watch out for the following errors</b><br/>
+                	1. If there is a bind failure, that means a server might still be running on the specified port and IP address. To 
+                	verify this, use the <font style="font-family:'Courier New'">ps</font> command to show the currently running 
+                	processes. To kill the server, use either <font style="font-family:'Courier New'">kill [pid#]</font> or
+                	<font style="font-family:'Courier New'">pkill server</font>. Notice in the code you can also change the port. Both
+                	the client and the server will need the same port number to connect to each other.<br/>
+                	2. If there is a connect failure, the client failed to reach the server due to attempting to connect to the wrong
+                	address or the server either terminated unexpected (possibly due to the first error) or it isn't running at all.
+                	In the code provided, the IP addresses and port numbers of the server and client are the same so it is unlikely that
+                	this error will be caused by the former.<br/>
+                </font>
+            </div>
+        </div>
+
+         	<a name="19"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Introduction to Socket programming in C (part 2)<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>30 August 2018 | Engineering</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                	Here are the steps to utilize Socket programming. The example code shown are snippets of a program where the
+                	server listens for a client that contains a message to be printed on stdout. The code will be provided in part
+                	3 of this blog post.<br/><br/>
+                	<b>Server</b><br/>
+                	1. You need descriptors for the server socket to listen and the client socket to receive from. In order to bind them,
+                	you will need to create a <font style="font-family:'Courier New'">struct sockaddr</font> that will contain the IP
+                	address and port number. The length of this struct will also be needed as an argument for some Socket functions. Lastly,
+                	you need a buffer to store message contents to be sent or received.<br/>
+                	<img src="server1.png" width="100%"/><br/><br/>
+                	2. Simply create the socket.<br/>
+                	<img src="server2.png" width="100%"/><br/><br/>
+                	3. In order to bind the socket, you need to initialize the sockaddr struct to contain the protocol, IP address, and
+                	port number. Bind the socket and be sure to use the <font style="font-family:'Courier New'">sizeof</font> operator
+                	for the length of the struct.<br/>
+                	<img src="server3.png" width="100%"/><br/><br/>
+                	4. Now that the socket is binded, you can have it listen for incoming sockets.<br/>
+                	<img src="server4.png" width="100%"/><br/><br/>
+                	5. In order to achieve a connection between the server and the client, assign the client socket to accept given
+                	the server socket.<br/>
+                	<img src="server5.png" width="100%"/><br/><br/>
+                	6. It is now possible to send or receive messages. For sending messages, use the message string length and for receiving,
+                	use the buffer size.<br/>
+                	<img src="server6.png" width="100%"/><br/><br/>
+                	7. DO NOT forget to close your sockets when they are no longer in use. This will allow the used ports and IP addresses
+                	to be available for new sockets.<br/>
+                	<img src="server7.png" width="100%"/><br/><br/>
+                	<b>Client</b><br/>
+                	1. You will need a descriptor for the client socket to connect to the server. Using a 
+                	<font style="font-family:'Courier New'">struct sockaddr</font> will store the needed IP address and port number needed
+                	to achieve the connection. Lastly, you will need a buffer to store message contents to be sent or received.<br/>
+                	<img src="client1.png" width="100%"/><br/><br/>
+                	2. Simply create the socket.<br/>
+                	<img src="client2.png" width="100%"/><br/><br/>
+                	3. Similarly to bind, the sockaddr struct will need to be initialized in order for the client to connect to the server.<br/>
+                	<img src="client3.png" width="100%"/><br/><br/>
+                	4. At this point, you can send or receive messages.<br/>
+                	<img src="client4.png" width="100%"/><br/><br/>
+                	5. Once again, close the socket when finished.<br/>
+                	<img src="client5.png" width="100%"/><br/><br/>
+                	<center><a href="blog.html#20">Read part 3</a></center>
+                </font>
+            </div>
+        </div>
+
+         	<a name="18"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Introduction to Socket programming in C (part 1)<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>30 August 2018 | Engineering</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                	<b>What are Sockets?</b><br/>
+                	Sockets are abstractions that contain the necessary implementation to connect clients and servers over a networked
+                	connection in order to provide communication between systems. In a Socket implemented application, a server contains the 
+                	socket to listen for client bound sockets reaching out on a specified IP address and port in order to form a
+                	connection. Sockets are very widely used in networked systems and applications. Examples of programs that utilize 
+                	sockets are instant messaging apps and cloud storage. In this blog post, I will be discussing the basic universal 
+                	semantics in C to form a Socket based communication. Familiarize yourself with the Socket state diagram below that shows
+                	the basic control flow:<br/><br/>
+                	<center>                    
+                	   <img src="socketstate.png" width="80%"/><br/><br/>
+                	</center>
+                	For this tutorial, we will be using the following methods from the <a href="http://pubs.opengroup.org/onlinepubs/7908799/xns/syssocket.h.html" target="_blank">Socket API</a>:
+                	<br/>
+                	<font style="font-family:'Courier New'">
+                		int socket(int domain, int type, int protocol)
+                	</font><br/>
+                	An unsigned int value is returned based on the numerical quantity of the socket created. Any socket returning a
+                	negative value determines a failed attempt in creating the socket.<br/>
+                	<b>domain:</b> protocol to use determined by Socket constant<br/>
+                	<b>type:</b> how to communicate with protocol determined by Socket constant<br/>
+                	<b>protocol:</b> protocol value (0 for IP)<br/>
+                	<br/>
+                	<font style="font-family:'Courier New'">
+                		int bind(int socket, const struct sockaddr * address, socklen_t address_length)
+                	</font><br/>
+                	An unsigned int value is returned upon successful attachment of the socket to the given address and port. A negative
+                	value determines a failure to connect to the given address and port.<br/>
+                	<b>socket:</b> integer value corresponding to a given socket to bind<br/>
+                	<b>address:</b> struct containing network routing information including IP address and port number<br/>
+                	<b>address_length:</b> length of the struct in bytes<br/>
+                	<br/>
+                	<font style="font-family:'Courier New'">
+                		int listen(int socket, int back_log)
+                	</font><br/>
+                	The server waits to receive a connection from a client. If this value is negative, the server cannot receive any
+                	communication.<br/>
+                	<b>socket:</b> integer value corresponding to given socket to receive inbound communication<br/>
+                	<b>back_log:</b> maximum length in bytes for queue of pending communication<br/>
+                	<br/>
+                	<font style="font-family:'Courier New'">
+                		int accept(int socket, struct sockaddr * address, socklen_t address_length)
+                	</font><br/>
+                	A positive integer determines that an inbound socket has been detected and accepted. A negative integer determines
+                	a failure to accept the inbound socket.<br/>
+                	<b>socket:</b> integer value corresponding to given socket to accept inbound communication<br/>
+                	<b>address:</b> struct containing network routing information including IP address and port number<br/>
+                	<b>address_length:</b> length of the struct in bytes<br/>
+                	<br/>
+                	<font style="font-family:'Courier New'">
+                		int connect(int socket, const struct sockaddr * address, socklen_t address_length)
+                	</font><br/>
+                	Connects the client socket to the server socket. A negative value determines a connection failure.<br/>
+                	<b>socket:</b> integer value corresponding to given socket to connect to the server<br/>
+                	<b>address:</b> struct containing network routing information including IP address and port number<br/>
+                	<b>address_length:</b> length of the struct in bytes<br/>
+                	<br/>
+                	<font style="font-family:'Courier New'">
+                		ssize_t send(int socket, const void * buffer, size_t buffer_length, int flags)
+                	</font><br/>
+                	Returns the size in bytes of an outbound message. A negative value determines a failure to send
+                	the message.<br/>
+                	<b>socket:</b> integer value corresponding to given socket with message to send<br/>
+                	<b>buffer:</b> message contents being sent<br/>
+                	<b>buffer_length:</b> size of message<br/>
+                	<b>flags:</b> send flag determined by Socket constant or 0<br/>
+                	<br/>
+                	<font style="font-family:'Courier New'">
+                		int recv(int socket, void * buffer, size_t buffer_length, int flags)
+                	</font><br/>
+                	Returns the size in bytes of an inbound message. A negative value determines a failure to receive
+                	the message.<br/>
+                	<b>socket:</b> integer value corresponding to given socket with message to receive<br/>
+                	<b>buffer:</b> message contents being received<br/>
+                	<b>buffer_length:</b> size of message<br/>
+                	<b>flags:</b> receive flag determined by Socket constant or 0<br/>
+                	<br/>
+                	<font style="font-family:'Courier New'">
+                		int close(int socket)
+                	</font><br/>
+                	Remove the socket from memory in order to make the IP address and port available for another socket.
+                	This returns a negative value if the given socket doesn't exist.<br/>
+                	<b>socket:</b> integer value corresponding to given socket to remove from memory<br/>
+                	<br/>
+                	Quick note: Because Socket functions can fail, it is good practice to return with an error code if
+                	their return values determine failure. Also, you will typically need a buffer to make use of sockets.
+                	This is the container that gets sent through the socket that enables communication.<br/><br/>
+                	<center><a href="blog.html#19">Read part 2</a></center>
+                </font>
+            </div>
+        </div>
 
          <a name="12"></a>
+            <br />
+            <br />
+            <br />
+            <br />
             <br />
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
