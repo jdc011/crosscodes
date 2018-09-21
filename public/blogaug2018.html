@@ -27,6 +27,42 @@
    crossorigin="anonymous"></script>
    <script src="nav.js"></script>
 
+   <!-- Script to load blog side nav content -->
+   <script type="text/javascript">
+      function includeHTML() {
+         var z, i, elmnt, file, xhttp;
+         
+         /*loop through a collection of all HTML elements:*/
+         z = document.getElementsByTagName("*");
+         for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+    
+           /*search for elements with a certain atrribute:*/
+           file = elmnt.getAttribute("w3-include-html");
+              if (file) {
+                 /*make an HTTP request using the attribute value as the file name:*/
+                 xhttp = new XMLHttpRequest();
+                 xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                       if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                       if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                 
+                       /*remove the attribute, and call this function once more:*/
+                       elmnt.removeAttribute("w3-include-html");
+                       includeHTML();
+                    }
+                 }
+           
+                 xhttp.open("GET", file, true);
+                 xhttp.send();
+      
+                 /*exit the function:*/
+                 return;
+              }
+           }
+        }
+    </script> 
+
    <body background="background.jpg">
       <!-- Nav bar -->        
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed">
@@ -78,8 +114,8 @@
          <div class="row">
          <div class="col">
             <br/>
-            
-            <div class="box">
+                    
+         <div class="box">
                <div class="title">
                   <center>
                      <font size="6px" style="color:grey;font-family:Georgia"><b>Cross Codes Blog<br /></b></font>
@@ -94,144 +130,9 @@
                <br/>
 
                <hr color="grey"/>
-
-               <center><input placeholder="Search..." list="posts" name="post" id="search"><br/><br/> 
-               <input type="button" value="Search" onClick="javascript: 
-                  switch(document.getElementById('search').value) {
-                     case('Ambiguous 0 value in Socket buffers'):
-                        window.open('blog.html#21','_self');
-                        break;
-                  	 case('Introduction to Socket programming in C (part 3)'):
-                        window.open('blog.html#20','_self');
-                        break;
-                     case('Introduction to Socket programming in C (part 2)'):
-                        window.open('blog.html#19','_self');
-                        break;
-                     case('Introduction to Socket programming in C (part 1)'):
-                        window.open('blog.html#18','_self');
-                        break;
-                     case('Networking culture in software engineering'):
-                        window.open('blog.html#17','_self');
-                        break;
-                     case('Answering the salary question'):
-                        window.open('blog.html#16','_self');
-                        break;
-                     case('Bad superblock remedy'):
-                        window.open('blog.html#15','_self');
-                        break;
-                     case('Partitioning hard drives in Windows'):
-                        window.open('blog.html#14','_self');
-                        break;
-                     case('Resume tips'):
-                        window.open('blog.html#13','_self');
-                        break;
-                     case('2 Arduino projects'):
-                        window.open('blog.html#12','_self');
-                        break;
-                     case('Including multiple Lua scripts'):
-                        window.open('blog.html#11','_self');
-                        break;
-                     case('Introduction to Wireshark dissectors'):
-                        window.open('blog.html#10','_self');
-                        break;
-                     case('Implementing DHCP on Junos'):
-                        window.open('blog.html#9','_self');
-                        break;
-                     case('NVIDIA crashing on Linux'):
-                        window.open('blog.html#8','_self');
-                        break;
-                     case('Dual booting a Windows machine'):
-                        window.open('blog.html#7','_self');
-                        break;
-                     case('Juniper operating system'):
-                        window.open('blog.html#6','_self');
-                        break;
-                     case('Five recruiters one question'):
-                        window.open('blog.html#5','_self');
-                        break;
-                     case('SD Hacks experience'):
-                        window.open('blog.html#4','_self');
-                        break;
-                     case('Resume growth and socio-economic entitlement'):
-                        window.open('blog.html#3','_self');
-                        break;
-                     case('The study of Computer Science'):
-                        window.open('blog.html#2','_self');
-                        break;
-                     case('University vs. industry'):
-                        window.open('blog.html#1','_self');
-                        break;
-                     default:
-                        window.open('blog404.html','_self');
-                  }"/></center>
-               <datalist id="posts">
-               	  <option value="Ambiguous 0 value in Socket buffers">
-               	  <option value="Introduction to Socket programming in C (part 3)">
-                  <option value="Introduction to Socket programming in C (part 2)">
-               	  <option value="Introduction to Socket programming in C (part 1)">
-               	  <option value="Networking culture in software engineering">
-               	  <option value="Answering the salary question">	
-               	  <option value="Bad superblock remedy">
-               	  <option value="Partitioning hard drives in Windows">
-                  <option value="Resume tips">
-               	  <option value="2 Arduino projects">
-               	  <option value="Including multiple Lua scripts">
-                  <option value="Introduction to Wireshark dissectors">
-                  <option value="Implementing DHCP on Junos">
-                  <option value="NVIDIA crashing on Linux">
-                  <option value="Dual booting a Windows machine">
-                  <option value="Juniper operating system">
-                  <option value="Five recruiters one question">
-                  <option value="SD Hacks experience">
-                  <option value="Resume growth and socio-economic entitlement">
-                  <option value="The study of Computer Science">
-                  <option value="University vs. industry">
-               </datalist>
-
-               <hr color="grey"/>
-
-               <center>
-                  <font size="5px" style="color:black"><b>Recent Posts</b></font> 
-               </center>
-
-               <font size="4px">
-
-               <a href="blog.html#21">Ambiguous 0 value in Socket buffers</a><br/>
-               <a href="blog.html#20">Introduction to Socket programming in C (part 3)</a><br/>
-               <a href="blog.html#19">Introduction to Socket programming in C (part 2)</a><br/>
-               <a href="blog.html#18">Introduction to Socket programming in C (part 1)</a><br/>
-               <a href="blog.html#17">Networking culture in software engineering</a><br/>
-               <a href="blog.html#16">Answering the salary question</a><br/>
-               <a href="blog.html#15">Bad superblock remedy</a><br/>	
-
-               <hr color="grey"/>
-
-               <center>
-                  <font size="5px" style="color:black"><b>Categories</b></font> 
-               </center>
-
-               <font size="4px"><a href="blogengineering.html">Engineering</a><br/>
-               <a href="blogtechnical.html">Technical</a><br/>
-               <a href="blogexperience.html">Experience</a><br/>
-               <a href="blogindustry.html">Industry</a></font><br/>
-
-               <hr color="grey"/>
-
-               <center>
-                  <font size="5px" style="color:black"><b>Archives</b></font> 
-               </center>
-
-               <font size="4px">
-               	  <a href="blogsep2018.html">September 2018</a><br/>
-               	  <a href="blogaug2018.html">August 2018</a><br/>
-               	  <a href="blogjuly2018.html">July 2018</a><br/>
-               	  <a href="blogjune2018.html">June 2018</a><br/>
-               	  <a href="blogmay2018.html">May 2018</a><br/>
-               	  <a href="blogapr2018.html">April 2018</a><br/>
-               	  <a href="blogmar2018.html">March 2018</a><br/>
-               	  <a href="blogfeb2018.html">Februrary 2018</a><br/>
-                  <a href="blogjan2018.html">January 2018</a><br/>
-               </font>
+           
+               <!-- Include blog side nav content -->
+               <div w3-include-html="blogsidenav.html"></div> 
 
                <hr color="grey"/>
 
@@ -241,6 +142,7 @@
             </div>
             
          </div>
+
          <div class="col-lg-9">
          	<a name="20"></a>
             <br />
@@ -654,4 +556,9 @@
       
       </div>
    </body>
+
+   <!-- Call html including function for blog side nav -->
+   <script type="text/javascript">
+      includeHTML();
+   </script>
 </html>
