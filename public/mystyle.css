@@ -230,3 +230,8 @@ hr.style {
     padding-left: 0;
   }
 }
+
+.page a {
+   font-size: 20px;
+   padding: 1vw;
+}

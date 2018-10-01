@@ -84,7 +84,7 @@
             </ul>
          </div>
       </nav>
-      
+
       <br/>
       <br/>
       <br/>
@@ -104,7 +104,7 @@
             <div class="row">
                <div class="col">
                   <div class="title">
-                     <center><font size="7px" style="color:grey;font-family:Georgia"><b>Nothing found<br /></b></font>
+                     <center><font size="7px" style="color:grey;font-family:Georgia"><b>Category: Web Development<br /></b></font>
                   </div>
                </div>
             </div>
@@ -144,119 +144,47 @@
          </div>
 
          <div class="col-lg-9">
+                    <a name="23"></a>
             <br />
-            <div class="box">
+        <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
-               <div class="title">
-                  <center><font size="7px" style="color:grey;font-family:Georgia"><b>Please try a different search<br /></b></font>
-               </div>
-               <div style="text-align:left">
-                   <font size="4px" style="color:black">
-                   <br/>
-
-			<center><input placeholder="Search..." list="posts" name="post" id="search2"><br/><br/> 
-               <input type="button" value="Search" onClick="javascript: 
-                  switch(document.getElementById('search2').value) {
-                     case('Including seperate HTML files'):
-                        window.open('blog.html#23','_self');
-                        break;
-                     case('Roadblocks and solutions for Solar Interact'):
-                        window.open('blog.html#22','_self');
-                        break;
-                     case('Ambiguous 0 value in Socket buffers'):
-                        window.open('blog.html#21','_self');
-                        break;
-                  	 case('Introduction to Socket programming in C (part 3)'):
-                        window.open('blog_2.html#20','_self');
-                        break;
-                     case('Introduction to Socket programming in C (part 2)'):
-                        window.open('blog_2.html#19','_self');
-                        break;
-                     case('Introduction to Socket programming in C (part 1)'):
-                        window.open('blog.html#18','_self');
-                        break;
-                     case('Networking culture in software engineering'):
-                        window.open('blog.html#17','_self');
-                        break;
-                     case('Answering the salary question'):
-                        window.open('blog_2.html#16','_self');
-                        break;
-                     case('Bad superblock remedy'):
-                        window.open('blog_2.html#15','_self');
-                        break;
-                     case('Partitioning hard drives in Windows'):
-                        window.open('blog_2.html#14','_self');
-                        break;
-                     case('Resume tips'):
-                        window.open('blog_2.html#13','_self');
-                        break;
-                     case('2 Arduino projects'):
-                        window.open('blog_2.html#12','_self');
-                        break;
-                     case('Including multiple Lua scripts'):
-                        window.open('blog_2.html#11','_self');
-                        break;
-                     case('Introduction to Wireshark dissectors'):
-                        window.open('blog_3.html#10','_self');
-                        break;
-                     case('Implementing DHCP on Junos'):
-                        window.open('blog_3.html#9','_self');
-                        break;
-                     case('NVIDIA crashing on Linux'):
-                        window.open('blog_3.html#8','_self');
-                        break;
-                     case('Dual booting a Windows machine'):
-                        window.open('blog_3.html#7','_self');
-                        break;
-                     case('Juniper operating system'):
-                        window.open('blog_3.html#6','_self');
-                        break;
-                     case('Five recruiters one question'):
-                        window.open('blog_3.html#5','_self');
-                        break;
-                     case('SD Hacks experience'):
-                        window.open('blog_3.html#4','_self');
-                        break;
-                     case('Resume growth and socio-economic entitlement'):
-                        window.open('blog_3.html#3','_self');
-                        break;
-                     case('The study of Computer Science'):
-                        window.open('blog_3.html#2','_self');
-                        break;
-                     case('University vs. industry'):
-                        window.open('blog_3.html#1','_self');
-                        break;
-                     default:
-                        window.open('blog404.html','_self');
-                  }"/></center>
-               <datalist id="posts">
-                  <option value="Including seperate HTML files">
-                  <option value="Roadblocks and solutions for Solar Interact">
-               	  <option value="Ambiguous 0 value in Socket buffers">
-               	  <option value="Introduction to Socket programming in C (part 3)">
-                  <option value="Introduction to Socket programming in C (part 2)">
-               	  <option value="Introduction to Socket programming in C (part 1)">
-               	  <option value="Networking culture in software engineering">
-               	  <option value="Answering the salary question">	
-               	  <option value="Bad superblock remedy">
-               	  <option value="Partitioning hard drives in Windows">
-                  <option value="Resume tips">
-               	  <option value="2 Arduino projects">
-               	  <option value="Including multiple Lua scripts">
-                  <option value="Introduction to Wireshark dissectors">
-                  <option value="Implementing DHCP on Junos">
-                  <option value="NVIDIA crashing on Linux">
-                  <option value="Dual booting a Windows machine">
-                  <option value="Juniper operating system">
-                  <option value="Five recruiters one question">
-                  <option value="SD Hacks experience">
-                  <option value="Resume growth and socio-economic entitlement">
-                  <option value="The study of Computer Science">
-                  <option value="University vs. industry">
-               </datalist>
-               <br/>
-               </div>
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Including seperate HTML files<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>29 September 2018 | Web Development</b></font><br/>
+               </p></center>
             </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                   It is usually good practice to create a single HTML file for a specific component that will be used by multiple HTML files.
+                   This way, HTML source can be reused and the component will only need to be edited once for reliable consistency when other
+                   HTML files refer to it. There are two ways to do this:<br/><br/>
+                   <b>jQuery</b><br/>
+                   Your main file must include jQuery from the exact following url: 
+                   <font style="font-family:'Courier New'">http://code.jquery.com/jquery-1.10.2.js</font>. A div class or id should be placed
+                   where the content of the included file will be loaded. Include a script that uses the load function from jQuery. It takes
+                   the name of the included file as an argument. The calling reference will be the div tag's id or class attribute value. 
+                   Notice that in this example, the '#' character is used for the "id" attribute. Be sure to use '.' for "class".<br/>
+                   <img src="html1.png" width="100%"></img><br/><br/>
+                   The included file's body will be loaded to the main file's div tag attribute that called the load function.<br/>
+                   <img src="html2.png" width="100%"></img><br/><br/>
+                   <b>W3S</b><br/>
+                   Sometimes, jQuery doesn't work given certain frameworks as sources. W3S is an alternative choice of framework to accomplish
+                   this task. Similarly to jQuery, the body of the included file will be loaded to the main file. First off, W3S will need to be 
+                   included into your source.<br/>
+                   <img src="w3s.png" width="100%"></img><br/><br/>
+                   In order to specify where to place the components of the included file, use the "w3-include-html" attribute with the name of
+                   the included file as the value.
+                   <img src="w3include.png" width="100%"></img><br/><br/>
+                   To get the contents to load, you need the JavaScript source to load it as well as a script to call the JavaScript.
+                   <img src="includescript.png" width="100%"></img><br/><br/>
+                   <img src="caller.png" width="100%"></img><br/><br/>
+                   <b>Fianl result</b><br/>
+                   <img src="output.png" width="100%"></img>
+                </font>
+            </div>
+        </div>
+
                    </font>
                    </font>
                    </font>
@@ -264,6 +192,9 @@
                    </font>
                    </font>
                   </font>
+
+
+
          </div>
          </div>
          </div>
@@ -284,5 +215,5 @@
    <!-- Call html including function for blog side nav -->
    <script type="text/javascript">
       includeHTML();
-   </script>   
+   </script>
 </html>

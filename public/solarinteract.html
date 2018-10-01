@@ -81,7 +81,7 @@
                      of using solar energy over electrical energy. It also features an interactive game where a user
                      attempts to generate more energy than a solar panel through a hand crank. Not only is this 
                      exhibit educational, but it will also provide a service in the form of an interactive map 
-                     of UCSD's Price Center, and allow three engineering diciplnes to gain hands on experience in 
+                     of UCSD's Price Center, and allow three engineering disciplines to gain hands on experience in 
                      one project.<br/>
                      </div>
 
@@ -101,23 +101,44 @@
                      <b>Details</b><br/>
                      <div style="text-align:left">                    
                      The exhibit contains a user interactive Android table that contains an interactive map of
-                     UCSD's Price Center. This allows a user a navigate the building on all floors and see
-                     what services are currently open. The other feature is a game that displays a realtime
+                     UCSD's Price Center. This has been implented with the help of the GoogleMaps API. This 
+                     allows a user a navigate the building on all floors and see
+                     what services are currently open and how to navigate them thereby helping several new students and individuals
+                     who normally get lost inside the massive building. The other feature is a game that displays a real-time
                      line graph that shows hand cranked energy versus the solar panel in watts. This power output
                      is done through Bluetooth implemented back end communication between the tablet and the
-                     Arduino where the Arduino directly recieves the power output to tranfer to the tablet.
-                     The 3D printed Giesel library lights up to signify a win which is controlled by the Arduinno.<br/>
+                     Arduino containing a Bluetooth module where the Arduino directly receives the power output to transfer to the tablet. The power
+                     is translated by a decoder connected to the hand crank. The Arduino receives the generated watts.
+                     The 3D printed Giesel library also lights up via the Arduino comparing solar and user-generated energy
+                     via the hand crank and decoder.<br/>
+                     <br/>
+
+                     The final result is an embedded system containing an Arduino receiving watt data from a decoder and solar
+                     panel, an Android app implemented with Bluetooth sockets and a static mac address to send and receive data
+                     from the Arduino, LED's controlled by the Arduino, and an embedded software acting as a protocol for the
+                     Arduino to send data throughout the exhibit (LED's, tablet, solar panel, and decoder).<br/><br/></div>
+
+                     <div class="container">
+                     	<div class="row">
+                     		<div class="col">
+                     			<img src="exhibit.png" height="600px" width="70%"></img><br/><br/>
+                     		</div>
+
+                     		<div class="col">
+                     			<img src="solarinteract.gif" height="600px" width="70%"></img><br/>
+                     		</div>
+                     	</div>
                      </div>
 
                      <br/>
                   
                      <b>Google Maps fragment used for Price Center</b><br/>
-                     <img src="pcmap.png" height="70%" width="90%"></img><br/><br/>
+                     <img src="map.png" height="70%" width="90%"></img><br/><br/>
                   
                      <br/>
                      
                      <b>Graph display for power output</b><br/>
-                     <img src="crank.png" height="70%" width="90%"></img><br/><br/>
+                     <img src="graph.png" height="70%" width="90%"></img><br/><br/>
                   
                      <br/>
                   
@@ -144,14 +165,35 @@
                         </font>
                      </a>
 
+                     <a href="blog.html#22" target="_blank">
+                        <font size="4px">
+                           Solar Interact roadblocks blog post<br/>
+                        </font>
+                     </a>
+
                      <br/>
 
-                     <a href='https://github.com/jdc011/SolarInteract' target="_blank">
-                        <div class="click"><font size="4px">
-                           View repository<br/>
-                        <img src="octo.png" height="150vw" width="150vw"></img>
-                        </font></div>
-                     </a>
+                     <div class="container">
+                     	<div class="row">
+                     		<div class="col">
+                     			<a href='https://github.com/jdc011/SolarInteract' target="_blank">
+                        		<div class="click"><font size="4px">
+                           		View Android repository<br/>
+                        		<img src="octo.png" height="150vw" width="150vw"></img>
+                        		</font></div>
+                     			</a>
+                     		</div>
+
+                     		<div class="col">
+                     			<a href='https://github.com/jasonytliu/Solar_Interact' target="_blank">
+                        		<div class="click"><font size="4px">
+                           		View Arduino repository<br/>
+                        		<img src="octo.png" height="150vw" width="150vw"></img>
+                        		</font></div>
+                     			</a>
+                     		</div>
+                     	</div>
+                     </div>
                   </font>
                </div>
             </center>   
