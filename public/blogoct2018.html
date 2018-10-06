@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
    <title>Crosscodes</title>
    <meta charset="UTF-8"> 
@@ -92,13 +92,27 @@
       <!-- Content -->
       <div style="margin-left:0%"> 
          <div class="w3-container w3-animate-opacity">
+
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="title">
+                     <center><font size="7px" style="color:grey;font-family:Georgia"><b>Archive: October 2018<br /></b></font>
+                  </div>
+               </div>
+            </div>
+         </div>
+
          <div class="container">
          <div class="row">
          <div class="col">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <br/>
                     
          <div class="box">
@@ -130,11 +144,14 @@
          </div>
 
          <div class="col-lg-9">
-          <a name="25"></a>
-            <br />
-            <br />
-            <br />
-            <br />
+                   </font>
+                   </font>
+                   </font>
+                   </font>
+                   </font>
+                   </font>
+
+                   <a name="25"></a>
             <br />
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
@@ -264,212 +281,10 @@
             </div>
         </div>
 
-          <a name="23"></a>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <div class="box">
-            <!-------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Including seperate HTML files<br /></b></font>
-               <p>
-                  <font size="4px" style="color:white"><b>29 September 2018 | Web Development</b></font><br/>
-               </p></center>
-            </div>
-            <div style="text-align:left">
-                <font size="4px" style="color:black">
-                   It is usually good practice to create a single HTML file for a specific component that will be used by multiple HTML files.
-                   This way, HTML source can be reused and the component will only need to be edited once for reliable consistency when other
-                   HTML files refer to it. There are two ways to do this:<br/><br/>
-                   <b>jQuery</b><br/>
-                   Your main file must include jQuery from the exact following url: 
-                   <font style="font-family:'Courier New'">http://code.jquery.com/jquery-1.10.2.js</font>. A div class or id should be placed
-                   where the content of the included file will be loaded. Include a script that uses the load function from jQuery. It takes
-                   the name of the included file as an argument. The calling reference will be the div tag's id or class attribute value. 
-                   Notice that in this example, the '#' character is used for the "id" attribute. Be sure to use '.' for "class".<br/>
-                   <img src="html1.png" width="100%"></img><br/><br/>
-                   The included file's body will be loaded to the main file's div tag attribute that called the load function.<br/>
-                   <img src="html2.png" width="100%"></img><br/><br/>
-                   <b>W3S</b><br/>
-                   Sometimes, jQuery doesn't work given certain frameworks as sources. W3S is an alternative choice of framework to accomplish
-                   this task. Similarly to jQuery, the body of the included file will be loaded to the main file. First off, W3S will need to be 
-                   included into your source.<br/>
-                   <img src="w3s.png" width="100%"></img><br/><br/>
-                   In order to specify where to place the components of the included file, use the "w3-include-html" attribute with the name of
-                   the included file as the value.
-                   <img src="w3include.png" width="100%"></img><br/><br/>
-                   To get the contents to load, you need the JavaScript source to load it as well as a script to call the JavaScript.
-                   <img src="includescript.png" width="100%"></img><br/><br/>
-                   <img src="caller.png" width="100%"></img><br/><br/>
-                   <b>Fianl result</b><br/>
-                   <img src="output.png" width="100%"></img>
-                </font>
-            </div>
-        </div>
-
-        <a name="22"></a>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <div class="box">
-            <!-------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Roadblocks and solutions for Solar Interact<br /></b></font>
-               <p>
-                  <font size="4px" style="color:white"><b>26 September 2018 | Engineering</b></font><br/>
-               </p></center>
-            </div>
-            <div style="text-align:left">
-                <font size="4px" style="color:black">
-                   After a wonderful two years of balancing school, work, and side commitments, Solar Interact comes to a close; at least for its
-                   first release. With all members of the team graduated with the exception of one programmer, the final build is released and
-                   available for use at the UCSD Sustainability Resource Center. Currently, one programming student is planning to extend the 
-                   product's current capabilities and continue the project for the future generation of Engineers for a Sustainable World.<br/><br/>
-                   
-                   During
-                   the process of coming up with our first MVP, the software team has encountered several roadblocks. The way I like to think of
-                   this experience is by the motto, "You either win, or you learn". Given these roadblocks, the team definately learned a lot
-                   about Android development until we succeeded. Below, I document the software team's roadblocks and their solutions:<br/><br/>
-
-                   <b>1. Build failures</b><br/>
-                   This problem happened everytime Google released an update for Android Studio. Typically, the solution was to update the top
-                   level gradle that the build relies on. Updates come with release notes that typically document how to update the gradle
-                   file to work with the new dev environment. This would involve updating repositories, and the class path:<br/>
-                   <div class="codebox">
-                      <font style="font-family:'Courier New'" color="lime">
-                        buildscript {<br/>
-                        &nbsp;&nbsp;&nbsp;repositories {<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="grey">// keep these dependencies updated<br/></font>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jcenter()<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;google()<br/>
-                        &nbsp;&nbsp;&nbsp;}<br/>
-                        &nbsp;&nbsp;&nbsp;dependencies {<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="grey">// make sure the path is correct (typically the version #)<br/></font>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classpath 'com.android.tools.build:gradle:3.2.0'<br/>
-                        &nbsp;&nbsp;&nbsp;}<br/>
-                        }<br/>
-                        <br/>
-                        allprojects {<br/>
-                        &nbsp;&nbsp;&nbsp;repositories {<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="grey">// keep these dependencies updated<br/></font>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jcenter()<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;google()<br/>
-                        &nbsp;&nbsp;&nbsp;}<br/>
-                        }
-                      </font> 
-                   </div>
-                   <br/><br/>
-                   <b>2. Circular dependency</b><br/>
-                   We had problems building the APK due to a circular dependency. The graphview API was responsible for this as well as
-                   myself learning how to incorporate the API into our project. There are two ways to include the API and <b>ONLY</b> 
-                   one of them should be done:<br/>
-                   Add the following to the dependencies block in the build.gradle file from the "app" directory:<br/>
-                   <font style="font-family:'Courier New'">implementation 'com.jjoe64:graphview:4.2.2'</font><br/>
-                   -- or --<br/>
-                   Clone "https://github.com/jjoe64/GraphView.git", select File > Import Module followed by the folder that contains
-                   the repository, and add <font style="font-family:'Courier New'">implementation project(':GraphView')</font> into the dependencies block.<br/><br/>
-                   <b>3. Incorrect values for power outputs</b><br/>
-                   Bluetooth sockets accomplish communication of data in byte buffers which are framed and parsed by character making it problematic for
-                   values with multiple digits. Logic would need to be added to ensure that every digit of an individual value is considered before
-                   being read.<br/><br/>
-                   <b>4. Slow graph</b><br/>
-                   The problem was from calling the <font style="font-family:'Courier New'">AppendData(DataPoint, scrollToEnd, maxPoints, silent)</font> function.
-                   The maxPoints parameter is the maximum number of data points a line can have. The garbage collector deletes old data points. This value
-                   was set too high causing memory bloat. There has to be a limit to how many data points can be seen on the graph. Luckily, the graph automatically
-                   scales and moves along axes for the data.<br/><br/>
-                   <b>5. Bad USB cable/ port<br/></b>
-                   This has always been a problem for me as an Android developer. Emulators were the solution. However, emulators do not support Bluetooth connection.
-                   We had to repeatedly build an APK and email it to the device. However, debugging was unavailable rendering us required to put print
-                   statements within the app and going through several trial an error.<br/><br/>
-                   <b>6. Map crashing<br/></b>
-                   The .jpg file for the map was high-res. It turned out that the device did not have enough memory to load it. To make it work for our final
-                   build, we had to lower the resolution of the image despite an HD image being a nice feature.<br/><br/>
-                   <b>What's the plan now?<br/></b>
-                   As I stated earlier, there are plans to extend the product's current features that the future generation of ESW members can take care of. One of
-                   our programmers is planning on adding land marks to the map as well as the ability to store business hours and let users know whether something is
-                   closed or about to close. There is also room to make the app itself more aesthetically pleasing. For the Solar Interact game, it would be nice to
-                   be able to save the top scores. I originally wanted to work on this feature but class work and graduation beat me to it.<br/><br/> 
-                   Overall, I have learned
-                   a lot of Android development skills as well as knowledge of several API's from this project. I also learned soft skills involving leading the
-                   development cycle of software projects to ensure quality builds. Some of these soft skills involve unit testing, automation, code review,
-                   documentation, communication, and agile scrum. I plan to take note of everything I learned on the next chapter of my career as a software
-                   engineer.<br/><br/>
-                   <center><a href="solarinteract.html" target="_blank">View project</a></center>
-                </font>
-            </div>
-        </div>
-
-         	<a name="21"></a>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <div class="box">
-            <!-------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Ambiguous 0 value in Socket buffers<br /></b></font>
-               <p>
-                  <font size="4px" style="color:white"><b>9 September 2018 | Engineering</b></font><br/>
-               </p></center>
-            </div>
-            <div style="text-align:left">
-                <font size="4px" style="color:black">
-					          I was tasked with working on a Socket based cloud storage application when I encountered a file I/O error. I noticed a few
-                  	ASCII files being unread after certain areas in the text and binary files not being read at all. I also noticed several reading
-                  	errors on Unicode text files. Knowing that the char data type in C only supports 8-bit ASCII, I believed the lack of bit space
-                  	was causing the error. This was definitely the case for parsing Unicode files. However, this was irrelevant to the misread
-                  	issue on ASCII encoded files. Taking care of 16-bit characters would just be a later task for me but it didn't add up to me why some files encoded
-                  	with 8-bit character schemes were not being read. The issue was pointed out by a fellow senior software engineer at work. <b>The
-                  	'0' character is ambiguous. When inputting characters into my message buffers, there was no way to for a char array to tell
-                  	the difference between the numerical value 0 and the null character.</b> This explained why binary files were not being read at all
-                  	and why certain characters were not being read from ASCII files. They were null characters. I learned the following lessons from this error:<br/><br/>
-                  	1. <b>DO NOT</b> use char buffers when parsing files. Use the <font style="font-family:'Courier New'">stat</font> struct defined in the C library.<br/>
-                  	2. Use the <font style="font-family:'Courier New'">sendfile</font> system call to efficiently and reliably parse all file contents 
-                  	instead of using <font style="font-family:'Courier New'">fgetc</font> and <font style="font-family:'Courier New'">fputc</font> to parse
-                  	characters at a time.<br/></br>
-                  	This video taught me how to use the <font style="font-family:'Courier New'">sendfile</font> system call.<br/><br/>
-
-                  	<center><object data="https://www.youtube.com/embed/r4gTEPo9m10"
-   					   width="70%" height="500"></object></center>
-                </font>
-            </div>
-        </div>
-
          </div>
          </div>
          </div>
          </div>
-         </div>
-
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-
-          <!-- Blog pagination component -->
-          <div class="container">
-             <div class="row">
-                <div class="col">
-                   <center>
-                      <div class="box">
-                         <div class="page">
-                            <a href="blog.html"><<</a>
-                            <a href="blog.html"><</a>
-                            <a href="blog.html" style="color: purple">1</a>
-                            <a href="blog_2.html">2</a>
-                            <a href="blog_3.html">3</a>
-                            <a href="blog_2.html">></a>
-                            <a href="blog_3.html">>></a>
-                         </div>
-                      </div>
-                   </center>
-                </div>
-             </div>
          </div>
 
          <br/>
