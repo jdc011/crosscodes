@@ -130,6 +130,75 @@
          </div>
 
          <div class="col-lg-9">
+         	<a name="27"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Compiling C++ templates<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>26 November 2018 | Engineering</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                	Styling conventions in C/C++ generally separate function definitions/ class templates and their implementations. Although clean in nature, this convention poses a problem with templates. Interestingly, I was told by my data structures professor that templated classes require implementations to be defined in the header files, a contradiction of the convention I previously mentioned. It is also interesting to note that this professor would agree with the said convention. Why was this a problem with templated classes? Do templated classes necessarily have to go against this styling convention in order to compile? The simple answer is no. Templated classes can still follow best practices in code organization remaining consistent with non-templated classes. My professor's claim that implementing templated classes in the header file is therefore inaccurate. The problem has to do with the compiler not knowing how to interpret what to pass into the template. At compile time, the type(s) that are expected to be passed into the template need to be defined. For objects, operators
+                	would need to be overloaded and their classes would need to be implemented in order for the template to know how to use them.<br/><br/>
+
+                	<div class="codebox">
+                      <font style="font-family:'Courier New'" color="lime">
+                      	 <font color="blue">/* A generic templated class */</font><br/>
+                         <font color="darkgreen">template</font>&lt;<font color="darkgreen">typename</font> type&gt;<br/>
+                         <font color="darkgreen">class</font> some_class<br/>
+                         {<br/>
+                         &nbsp;&nbsp;&nbsp;<font color="orange">private<font color="lime">:</font></font><br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type some_variable;<br/><br/>
+                         &nbsp;&nbsp;&nbsp;<font color="orange">public<font color="lime">:</font></font><br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some_class(type some_variable)<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">this</font>.some_variable = some_variable;<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                         };<br/><br/>
+                         some_class&lt;<font color="darkgreen">int</font>&gt; foo = <font color="orange">new</font> some_class&lt;<font color="darkgreen">int</font>&gt;(<font color="red">1</font>);<br/>
+                         <font color="blue"><br/>
+                         	/* At compile time, the above line causes the compiler to create an untemplated instance of the templated class based 
+                         	on what was passed in as a template argument as shown below. */<br/>
+                         </font>
+                         <font color="darkgreen">class</font> some_class<br/>
+                         {<br/>
+                         &nbsp;&nbsp;&nbsp;<font color="orange">private<font color="lime">:</font></font><br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">int</font> some_variable;<br/><br/>
+                         &nbsp;&nbsp;&nbsp;<font color="orange">public<font color="lime">:</font></font><br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some_class(<font color="darkgreen">int</font> some_variable)<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">this</font>.some_variable = some_variable;<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                         };
+                      </font> 
+                   </div>
+                   <br/>
+                   When the code compiles, the compiler would need access to the implementation at the time the function definition is read. If this is not defined
+                   in the header file, the compiler would not have access in knowing the types of classes that would need to be created thus, lead to a "function undefined"
+                   compiler error. However, it is possible to isolate the implementation from the header files of templated classes in order to maintain code
+                   cleanliness. There are two solutions.<br/><br/>
+
+                   <div class="codebox">
+                      <font style="font-family:'Courier New'" color="lime">
+                      	<font color="blue">/* Include the .cpp file at the END of the header file */</font><br/>
+                      	<font color="purple">#include</font> <font color="red">"some_class.cpp"</font><br/><br/>
+                      	<font color="blue">/* Or explicitly define the expected types for the template at the end of the .cpp file */</font><br/>
+                      	<font color="darkgreen">template class</font> some_class&lt;<font color="darkgreen">int</font>&gt;;<br/>
+                      	<font color="blue">/* Explicitly define the rest of the types and/or below */</font>
+                      </font>
+                  </div>
+                </font>
+            </div>
+        </div>
+
           <a name="26"></a>
             <br />
             <br />
