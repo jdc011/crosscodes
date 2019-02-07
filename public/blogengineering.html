@@ -144,7 +144,83 @@
          </div>
 
          <div class="col-lg-9">
+          <a name="29"></a>
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Introduction to smart pointers<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>18 December 2018 | Engineering</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                  "Dynamic allocation is frowned upon!" This was an interesting statement I was told at work. I spent four years in UCSD learning
+                  strictly about dynamic allocation as if it's a vital skill to harness in the work force. This actually is the case but more
+                  importantly, for the purpose of understanding memory management behind the scenes in C++ without taking it for granted. Given
+                  the possible array of errors that can arise from dynamic allocation such as memory leaks, dangling pointers, and page faults,
+                  there is a way to avoid this given the level and size of programming in the industry. Shortening one's subset of contingent
+                  errors will prove to be useful anywhere. I am talking specifically about smart pointers, an abstraction in C++ that contains
+                  all the black boxes for traditional pointers easing the programmer from having to explicitly manage them in order to prevent
+                  errors. The following are some problematic examples of using traditional pointers:<br/>
+                  <div class="codebox">
+                    <font style="font-family:'Courier New'" color="lime">
+                      <font color="blue">/* If the call to function results in an exception, a double delete would lead to a heap corruption error. */<br/></font>
+                      ptr * foo1 = <font color="orange">new</font> ptr();<br/>
+                      foo1->function();<br/>
+                      <font color="orange">delete</font> foo1;<br/>
+                      <br/>
+                      <font color="blue">/* Assigning the value of i results into a page fault since a pointee wasn't assigned. */<br/></font>
+                      <font color="darkgreen">int</font> * i;<br/>
+                      *i = <font color="red">1</font>;<br/>
+                      <br/>
+                      <font color="blue">/* If the call to my_error is true, foo would become a dangling pointer causing the call to function
+                      to result into a page fault. Otherwise, foo2 would not be deleted causing a memory leak. */<br/></font>
+                      ptr * foo2 = <font color="orange">new</font> ptr();<br/>
+                      <br/>
+                      <font color="orange">if</font>(my_error()) {<br/>
+                      &nbsp;&nbsp;&nbsp;<font color="orange">delete</font> foo2;<br/>
+                      }<br/>
+                      <br/>
+                      foo2->function();
+                    </font>
+                  </div>
+
+                  <br/>
+
+                  In industry level programs, the possibility of the above errors become such a nuisance when debugging. Smart pointers remove the
+                  need for explicitly managing pointers thereby, preventing any of the above scenarios and others. The two types of basic smart
+                  pointers are <font style="font-family:'Courier New'">unique_ptr</font> and <font style="font-family:'Courier New'">shared_ptr</font>.
+                  As the names suggests, the former is used to limit the number of pointers to one whereas the latter will allow multiple copies
+                  to exists. Which pointer you decide to use depends on whether you want to limit or extend the scope or implement a singleton instance
+                  of an object. To use these pointers, simply declare one using a smart pointer type along with a template to specify what type or
+                  object to point to. To initialize, explicitly call the appropriate constructor on the declaration. Example below:<br/>
+                  <div class="codebox">
+                    <font style="font-family:'Courier New'" color="lime">
+                      <font color="purple">#include</font> <font color="red">&lt;memory&gt;</font> <font color="blue">/* Include this header file to use smart pointers */</font><br/>
+                      <br/>
+                      <font color="darkgreen">int</font> main() {<br/>
+                      <font color="blue">&nbsp;&nbsp;&nbsp;/* A smart pointer to an int with value 1 is created. */</font><br/>
+                      &nbsp;&nbsp;&nbsp;std :: unique_ptr&lt;<font color="darkgreen">int</font>&gt; i(<font color="orange">new</font> <font color="darkgreen">int</font>(<font color="red">1</font>));<br/>
+                      &nbsp;&nbsp;&nbsp;<font color="orange">return</font> <font color="red">0</font>;<br/>
+                      }<br/>
+                      <font color="blue">/* Note: A shared_ptr (same syntax) is ideal for a field; the errors mentioned above are implicitly taken care of. */</font>
+                    </font>
+                  </div>
+
+                  <br/>
+
+                  Here is the <a href="https://www.boost.org/doc/libs/1_63_0/libs/smart_ptr/smart_ptr.htm" target="_blank">documentation</a> for C++ smart pointers.
+                </font>
+            </div>
+        </div>
+        
         <a name="27"></a>
+            <br />
+            <br />
+            <br />
+            <br />
             <br />
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
@@ -170,7 +246,7 @@
                          &nbsp;&nbsp;&nbsp;<font color="orange">public<font color="lime">:</font></font><br/>
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some_class(type some_variable)<br/>
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">this</font>.some_variable = some_variable;<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">this</font>-&gt;some_variable = some_variable;<br/>
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
                          };<br/><br/>
                          some_class&lt;<font color="darkgreen">int</font>&gt; foo = <font color="orange">new</font> some_class&lt;<font color="darkgreen">int</font>&gt;(<font color="red">1</font>);<br/>
@@ -185,7 +261,7 @@
                          &nbsp;&nbsp;&nbsp;<font color="orange">public<font color="lime">:</font></font><br/>
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some_class(<font color="darkgreen">int</font> some_variable)<br/>
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">this</font>.some_variable = some_variable;<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">this</font>-&gt;some_variable = some_variable;<br/>
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
                          };
                       </font> 
@@ -442,7 +518,7 @@
                 	<img src="client4.png" width="100%"/><br/><br/>
                 	5. Once again, close the socket when finished.<br/>
                 	<img src="client5.png" width="100%"/><br/><br/>
-                	<center><a href="blog.html#20">Read part 3</a></center>
+                	<center><a href="blog_3.html#20">Read part 3</a></center>
                 </font>
             </div>
         </div>
@@ -549,7 +625,7 @@
                 	Quick note: Because Socket functions can fail, it is good practice to return with an error code if
                 	their return values determine failure. Also, you will typically need a buffer to make use of sockets.
                 	This is the container that gets sent through the socket that enables communication.<br/><br/>
-                	<center><a href="blog.html#19">Read part 2</a></center>
+                	<center><a href="blog_3.html#19">Read part 2</a></center>
                 </font>
             </div>
         </div>
@@ -850,7 +926,7 @@
                    <font size="4px" style="color:black">
 					In this blog post, I will present a tutorial on how to implement a DHCP server on a Juniper firewall using its
 					built-in Junos operating system. If you haven't done so yet, please read my blog post on 
-					<a href="#6">Juniper operating system</a> as this blog post builds up on that topic. You will need to access the
+					<a href="blog_4.html#6">Juniper operating system</a> as this blog post builds up on that topic. You will need to access the
 					configure mode of Junos for this tutorial. Before we begin implementing the server, let's talk about what DHCP
 					is. DHCP stands for Dynamic Host Configuration Protocol. It is used in a computer network to assign IP addresses
 					to devices connected to the server. To understand this, think of an individual computer in a networked system as
@@ -1072,7 +1148,7 @@
 					   </center>
                        This is the bare basics of Junos. I will likely be posting more advanced techniques and specific Junos related
                        tutorials in the future. Click <a href="https://www.juniper.net/us/en/" target="_blank">here</a> for the Juniper website to learn more.
-                       Take a look at <a href="#9">Implementing DHCP on Junos</a> if you came from there.
+                       Take a look at <a href="blog_4.html#9">Implementing DHCP on Junos</a> if you came from there.
                    </font>
                    </font>
                    </font>

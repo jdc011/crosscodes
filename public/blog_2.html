@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
    <title>Crosscodes</title>
    <meta charset="UTF-8"> 
@@ -130,7 +130,7 @@
          </div>
 
          <div class="col-lg-9">
-         	<a name="20"></a>
+         	<a name="30"></a>
             <br />
             <br />
             <br />
@@ -139,45 +139,57 @@
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
             <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Introduction to Socket programming in C (part 3)<br /></b></font>
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Programming key terms set 2<br /></b></font>
                <p>
-                  <font size="4px" style="color:white"><b>30 August 2018 | Engineering</b></font><br/>
+                  <font size="4px" style="color:white"><b>30 December 2018 | Concepts</b></font><br/>
                </p></center>
             </div>
             <div style="text-align:left">
                 <font size="4px" style="color:black">
-                	Here is the code for <a href="socket.tar.gz">Linux</a> and <a href="socket.zip">Windows</a> for this tutorial. Assuming you are using Linux, extract the compressed file with the command
-                	<font style="font-family:'Courier New'">tar -xzvf socket.tar.gz</font>. In the resulting socket directory, you will
-                	find source code for the server and client as well as a makefile to compile them. From the makefile, you have the option of the
-                	following commands:<br/><br/>
-                	<div class="codebox">   
-                	   <font style="font-family:'Courier New'">
-                		   <font color="lime">make</font> <font color="blue"># standard compile</font><br/>	
-                		   <font color="lime">make debug</font> <font color="blue"># compile with debugging symbols</font><br/>
-                		   <font color="lime">make clean</font> <font color="blue"># remove binary files</font><br/>
-                	   </font>
-                	</div><br/>
-                	After compiling the code, run the server using the command <font style="font-family:'Courier New'">./server&</font>. The
-                	'&' makes this run in the background. You can now run the client using the command
-                	<font style="font-family:'Courier New'">./client insert message here</font>. If done correctly, the server should
-                	print the message you specified via command line argument when running the client. The output should look like the
-                	following:<br/><br/>
-                	<center><img src="socketout.png" width="100%"/></center><br/><br/>
-                	<b>Watch out for the following errors</b><br/>
-                	1. If there is a bind failure, that means a server might still be running on the specified port and IP address. To 
-                	verify this, use the <font style="font-family:'Courier New'">ps</font> command to show the currently running 
-                	processes. To kill the server, use either <font style="font-family:'Courier New'">kill [pid#]</font> or
-                	<font style="font-family:'Courier New'">pkill server</font>. Notice in the code you can also change the port. Both
-                	the client and the server will need the same port number to connect to each other.<br/>
-                	2. If there is a connect failure, the client failed to reach the server due to attempting to connect to the wrong
-                	address or the server either terminated unexpected (possibly due to the first error) or it isn't running at all.
-                	In the code provided, the IP addresses and port numbers of the server and client are the same so it is unlikely that
-                	this error will be caused by the former.<br/>
+                  <b>Agile scrum</b> - iterative approach in project management consisting of interval sprints followed by milestones to be demoed; flexible when requirements change<br/>
+                  <b>Adapter pattern</b> - a software pattern that allows the interface of one class to be used as another interface<br/>
+                  <b>Assembler</b> - a program that translates assembly code to machine code<br/>
+                  <b>Auto</b> - reserved word in C++ that implies type during compilation; implicit with local variable declarations and initializations<br/>
+                  <b>Automation</b> - using scripts or programs to make simple tasks in software projects automatic and standard<br/>
+                  <b>Behavior driven development</b> - follows test driven development rules but addresses behavior over implementation<br/>
+                  <b>Compiled language</b> - programming language required to be translated into executable file to run program<br/>
+                  <b>Compiler</b> - converts source file to corresponding assembly instructions and taxonomizes program into object files<br/>
+                  <b>CRUD</b> - used in backend and database management applications; stands for create, remove, update, delete<br/>
+                  <b>Decorator pattern</b> - allows for the modifications of the behaviors in a derived class without affecting those of the parent class<br/>
+                  <b>Design pattern</b> - types of software architecture styles and paradigms to adhere to corresponding to the type of application being programmed<br/>
+                  <b>DNS</b> - hierarchical naming system for places within a network<br/>
+                  <b>Extern</b> - lets compiler know that a variable in one file will be used in another in C++<br/>
+                  <b>Facade pattern</b> - consisting of an interface that acts in the frontend of communicating between a client and a complicated cascade of functions in the backend<br/>
+                  <b>Factory pattern</b> - an object that produces other varying objects<br/>
+                  <b>Firewall</b> - network security monitor that either grants or denies access for requests in networked communications<br/>
+                  <b>FTP</b> - protocol used over a network to transfer files remotely known as file transfer protocol<br/>
+                  <b>Generic</b> - the Java equivalent of C++ templates allowing varying types and objects to be contained<br/>
+                  <b>Interpreted language</b> - a language where its source is runnable by an interpreter executing instructions that corresponds to a line of code; executed explicitly line by line<br/>
+                  <b>IPv4</b> - 32-bit IP address displayed in decimals where each byte is separated by '.'<br/>
+                  <b>IPv6</b> - 128-bit IP address used to address limited number of addresses in IPv4; displayed in hexadecimal<br/>
+                  <b>LAN</b> - local area network used within a limited space<br/>
+                  <b>Linker</b> - a program that takes the object files resulting from the compiler and translates them into a single binary runnable file<br/>
+                  <b>Port</b> - numerical node of communication within a networked system<br/>
+                  <b>Proxy</b> - a mediator that handles operations between a client and a server<br/>
+                  <b>RAIL</b> - principle used in making responsive and user-deemed fast web/ mobile applications; what to make responsive includes response, animation, idle, load<br/>
+                  <b>REST</b> - an API used in web development to support functions in the HTTP protocol<br/>
+                  <b>Router</b> - a networking device that forwards packets in a predetermined network route<br/>
+                  <b>Samba</b> - secure protocol that offers file and print services <br/>
+                  <b>Script</b> - source file typically interpreted to automate simple tasks<br/>
+                  <b>Singleton class</b> - a class where only one instance can exist in an execution; typically implemented with a private constructor and static datafield<br/>
+                  <b>SSH</b> - secure shell protocol used to login to UNIX/ Linux servers<br/>
+                  <b>Test driven development</b> - process of writing test code concurrently or before the application is written<br/>
+                  <b>Tunneling</b> - protocol in a networked system that allows movement of data providing the purpose of the network<br/>
+                  <b>Version control</b> - software that taxonomizes versions of software projects including builds and releases<br/>
+                  <b>Volatile</b> - reserved word in C++ that prevents compiler optimization on a variable declaration or initialization<br/>
+                  <b>Waterfall model</b> - linear approach to projects from start to finish involving requirements, design, implementation, verification, maintenance<br/>
+                  <b>Unit test</b> - test code used to test a block of code in a software project<br/>
+                  <b>UX/DX seesaw</b> - in web development, the user and developer experiences are inversely proportional and described by a seesaw 
                 </font>
             </div>
         </div>
 
-         	<a name="19"></a>
+         	<a name="29"></a>
             <br />
             <br />
             <br />
@@ -186,58 +198,74 @@
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
             <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Introduction to Socket programming in C (part 2)<br /></b></font>
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Introduction to smart pointers<br /></b></font>
                <p>
-                  <font size="4px" style="color:white"><b>30 August 2018 | Engineering</b></font><br/>
+                  <font size="4px" style="color:white"><b>18 December 2018 | Engineering</b></font><br/>
                </p></center>
             </div>
             <div style="text-align:left">
                 <font size="4px" style="color:black">
-                	Here are the steps to utilize Socket programming. The example code shown are snippets of a program where the
-                	server listens for a client that contains a message to be printed to stdout. The code will be provided in part
-                	3 of this blog post.<br/><br/>
-                	<b>Server</b><br/>
-                	1. You need descriptors for the server socket to listen and the client socket to receive from. In order to bind them,
-                	you will need to create a <font style="font-family:'Courier New'">struct sockaddr</font> that will contain the IP
-                	address and port number. The length of this struct will also be needed as an argument for some Socket functions. Lastly,
-                	you need a buffer to store message contents to be sent or received.<br/>
-                	<img src="server1.png" width="100%"/><br/><br/>
-                	2. Simply create the socket.<br/>
-                	<img src="server2.png" width="100%"/><br/><br/>
-                	3. In order to bind the socket, you need to initialize the sockaddr struct to contain the protocol, IP address, and
-                	port number. Bind the socket and be sure to use the <font style="font-family:'Courier New'">sizeof</font> operator
-                	for the length of the struct.<br/>
-                	<img src="server3.png" width="100%"/><br/><br/>
-                	4. Now that the socket is binded, you can have it listen for incoming sockets.<br/>
-                	<img src="server4.png" width="100%"/><br/><br/>
-                	5. In order to achieve a connection between the server and the client, assign the client socket to accept given
-                	the server socket.<br/>
-                	<img src="server5.png" width="100%"/><br/><br/>
-                	6. It is now possible to send or receive messages. For sending messages, use the message string length and for receiving,
-                	use the buffer size.<br/>
-                	<img src="server6.png" width="100%"/><br/><br/>
-                	7. DO NOT forget to close your sockets when they are no longer in use. This will allow the used ports and IP addresses
-                	to be available for new sockets.<br/>
-                	<img src="server7.png" width="100%"/><br/><br/>
-                	<b>Client</b><br/>
-                	1. You will need a descriptor for the client socket to connect to the server. Using a 
-                	<font style="font-family:'Courier New'">struct sockaddr</font> will store the needed IP address and port number needed
-                	to achieve the connection. Lastly, you will need a buffer to store message contents to be sent or received.<br/>
-                	<img src="client1.png" width="100%"/><br/><br/>
-                	2. Simply create the socket.<br/>
-                	<img src="client2.png" width="100%"/><br/><br/>
-                	3. Similarly to bind, the sockaddr struct will need to be initialized in order for the client to connect to the server.<br/>
-                	<img src="client3.png" width="100%"/><br/><br/>
-                	4. At this point, you can send or receive messages.<br/>
-                	<img src="client4.png" width="100%"/><br/><br/>
-                	5. Once again, close the socket when finished.<br/>
-                	<img src="client5.png" width="100%"/><br/><br/>
-                	<center><a href="blog_2.html#20">Read part 3</a></center>
+                	"Dynamic allocation is frowned upon!" This was an interesting statement I was told at work. I spent four years in UCSD learning
+                	strictly about dynamic allocation as if it's a vital skill to harness in the work force. This actually is the case but more
+                	importantly, for the purpose of understanding memory management behind the scenes in C++ without taking it for granted. Given
+                	the possible array of errors that can arise from dynamic allocation such as memory leaks, dangling pointers, and page faults,
+                	there is a way to avoid this given the level and size of programming in the industry. Shortening one's subset of contingent
+                	errors will prove to be useful anywhere. I am talking specifically about smart pointers, an abstraction in C++ that contains
+                	all the black boxes for traditional pointers easing the programmer from having to explicitly manage them in order to prevent
+                	errors. The following are some problematic examples of using traditional pointers:<br/>
+                	<div class="codebox">
+                		<font style="font-family:'Courier New'" color="lime">
+                			<font color="blue">/* If the call to function results in an exception, a double delete would lead to a heap corruption error. */<br/></font>
+                			ptr * foo1 = <font color="orange">new</font> ptr();<br/>
+                			foo1->function();<br/>
+                			<font color="orange">delete</font> foo1;<br/>
+                			<br/>
+                			<font color="blue">/* Assigning the value of i results into a page fault since a pointee wasn't assigned. */<br/></font>
+                			<font color="darkgreen">int</font> * i;<br/>
+                			*i = <font color="red">1</font>;<br/>
+                			<br/>
+                			<font color="blue">/* If the call to my_error is true, foo would become a dangling pointer causing the call to function
+                			to result into a page fault. Otherwise, foo2 would not be deleted causing a memory leak. */<br/></font>
+                			ptr * foo2 = <font color="orange">new</font> ptr();<br/>
+                			<br/>
+                			<font color="orange">if</font>(my_error()) {<br/>
+                			&nbsp;&nbsp;&nbsp;<font color="orange">delete</font> foo2;<br/>
+                			}<br/>
+                			<br/>
+                			foo2->function();
+                		</font>
+                	</div>
+
+                	<br/>
+
+                	In industry level programs, the possibility of the above errors become such a nuisance when debugging. Smart pointers remove the
+                	need for explicitly managing pointers thereby, preventing any of the above scenarios and others. The two types of basic smart
+                	pointers are <font style="font-family:'Courier New'">unique_ptr</font> and <font style="font-family:'Courier New'">shared_ptr</font>.
+                	As the names suggests, the former is used to limit the number of pointers to one whereas the latter will allow multiple copies
+                	to exists. Which pointer you decide to use depends on whether you want to limit or extend the scope or implement a singleton instance
+                	of an object. To use these pointers, simply declare one using a smart pointer type along with a template to specify what type or
+                	object to point to. To initialize, explicitly call the appropriate constructor on the declaration. Example below:<br/>
+                	<div class="codebox">
+                		<font style="font-family:'Courier New'" color="lime">
+                			<font color="purple">#include</font> <font color="red">&lt;memory&gt;</font> <font color="blue">/* Include this header file to use smart pointers */</font><br/>
+                			<br/>
+                			<font color="darkgreen">int</font> main() {<br/>
+                			<font color="blue">&nbsp;&nbsp;&nbsp;/* A smart pointer to an int with value 1 is created. */</font><br/>
+                			&nbsp;&nbsp;&nbsp;std :: unique_ptr&lt;<font color="darkgreen">int</font>&gt; i(<font color="orange">new</font> <font color="darkgreen">int</font>(<font color="red">1</font>));<br/>
+                			&nbsp;&nbsp;&nbsp;<font color="orange">return</font> <font color="red">0</font>;<br/>
+                			}<br/>
+                			<font color="blue">/* Note: A shared_ptr (same syntax) is ideal for a field; the errors mentioned above are implicitly taken care of. */</font>
+                		</font>
+                	</div>
+
+                	<br/>
+
+                	Here is the <a href="https://www.boost.org/doc/libs/1_63_0/libs/smart_ptr/smart_ptr.htm" target="_blank">documentation</a> for C++ smart pointers.
                 </font>
             </div>
         </div>
 
-         	<a name="18"></a>
+         	<a name="28"></a>
             <br />
             <br />
             <br />
@@ -246,105 +274,81 @@
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
             <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Introduction to Socket programming in C (part 1)<br /></b></font>
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Programming key terms set 1<br /></b></font>
                <p>
-                  <font size="4px" style="color:white"><b>30 August 2018 | Engineering</b></font><br/>
+                  <font size="4px" style="color:white"><b>13 December 2018 | Concepts</b></font><br/>
                </p></center>
             </div>
             <div style="text-align:left">
                 <font size="4px" style="color:black">
-                	<b>What are Sockets?</b><br/>
-                	Sockets are abstractions that contain the necessary implementation to connect clients and servers over a networked
-                	connection in order to provide communication between systems. In a Socket implemented application, a server contains the 
-                	socket to listen for client bound sockets reaching out on a specified IP address and port in order to form a
-                	connection. Sockets are very widely used in networked systems and applications. Examples of programs that utilize 
-                	sockets are instant messaging apps and cloud storage. In this blog post, I will be discussing the basic universal 
-                	semantics in C to form a Socket based communication. Familiarize yourself with the Socket state diagram below that shows
-                	the basic control flow:<br/><br/>
-                	<center>                    
-                	   <img src="socketstate.png" width="80%"/><br/><br/>
-                	</center>
-                	For this tutorial, we will be using the following methods from the <a href="http://pubs.opengroup.org/onlinepubs/7908799/xns/syssocket.h.html" target="_blank">Socket API</a>:
-                	<br/>
-                	<font style="font-family:'Courier New'">
-                		int socket(int domain, int type, int protocol)
-                	</font><br/>
-                	An unsigned int value is returned based on the numerical quantity of the socket created. Any socket returning a
-                	negative value determines a failed attempt in creating the socket.<br/>
-                	<b>domain:</b> protocol to use determined by Socket constant<br/>
-                	<b>type:</b> how to communicate with protocol determined by Socket constant<br/>
-                	<b>protocol:</b> protocol value (0 for IP)<br/>
-                	<br/>
-                	<font style="font-family:'Courier New'">
-                		int bind(int socket, const struct sockaddr * address, socklen_t address_length)
-                	</font><br/>
-                	An unsigned int value is returned upon successful attachment of the socket to the given address and port. A negative
-                	value determines a failure to connect to the given address and port.<br/>
-                	<b>socket:</b> integer value corresponding to a given socket to bind<br/>
-                	<b>address:</b> struct containing network routing information including IP address and port number<br/>
-                	<b>address_length:</b> length of the struct in bytes<br/>
-                	<br/>
-                	<font style="font-family:'Courier New'">
-                		int listen(int socket, int back_log)
-                	</font><br/>
-                	The server waits to receive a connection from a client. If this value is negative, the server cannot receive any
-                	communication.<br/>
-                	<b>socket:</b> integer value corresponding to given socket to receive inbound communication<br/>
-                	<b>back_log:</b> maximum length in bytes for queue of pending communication<br/>
-                	<br/>
-                	<font style="font-family:'Courier New'">
-                		int accept(int socket, struct sockaddr * address, socklen_t address_length)
-                	</font><br/>
-                	A positive integer determines that an inbound socket has been detected and accepted. A negative integer determines
-                	a failure to accept the inbound socket.<br/>
-                	<b>socket:</b> integer value corresponding to given socket to accept inbound communication<br/>
-                	<b>address:</b> struct containing network routing information including IP address and port number<br/>
-                	<b>address_length:</b> length of the struct in bytes<br/>
-                	<br/>
-                	<font style="font-family:'Courier New'">
-                		int connect(int socket, const struct sockaddr * address, socklen_t address_length)
-                	</font><br/>
-                	Connects the client socket to the server socket. A negative value determines a connection failure.<br/>
-                	<b>socket:</b> integer value corresponding to given socket to connect to the server<br/>
-                	<b>address:</b> struct containing network routing information including IP address and port number<br/>
-                	<b>address_length:</b> length of the struct in bytes<br/>
-                	<br/>
-                	<font style="font-family:'Courier New'">
-                		ssize_t send(int socket, const void * buffer, size_t buffer_length, int flags)
-                	</font><br/>
-                	Returns the size in bytes of an outbound message. A negative value determines a failure to send
-                	the message.<br/>
-                	<b>socket:</b> integer value corresponding to given socket with message to send<br/>
-                	<b>buffer:</b> message contents being sent<br/>
-                	<b>buffer_length:</b> size of message<br/>
-                	<b>flags:</b> send flag determined by Socket constant or 0<br/>
-                	<br/>
-                	<font style="font-family:'Courier New'">
-                		int recv(int socket, void * buffer, size_t buffer_length, int flags)
-                	</font><br/>
-                	Returns the size in bytes of an inbound message. A negative value determines a failure to receive
-                	the message.<br/>
-                	<b>socket:</b> integer value corresponding to given socket with message to receive<br/>
-                	<b>buffer:</b> message contents being received<br/>
-                	<b>buffer_length:</b> size of message<br/>
-                	<b>flags:</b> receive flag determined by Socket constant or 0<br/>
-                	<br/>
-                	<font style="font-family:'Courier New'">
-                		int close(int socket)
-                	</font><br/>
-                	Remove the socket from memory in order to make the IP address and port available for another socket.
-                	This returns a negative value if the given socket doesn't exist.<br/>
-                	<b>socket:</b> integer value corresponding to given socket to remove from memory<br/>
-                	<br/>
-                	Quick note: Because Socket functions can fail, it is good practice to return with an error code if
-                	their return values determine failure. Also, you will typically need a buffer to make use of sockets.
-                	This is the container that gets sent through the socket that enables communication.<br/><br/>
-                	<center><a href="blog_2.html#19">Read part 2</a></center>
+                    <b>Abstract Class</b> - a class that cannot be instantiated; class can optionally contain implementations but must be derived in order to use its fields and functions<br/>
+					<b>Array</b> - a container of predetermined size that cannot change once instantiated; elements of container are indexed<br/>
+					<b>Arraylist</b> - indexed like an array but can grow or shrink once initialized<br/>
+					<b>CI Pipeline</b> - a defined sequence of steps in continuous integration for software development aided with scripts to automate the process<br/>
+					<b>Class</b> - typically contains functions and data fields; private access by default; allocated on the heap; supports inheritance and polymorphism<br/>
+					<b>Condition Variable</b> - variables used in monitors to serve as conditions for determining which thread to give priority to<br/>
+					<b>Constructor</b> - class method used to allocate memory for an instance of the class; default constructor with no parameters is implicit in all classes<br/> 
+					<b>Deadlock</b> - a state in concurrent programming where no thread or process can be given access to the CPU due to any of the 4 conditions<br/>
+					&nbsp;&nbsp;&nbsp;<b>Mutual Exclusion</b> - at least one thread or process is locked out from using the<br/>
+					&nbsp;&nbsp;&nbsp;CPU due to not meeting priority<br/>
+					&nbsp;&nbsp;&nbsp;<b>Hold and Wait</b> - at least one process or thread is waiting for CPU access but is<br/> 
+					&nbsp;&nbsp;&nbsp;being blocked because the CPU has been requested by another thread or process<br/>
+					&nbsp;&nbsp;&nbsp;<b>Circular Wait</b> - there exists a process P1 attempting to access the CPU waiting<br/> 
+					&nbsp;&nbsp;&nbsp;for process P2 whom is also waiting for P1<br/>
+					&nbsp;&nbsp;&nbsp;<b>No Preemption</b> - CPU access cannot be preempted so tasks must finish completely<br/> 
+					&nbsp;&nbsp;&nbsp;before another thread or process accesses the CPU<br/>  
+					<b>Destructor</b> - method in class that deallocates memory if an instance of the class is allocated in the heap and needs to go out of scope; no parameters and default destructors 
+					are implicit in all classes; must be implemented if constructor allocates memory on the heap to avoid memory leak<br/>
+					<b>Dynamic</b> - memory allocated in the heap that can grow or shrink indefinitely<br/>
+					<b>Hash Map</b> - unique values are mapped by unique keys; indexing used<br/>
+					<b>Hash Set</b> - sets are mapped by unique keys; indexing used to access first element in a set within the hash set<br/>
+					<b>Hash Table</b> - a hashcode algorithm is performed to store values in indeces; supports collisions caused by common hash value and duplicate insert<br/>
+                    <b>Interface</b> - cannot be instantiated; contains only method signatures; must be implemented for use; multiple interfaces can be implemented<br/>
+					<b>Linked List</b> - dynamically allocated linear structure not relying on indexing<br/>
+					<b>Memory</b> - there are four sections of memory<br/>
+					&nbsp;&nbsp;&nbsp;<b>Text</b> - contains text of instructions for the executable such as if statements, loops,<br/>
+					&nbsp;&nbsp;&nbsp;classes, etc.<br/>
+					&nbsp;&nbsp;&nbsp;<b>Data</b> - contains virtual addresses corresponding to the program as well as global<br/> 
+					&nbsp;&nbsp;&nbsp;variables and static fields<br/>
+					&nbsp;&nbsp;&nbsp;<b>Heap</b> - contains dynamically allocated variables and instances of objects<br/>
+					&nbsp;&nbsp;&nbsp;<b>Stack</b> - contains functions, arguments, and local variables in a LIFO container<br/> 
+					&nbsp;&nbsp;&nbsp;where a stack frame is popped off and out of scope when a function returns;<br/> 
+					&nbsp;&nbsp;&nbsp;each frame corresponds to a function<br/>
+					<b>Monitor</b> - concurrent synchronization construct for concurrent programming relying on condition variable to allow a producer and consumer to modify a buffer<br/>
+					<b>Mutex</b> - a mutual exclusion object that serves to lock and unlock concurrent processes and threads to and from the CPU to prevent data race in what is determined to be the
+					critical section in the program<br/>
+					<b>MVC</b> - model view controller design pattern; separates visual components(view), logic to initiate interaction(model), and what events to listen for 
+					to execute an interactive process(controller); typically used in but not limited to web applications<br/>
+                    <b>Object</b> - an instance of a class containing variables as data fields and access to the functions to either modify or access a field in the class; found in the heap<br/>
+					<b>Object Oriented Programming</b> - programming paradigm involving the idea of separating modules into objects based on related functionality; objects contain data fields
+					and functions to access or modify their fields; object reference creates instance of class when instantiating; there are "four pillars to object oriented programming"<br/>
+					&nbsp;&nbsp;&nbsp;<b>Encapsulation</b> - hiding details of data fields from other classes<br/>
+					&nbsp;&nbsp;&nbsp;<b>Abstraction</b> - showing essential features of an application but preventing direct<br/> 
+					&nbsp;&nbsp;&nbsp;access to its data fields (includes encapsulation)<br/>
+					&nbsp;&nbsp;&nbsp;<b>Inheritance</b> - extending the parent or base class to a child or derived class used<br/> 
+					&nbsp;&nbsp;&nbsp;that has access to the base class's functions and fields;<br/> 
+					&nbsp;&nbsp;&nbsp;for recycling code<br/>
+					&nbsp;&nbsp;&nbsp;<b>Polymorphism</b> - allows the ability to overload and override functions<br/>
+					<b>Pass by Reference</b> - the argument passed to the caller is the same (referred) variable as the parameter of the callee<br/>
+					<b>Pass by Value</b> - the argument passed to the caller is a copy of the parameter of the callee; the parameter goes out of scope when the function returns<br/>
+					<b>Process</b> - an instance of execution of concurrent executions that do not share addresses nor registers<br/>
+					<b>Round Robin</b> - a preemptive scheduling algorithm that assigns sections of a thread or process priority to use the CPU<br/>
+					<b>SDLC</b> - stands for software development life cycle, a set of stages in the software development process for a particular project starting from requirements and
+					ending to release<br/>
+					<b>Semaphore</b> - a concurrency mechanism that relies on a counter to either signal a process, or let it wait; changes between wait to signal depend on whether the counter
+					has fully decremented to 0<br/>
+					<b>Static</b> - fixed size allocation of memory in the data section of memory; global in scope; function or field that is static must be called without instance of an object<br/>
+					<b>Template</b> - a container that assigns an arbitrary primitive and/or object for a class or struct to implement<br/>
+					<b>Thread</b> - a unit of a process that shares addresses and registers of another thread within the same process<br/>
+					<b>Virtual Function</b> - a function defined in a base class to be redefined in a derived class; explicitly referring to a virtual function executes the derived class's function<br/>
+					<b>Virtual Memory</b> - abstracted memory mapped to limited physical memory to give user the illusion of a large amount of memory; quantified by number of addresses; less physical addresses,
+					more virtual addresses<br/>
+					<b>Void Pointer</b> - a pointer to anything; cannot be dereferenced; can be used in place of templates to implement polymorphic generic containers<br/>
                 </font>
             </div>
         </div>
 
-         	<a name="17"></a>
+         	<a name="27"></a>
             <br />
             <br />
             <br />
@@ -353,272 +357,67 @@
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
             <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Networking culture in software engineering<br /></b></font>
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Compiling C++ templates<br /></b></font>
                <p>
-                  <font size="4px" style="color:white"><b>28 August 2018 | Experience</b></font><br/>
+                  <font size="4px" style="color:white"><b>26 November 2018 | Engineering</b></font><br/>
                </p></center>
             </div>
             <div style="text-align:left">
-                <font size="4px" style="color:black">                    
-                	I have noticed a a subculture among software engineers that presents a fondness for professional networking. This is what inspired
-                	the creation of <a href="http://crosscodes.biz" target="_blank">Crosscodes</a> in my case; to showcase my professional work and experience while job hunting, and to document what I have learned in my career on this blog. This experience typically begins in university where students are adamant in obtaining a quantity of technical skills from their classes whilst performing at the highest caliber possible. A software engineer with an ideal attitude is described as "one who is always hungry to learn". The goal is to be professionally competitive in terms of experience in order to gain access to higher standing careers. Through academics, this can be achieved through GPA, awards, recognition, projects, letters of recommendation, degrees, and technical knowledge. Outside of academics, one can also seek more experience through engineering organizations, outside projects, hackathons, internships, and relevant employment. The presence of this experience follows with the steps to land an engineering title under a respectable company and acquire even more technical skills. A good place to start in one's job hunting journey are career fairs where multiple companies are arranged in panels where participants can showcase their resumes and electronic portfolios or relevant work. Hackathons also typically have company panels where showcasing one's resume is also appropriate in addition to submitting a winning hack. Companies present at hackathons typically assess participants' performance based on their hack. This makes hackathons a perfect place to showcase one's technical ability since companies use these events to look for potential candidates. While software engineers taking part in this networking culture are selling their competencies, companies are looking for engineers to invest in since they can provide valuable assets. Thus, companies are also competing to hire and compensate engineers to the best of their ability. I have also seen job fairs and professional networking events happening within engineering organizations. One's resume is their best friend when marketing their skills. It is also appropriate in casual settings to showcase one's resume therefore, always having one at hand is good practice. There have been multiple times where I have been asked for my resume in casual settings when I gave off hints of being a software engineer in search of a job; to where I reply by presenting the link to this website. These casual settings can happen anywhere including company social gatherings where the purpose is for engineers to get to know each other in terms of who posses what skill set, and bond to form a team. One looking to move up the ranks within their company can take advantage of this setting by chatting with higher experienced individuals. Individuals who have taken an extra step in this networking culture have created websites to not only showcase their experience, but present it in a personal way thereby proving technical competencies in web development in particular but more importantly, validating presentation skills and showing a uniqueness in personality. Having a <a href="http://linkedin.com" target="_blank">LinkedIn</a> and/ or <a href="http://github.com" target="_blank">GitHub</a> account are also great ways for one to present their experience and have an online persona. This contributes
-                	to a world wide web of software engineers available to connect and compete for networking power in order to gain the upper advantage.
-                	I have also noticed individuals blogging or publishing specific work or articles while connecting with other software engineers either for mentoring, or
-                	to expand their networking power. Keep in mind that soft skills should not be ignored. In fact, a common mistake for some individuals is spending too much time harnasing
-                	their technical skills while neglecting their soft skills. To stand out even further, one will want to have good communication skills and be presentable. This involves
-                	but is not limited to being able to communicate effectively in a panel, showcasing slide shows, being organized, punctual, and being a leader and a team player. Although this
-                	blog post was focused on the technical aspect of the networking culture, that is only one out of many aspects to consider when being professionally competitive.
+                <font size="4px" style="color:black">
+                	Styling conventions in C/C++ generally separate function definitions/ class templates and their implementations. Although clean in nature, this convention poses a problem with templates. Interestingly, I was told by my data structures professor that templated classes require implementations to be defined in the header files, a contradiction of the convention I previously mentioned. It is also interesting to note that this professor would agree with the said convention. Why was this a problem with templated classes? Do templated classes necessarily have to go against this styling convention in order to compile? The simple answer is no. Templated classes can still follow best practices in code organization remaining consistent with non-templated classes. My professor's claim that implementing templated classes in the header file is therefore inaccurate. The problem has to do with the compiler not knowing how to interpret what to pass into the template. At compile time, the type(s) that are expected to be passed into the template need to be defined. For objects, operators
+                	would need to be overloaded and their classes would need to be implemented in order for the template to know how to use them.<br/><br/>
 
-                </font>
-            </div>
-        </div>
-
-		    <a name="16"></a>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <div class="box">
-            <!-------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Answering the salary question<br /></b></font>
-               <p>
-                  <font size="4px" style="color:white"><b>24 August 2018 | Industry</b></font><br/>
-               </p></center>
-            </div>
-            <div style="text-align:left">
-                <font size="4px" style="color:black">                    
-                	Whether it's a job application, phone screen, or interview, chances are you will be asked to put a
-                	quantitative mark on your salary expectations. When searching for a job, this can feel uneasy for
-                	an applicant because they would not want to over estimate and appear too expensive or arrogant to
-                	be given a job offer. The same applies on the opposite side of the spectrum where no one would
-                	want to low-ball themselves and be stuck with limited job offers. From research, experience, and
-                	mentoring from individuals who have experience in the industry, I present some tips on how to
-                	address the salary question given certain scenarios.<br/><br/>
-                	<b>Do your research</b><br/>
-                	First of all, it is important to understand that salary is only one out of multiple compensations that a
-                	company has to offer. One mustn't forget about health benefits, 401k, paid vacation, personal time,
-                	work hour options, ability to work remotely, company culture, location, etc. All of these factors should be
-                	weighted in when deciding to apply for a company based on its perks. There is no utopian company so
-                	compensate accordingly. Some good links to start research on company perks are:<br/>
-                	&nbsp;&nbsp;&nbsp;<a href="http://glassdoor.com/salary" target="_blank">Glassdoor</a><br/>
-                	&nbsp;&nbsp;&nbsp;<a href="http://indeed.com/salary" target="_blank">Indeed</a><br/>
-                	&nbsp;&nbsp;&nbsp;<a href="http://paysa.com/" target="_blank">Paysa</a><br/><br/>
-                	If you are going to negotiate your salary, have an idea of what you are worth based on the
-                	skill set you have to offer. As of writing this blog post, the average starting salary for
-                	software engineers in San Diego is $78,501 according to <a href="https://www.google.com/search?ei=B22QW7a3HMma_QaLoojgDw&q=san+diego+average+software+engineer+starting+salary&oq=san+diego+average+software+engineer+starting+salary&gs_l=psy-ab.3...14574.18693..18853...0.0..0.181.1546.0j11......0....1..gws-wiz.......0i71j0i8i30.clnoYqaBgoA" target="_blank">Google</a>. 
-                	Location is also a determining factor of salary. If you must provide a specific answer for your salary expectations,
-                	use a range based on substantial research. Also be sure
-                	you are comfortable with the lower end of the range of what you ask for. Of course, it is preferable to defer
-                	an answer for your salary which I will explain below.<br/><br/>
-                	<b>Job Application</b><br/>
-                	Usually, job applications that ask for your expected salary provide a list of salary ranges. Once again,
-                	do your research and be sure you are okay with being paid in the low end of that range. If it's an
-                	open-ended input, then you can defer your answer by tying "negotiable", "applicable", "open", etc. I
-                	normally put "up for in-person discussion". This prevents you from being eliminated for being too
-                	expensive or from limiting yourself to accepting a lower pay just to be hired.<br/><br/>
-                	<b>Phone screening</b><br/>
-                	You may be asked about your salary expectations during a phone screen. Be careful as going too high may
-                	eliminate you from being considered. Going too low is also not the ideal way to approach it. Depending on the employer,
-                	they may be checking to see whether you value your work. A good approach is to go on the offensive within
-                	reason. It is okay to reply; "On average, how much is offered for this position?" Telling the recruiter that
-                	you did research can be risky. Data you find may not be up-to-date or you might appear to be bargaining the
-                	company giving the impression that you might be difficult to work with. Also consider taking a more 
-                	defensive approach. "I would like to discuss this later in the application process in the event that I am hired.
-                	I trust that what you have to offer your candidates are competitive based on the impression I have of this
-                	company." If all fails and a number must be given, refer to your research and more importantly, be humble but confident. In
-                	this case, it may be ideal to take the offensive approach.<br/><br/>
-                	<b>Interview</b><br/>
-                	Unless you have been given the offer up front, take the same approach I mentioned in the phone screening section
-                	of the application process. Once you do get the offer, this is the ideal time to actively negotiate your
-                	salary. Know your value and do your research to ensure that you and the company get the most out of the
-                	negotiation. Also, if you are this far in the application process, do not be afraid to go slightly above the
-                	market. At the very least, you might be paid above your baseline. This also lets the interviewer know that you
-                	value your work and are willing to do the job in a worthwhile manner for you are an investment to the company.<br/><br/>
-                	To conclude, it is important to be humble in the process of answering the salary question. Do your research on
-                	the company, job position, and location and base your answer from that. If possible, defer your answer until
-                	you are given the offer. Once you made it that far, it is then preferable to be confident in negotiating a specific
-                	mark. Also, never be timid about salary question. Part of it is an assessment of your confidence and self-worth.
-                </font>
-            </div>
-        </div>
-
-          <a name="15"></a>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <div class="box">
-            <!-------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Bad superblock remedy<br /></b></font>
-               <p>
-                  <font size="4px" style="color:white"><b>21 August 2018 | Technical</b></font><br/>
-               </p></center>
-            </div>
-            <div style="text-align:left">
-                <font size="4px" style="color:black">                    
-                  There have been multiple times where I have experienced Linux booting into the temporary root file system "initramfs". After
-                  doing some research, this seems to happen due to a bad superblock typically resulting from an unexpected shutdown. This was
-                  very prominent in Linux Mint 18.3 Sylvia when my laptop battery would die. In this blog post, I present a remedy for bad
-                  superblocks that has consistently worked for me. If the following cannot be done through the terminal when you boot, you will
-                  need to make a bootable flash drive with Linux and do the following from there. To learn how to make a bootable flash drive,
-                  please see my blog post <a href="blog.html#7">Dual booting a Windows machine</a>.<br/><br/>
-                  <b>Repairing the superblock:</b><br/>
-                  <div class="codebox">
-                      <font style="font-family:'Courier New'">
-                        <font color="blue">#List all available partitions; '*' marks the partition of your Linux install<br/></font>
-                        <font color="lime">
-                           sudo fdisk -l|grep Linux|grep -Ev 'swap'<br/>
-                           /dev/sda1            2048 204587007 204584960 97.6G 83 Linux<br/>
-                           /dev/sda2  *    204587008 214351871   9764864  4.7G 83 Linux<br/>
-                           /dev/sda4       224116736 419428351 195311616 93.1G 83 Linux<br/><br/>                       
-                        <font color="blue">#List all superblocks; '/dev/sda2' is my partition, replace that with where YOUR partition is<br/></font>
-                           sudo dumpe2fs /dev/sda2 | grep superblock<br/>
-                           Primary superblock at 0, Group descriptors at 1-6<br/>
-                           Backup superblock at 32768, Group descriptors at 32769-32774<br/>
-                           Backup superblock at 98304, Group descriptors at 98305-98310<br/>
-                           Backup superblock at 163840, Group descriptors at 163841-163846<br/>
-                           Backup superblock at 229376, Group descriptors at 229377-229382<br/>
-                           Backup superblock at 294912, Group descriptors at 294913-294918<br/>
-                           Backup superblock at 819200, Group descriptors at 819201-819206<br/>
-                           Backup superblock at 884736, Group descriptors at 884737-884742<br/>
-                           Backup superblock at 1605632, Group descriptors at 1605633-1605638<br/>
-                           Backup superblock at 2654208, Group descriptors at 2654209-2654214<br/>
-                           Backup superblock at 4096000, Group descriptors at 4096001-4096006<br/>
-                           Backup superblock at 7962624, Group descriptors at 7962625-7962630<br/>
-                           Backup superblock at 11239424, Group descriptors at 11239425-11239430<br/>
-                           Backup superblock at 20480000, Group descriptors at 20480001-20480006<br/>
-                           Backup superblock at 23887872, Group descriptors at 23887873-23887878<br/><br/>
-                        <font color="blue">#Choose alternate superblock and repair it; '-y' flag automatically answers 'yes' to all questions; I chose block 32768<br/></font>
-                           sudo fsck -b 32768 /dev/sda2 -y<br/>
-                           fsck 1.40.2 (12-Jul-2007)<br/>
-                           e2fsck 1.40.2 (12-Jul-2007)<br/>
-                           /dev/sda2 was not cleanly unmounted, check forced.<br/>
-                           Pass 1: Checking inodes, blocks, and sizes<br/>
-                           Pass 2: Checking directory structure<br/>
-                           Pass 3: Checking directory connectivity<br/>
-                           Pass 4: Checking reference counts<br/>
-                           Pass 5: Checking group summary information<br/>
-                           Free blocks count wrong for group #241 (32254, counted=32253).<br/>
-                           Fix? yes<br/>
-                           Free blocks count wrong for group #362 (32254, counted=32248).<br/>
-                           Fix? yes<br/>
-                           Free blocks count wrong for group #368 (32254, counted=27774).<br/>
-                           Fix? yes<br/>
-                           ..........<br/>
-                           /dev/sda2: ***** FILE SYSTEM WAS MODIFIED *****<br/>
-                           /dev/sda2: 59586/30539776 files (0.6% non-contiguous), 3604682/61059048 blocks<br/><br/>
-                        <font color="blue">#Finally mount the partition; remember to use YOUR partition, mine is '/dev/sda2'<br/></font>
-                           sudo mount /dev/sda2 /mnt<br/>
-                        </font>
-                      </font>
-                  </div><br/>
-                  Hopefully this was helpful to anyone that has ever experienced this problem. Feel free to <a href="contact.html" target="_blank">contact me</a> for any concerns.
-                </font>
-            </div>
-        </div>
-
-          <a name="14"></a>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <div class="box">
-            <!-------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Partitioning hard drives in Windows<br /></b></font>
-               <p>
-                  <font size="4px" style="color:white"><b>29 July 2018 | Technical</b></font><br/>
-               </p></center>
-            </div>
-            <div style="text-align:left">
-                <font size="4px" style="color:black">  
-                   Before using your hard drive, you typically need to allocate space and assign each allocated space to a
-                   particular purpose in order for your OS to gain access to it. By default, there are usually partitions
-                   for recovery purposes or anything that has to do with system embedded software. If you are nit picky
-                   about organizing your hard drive like myself, it may be in your favor to partition your hard drive(s) in
-                   a way that you find organized by allocating specific areas for whatever general data you want that area for. 
-                   Also, it is favorable to make sure you are actually using all the space
-                   you need that is installed in your system. If you want to make a multiboot system, partitioning will also
-                   need to be done to allocate space for specific operating systems. OS installers normally prompt users to
-                   a hard drive partitioning menu. In windows, you can use the "Computer Management" app or type in 
-                   "diskmgmt.msc" in the DOS prompt to access the app. You might need to run it as administrator since you
-                   are modifying system hardware. The app looks like the following:<br/><br/>
-                   <img src=Partition.PNG width="100%" height="100%"/><br/><br/>
-                   To partition, you simply right click on any unallocated area and allocate some if not all the space left.
-                   However, it is preferable to do this prior to installing an operating system in order to prevent space
-                   gaps once a system is already installed. Also, partitioning on already allocated areas <b>WILL</b> format that
-                   area in your hardrive so be careful and <b>BACK UP</b> all your data before attempting to do any repartitioning.
-                   Anything with unallocated space is however safe to touch.
-
-                </font>
-            </div>
-        </div>
-
-        <a name="13"></a>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <div class="box">
-            <!-------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Resume tips<br /></b></font>
-               <p>
-                  <font size="4px" style="color:white"><b>14 July 2018 | Industry</b></font><br/>
-               </p></center>
-            </div>
-            <div style="text-align:left">
-                <font size="4px" style="color:black">  
-                   We have all gone through the insatiably repetitive task of updating and proof reading our resumes
-                   in order to maximize the quality of how we sell ourselves to the industry. Before I go into the few 
-                   tips I'd like to share about writing resumes, I would like to mention a few principles to consider
-                   regarding resumes. First off, your resume is your marketing tool therefore, it is vital that it
-                   goes through substantial edits and feedback from multiple eyes. Everyone has different ideas for
-                   what makes a resume good but the ideas that matter are those who have the recruiting power. Thus, the more people
-                   you can get to review your resume, the more information you have on marketing yourself optimally
-                   to the perspective of others. Another point to mention is that a recruiter will spend an average
-                   of 5-10 seconds looking at your resume so plan accordingly to best communicate your experience
-                   and format in a quick read friendly way. Now to discuss some tips on writing your resume:
-                   <br/><br/>
-                   - adopt a mindset that you can never write the perfect resume and be prepared to take constructive
-                   criticism; the more flexible you are, the better ability you have in writing a good resume<br/>
-                   - NO MORE than one page; if it's over a page, it's a CV so make it work<br/>
-                   - avoid having a high concentrated area of text in order to make your resume more desirable to read
-                   within a few seconds<br/>
-                   - it helps to bold keywords<br/>
-                   - numerical metrics look good (ie. "design saved 45 watts of power"; "cut costs by 14%"")<br/>
-                   - conserve space; you only have a page (only put job relevant information that can actually help your chances of getting hired)<br/>
-                   - objectives/ summaries are a waste of space; whatever job you apply for, the recruiter already knows your objective which
-                   is obviously to land that job so just get to the point with your skills and experience<br/>
-                   - school projects are frowned upon but if you have no other experience, strive to explain your project in a way that
-                   APPLIES relevant skills (ie. "implemented autocomplete algorithm for user generated text" rather than "programmed multiway trie")<br/>
-                   - go out of your way to do projects; there's plenty of tutorials online that can apply and sharpen your skills<br/>
-                   - use "achiever" rather than "doer" statements for your descriptions (ie. "proposed agreement with payroll contractors 
-                   slashing labor costs by 10%" rather than "negotiated with payroll contractors")<br/>
-                   - send text versions of your resume; there's a good chance that the selection process is computerized and based on
-                   keyterms present in resumes; see how your resume looks using <a href="https://pdftotext.com/" target="_blank">ATS</a> (Applicant Tracking System)<br/>
-                   - hyperlinks look good for showing proof of your projects but keep the format (don't use hyperlink default format)<br/>
-                   - anything you write on your resume is fair game for interview questions so STUDY; the point of your resume is to land 
-                   the interview, once that is accomplished, the next step is making sure you are prepared to talk about everything in your resume<br/>
-                   - keep resume up-to-date; in the unfortunate event you are unemployed for an extended period, do projects and put them in your resume<br/>
-                   - unless your relevant experience was temporary work, it's a rule of thumb to add relavant employment only if it lasted for at least a year<br/>
-                   - use generic words when labeling sections to make it easy for ATS to read resume (you should have terms such as skills, experience, employment, certifications etc.)<br/>
-                   - avoid naming your sections with obscure terms (ie. skills instead of competencies, work/ employment over professional)<br/>
-                   Here's a link I stumbled into that gave me <a href="https://www.topresume.com/resume-review" target="_blank">resume feedback</a> and my current <a href="IResume.pdf" target="_blank">resume</a>
+                	<div class="codebox">
+                      <font style="font-family:'Courier New'" color="lime">
+                      	 <font color="blue">/* A generic templated class */</font><br/>
+                         <font color="darkgreen">template</font>&lt;<font color="darkgreen">typename</font> type&gt;<br/>
+                         <font color="darkgreen">class</font> some_class<br/>
+                         {<br/>
+                         &nbsp;&nbsp;&nbsp;<font color="orange">private<font color="lime">:</font></font><br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type some_variable;<br/><br/>
+                         &nbsp;&nbsp;&nbsp;<font color="orange">public<font color="lime">:</font></font><br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some_class(type some_variable)<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">this</font>-&gt;some_variable = some_variable;<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                         };<br/><br/>
+                         some_class&lt;<font color="darkgreen">int</font>&gt; foo = <font color="orange">new</font> some_class&lt;<font color="darkgreen">int</font>&gt;(<font color="red">1</font>);<br/>
+                         <font color="blue"><br/>
+                         	/* At compile time, the above line causes the compiler to create an untemplated instance of the templated class based 
+                         	on what was passed in as a template argument as shown below. */<br/>
+                         </font>
+                         <font color="darkgreen">class</font> some_class<br/>
+                         {<br/>
+                         &nbsp;&nbsp;&nbsp;<font color="orange">private<font color="lime">:</font></font><br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">int</font> some_variable;<br/><br/>
+                         &nbsp;&nbsp;&nbsp;<font color="orange">public<font color="lime">:</font></font><br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some_class(<font color="darkgreen">int</font> some_variable)<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="darkgreen">this</font>-&gt;some_variable = some_variable;<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                         };
+                      </font> 
+                   </div>
                    <br/>
+                   When the code compiles, the compiler would need access to the implementation at the time the function definition is read. If this is not defined
+                   in the header file, the compiler would not have access in knowing the types of classes that would need to be created thus, lead to a "function undefined"
+                   compiler error. However, it is possible to isolate the implementation from the header files of templated classes in order to maintain code
+                   cleanliness. There are two solutions.<br/><br/>
 
-
+                   <div class="codebox">
+                      <font style="font-family:'Courier New'" color="lime">
+                      	<font color="blue">/* Include the .cpp file at the END of the header file */</font><br/>
+                      	<font color="purple">#include</font> <font color="red">"some_class.cpp"</font><br/><br/>
+                      	<font color="blue">/* Or explicitly define the expected types for the template at the end of the .cpp file */</font><br/>
+                      	<font color="darkgreen">template class</font> some_class&lt;<font color="darkgreen">int</font>&gt;;<br/>
+                      	<font color="blue">/* Explicitly define the rest of the types and/or objects below */</font>
+                      </font>
+                  </div>
                 </font>
             </div>
         </div>
 
-        <a name="12"></a>
+          <a name="26"></a>
             <br />
             <br />
             <br />
@@ -627,36 +426,59 @@
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
             <div class="title">
-               <center><font size="7px" style="color:grey;font-family:Georgia"><b>2 Arduino projects<br /></b></font>
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Computer Science major classes<br /></b></font>
                <p>
-                  <font size="4px" style="color:white"><b>24 June 2018 | Engineering</b></font><br/>
+                  <font size="4px" style="color:white"><b>12 November 2018 | Experience</b></font><br/>
                </p></center>
             </div>
             <div style="text-align:left">
                 <font size="4px" style="color:black">
-                   While participating in ESW, I have gotten a handful of experience working outside the scope of software. The 
-                   sustainability projects I helped develop utilized an electrical engineering aspect involving an Arduino
-                   microcontroller. From these projects, I learned how to wire an electrical component to an
-                   Arduino as well as coding in Arduino's embedded environment through its IDE; in addition to learning some
-                   basic analog circuitry required to power the circuit design. Below, I present two links to tutorials that helped
-                   me complete these projects:<br/><br/>
-                   <center><a href="https://www.brainy-bits.com/scroll-text-using-the-max7219-led-dot-matrix/" target="_blank">Dot Matrix Scrolling Text</a><br/></center> 
-                   In my project for <a href="http://eswucsd.weebly.com/solar-chill.html" target="_blank">Solar Chill</a>, I was tasked with building a circuit for a scrolling text that
-                   would display the carbon emissions saved over time. We used a dot matrix for the text interface and programmed
-                   each individual character to be properly displayed using corresponding dots. Programming text characters was done in C and the display in Arduino's
-                   embedded environment.<br/><br/>
-                   <center><a href="https://www.allaboutcircuits.com/projects/control-an-arduino-using-your-phone/" target="_blank">Android Bluetooth Communication</a><br/></center>
-                   In my project for <a href="solarinteract.html" target="_blank">Solar Interact</a>, my team of software engineers and my colleague's team of electrical
-                   engineers were to collaborate in implementing a communication network through Bluetooth. The electrical team soldered
-                   the circuit to send and receive information between Android and Arduino and came up with the embedded software that
-                   tells the Arduino the communication protocol. My team of programmers used the Android <a href="https://developer.android.com/guide/topics/connectivity/bluetooth" target="_blank">Bluetooth</a> library in Android studio to communicate with
-                   the Arduino. We also implemented a UI that displays the information to the user in the form of a graph using
-                   <a href="http://www.android-graphview.org/" target="_blank">Graphview</a> which utilized the Bluetooth sockets for its information.             
+                	In general, there's a set of common classes to take among any university for a bachelor's degree in computer science.
+                	One should definitely expect the following set of math classes:<br/><br/>
+                	<b>Calculus I:</b> fundamental theory of calculus involving limit definitions of differentiation and integration<br/>
+                	<b>Calculus II:</b> advanced integration techniques; sequences and series to solve mathematical expressions; polar graphing<br/>
+                	<b>Calculus III:</b> application of Calculus I in 3-dimensional space, equation systems, and vectors<br/>
+                	<b>Differential Equations:</b> advanced differentiation techniques involving slope fields and equation systems<br/>
+                	<b>Statistics:</b> data set analysis involving function modeling<br/>
+                	<b>Linear Algebra:</b> analysis of variable dimensional space with equation systems, vectors, and matrices<br/>
+                	<b>Discrete Mathematics:</b> analysis of advanced algebraic techniques and introduction to number theory and mathematics for systems<br/><br/>
+                	Since computer science involves a highly systematic way of thinking, these math classes are chosen for to curriculum to train one's mindset into
+                	the proper conventional thought process for systems as well as the possibility of applying mathematical theory to solving any problems that can be encountered
+                	in the field of computation. The next set of following classes involve the typical order and content to expect when studying for a computer science 
+                	degree:<br/><br/>
+                	<b>Introduction to UNIX-like Systems:</b> basic UNIX command semantics and use of a CLI<br/>
+                	<b>Introduction to Programming and OOD:</b> basic programming features and applications of object oriented design practice for code readability<br/>
+                	<b>Data Structures:</b> applied object oriented design in implementing data storage and retrieval algorithms and common computational problems<br/>
+                	<b>Mathematical Theory for Systems:</b> logical mathematics for use in computer systems and introduction proof design and analysis of mathematical problems<br/>
+                	<b>Algorithm Design and Analysis:</b> paradigms for algorithm design to solve computational problems and time complexity analysis with correctness proofs<br/>
+                	<b>Computer Organization:</b> low level assembly programming, hardware analysis, C programming and pointer use<br/>
+                	<b>Computer Architecture:</b> VDHL implementation of CPU's and analysis; memory management; instruction set architecture<br/>
+                	<b>Software Engineering:</b> industry practices in software engineering involving customer communication, design patterns, development models, automation, and development tools<br/>
+                	<b>Operating Systems:</b> concurrent programming with synchronization mechanisms and OS constructs involving kernels, file systems, BIOS, memory management, and low level system analysis<br/>
+                	<b>Programming Paradigms:</b> varying programming styles involving functional, logical, scripting, and specific programming languages and analysis<br/><br/>
+                	By the time this major is finished, one should know how to use a UNIX or UNIX-like system for business and development. One will be able to write code with best 
+                	practices as well as implement common industry protocols for project development and team collaboration. One understands how code is translated to low level execution
+                	with respect to CPU architecture and digital design. One has a good understanding of algorithms to solve problems including but not limited to concurrent programming.
+                	One will also know multiple programming styles in addition to the traditional procedural and object oriented design paradigms. These are all the basics one must know
+                	in order to work in the industry utilizing their computer science degree. These basics should also preferably be applied to multiple specific disciplines within computer
+                	science. The following set of classes are some electives one can consider but are not limited to:<br/><br/>
+                	<b>Compiler Construction:</b> implementation of compilers (converting source code given a language semantic construct to assembly)<br/>
+                	<b>Relational Databases:</b> management of data for systems and relational algebra<br/>
+                	<b>Web Development:</b> development of websites, web applications, and mobile applications<br/>
+                	<b>GPU Architecture:</b> physical architecture and VDHL implementations of graphics cards<br/>
+                	<b>Machine Learning:</b> algorithms to train systems for accurate data outputs<br/>
+                	<b>Data Mining:</b> obtaining information from unorganized data and organizing it<br/>
+                	<b>Cyber Security:</b> cryptography schemes; securing systems from adversaries; known cyber attacks; security analysis; malware; hacking<br/>
+                	<b>Computer Networks:</b> implementing multiple computer system communication<br/>
+                	<b>Embedded Systems:</b> designing specified computerized systems<br/>
+                	<b>Computer Vision:</b> computerized animation, graphics, motion pictures<br/>
+                	<b>Game Design:</b> video game implementation<br/>
+                	<b>Computational Theory:</b> theoretical analysis of solvable and unsolvable computational problems with theoretical models of computing<br/>
                 </font>
             </div>
         </div>
 
-        <a name="11"></a>
+          <a name="25"></a>
             <br />
             <br />
             <br />
@@ -664,49 +486,307 @@
             <br />
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
-               <div class="title">
-                  <center><font size="7px" style="color:grey;font-family:Georgia"><b>Including multiple Lua scripts<br /></b></font>
-                  <p>
-                     <font size="4px" style="color:white"><b>2 June 2018 | Engineering</b></font><br/>
-                  </p></center>
-               </div>
-               <div style="text-align:left">
-                   <font size="4px" style="color:black">
-                      I have recently posted about implementing Wireshark dissectors in Lua. You may have been wondering whether
-                      it is possible to include multiple Lua scripts in the main driver in order to keep your Lua code base more
-                      organized. This can be accomplished by storing variables and functions within a file to be treated as a class in a dictionary and
-                      returning that dictionary. Then from the driver, simply type the <font style="font-family:'Courier New'">require</font> statement and assign it to an alias
-                      that treats the calling file as an object and using the alias as an object reference, call the specific
-                      function or variable. The <font style="font-family:'Courier New'">require</font> function takes the directory
-                      of the file to include as parameter but with "." as a folder separator. <b>DO NOT</b> add ".lua" in the filename. See below for examples:<br/><br/>
-                      Calling file:<br/>
-                      <div class="codebox">
-                      <font style="font-family:'Courier New'">
-                        <font color="blue">-- dictionary to store fields and functions</font><br/>
-                            <font color="orange">local</font> <font color="lime">dict =</font> <font color="lightblue">{}</font><br/><br/>
-                            <font color="blue">-- values to store in dictionary</font><br/>
-                            <font color="orange">local</font> <font color="lime">variable =</font> <font color="lightblue">""</font><br/>
-                            <font color="orange">local function</font> <font color="lime">method(</font><font color="blue">--[[ parameters ]]</font><font color="lime">)</font><br/>
-                            &nbsp;&nbsp;&nbsp;<font color="blue">-- function code</font><br/>
-                            <font color="orange">end</font><br/><br/>
-                            <font color="blue">-- store values in dictionary</font><br/>
-                            <font color="lime">dict.v = variable<br/>
-                            dict.m = method<br/><br/></font>
-                            <font color="blue">-- return the dictionary</font><br/>
-                            <font color="orange">return</font> <font color="lime">dict</font><br/>
-                      </font>
-                      </div>
-                      <br/>
-                      Driver file:<br/>
-                      <font style="font-family:'Courier New'"><div class="codebox">
-                      <font color="blue">-- require statement</font><br/>
-                      <font color="orange">local</font> <font color="lime">callee = require(</font><font color="lightblue">"path.to.filename.NOT.dot.lua"</font><font color="lime">)</font><br/><br/>
-                      <font color="blue">-- call fields using object reference</font><br/>
-                      <font color="lime">callee.m()<br/>
-                      print(callee.v)<br/></font>
-                      </div></font>                     
-               </div>
-            </div>        
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Career fair tips<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>6 October 2018 | Experience</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                   Looking for a job? Trying to get your career started? Looking to expand your network, learn about new opportunities, or
+                   to get to know more companies that are looking for you? Attending a career fair is a great way to address any of the above
+                   desires. To get the most out of your career fair experience, here are 9 tips that have been explained by those who run
+                   the quarterly Triton Career Fair at UCSD:<br/><br/>
+                   <b>1. Have healthy expectations</b><br/>
+                   Don't expect that you will be successful with whatever top tech company is your top
+                   choice. Also understand that the more competitive companies will have longer lines that can have you waiting for over an
+                   hour. You should ask yourself if it's worth it to invest all that time waiting in line for one company rather than
+                   exploring around. In general, don't put all your eggs in one basket. You want to expand your options. The point of
+                   attending a career fair is to expand your employment opportunities in addition to meeting with employers face to face
+                   and expanding your network. Also, understand that attending career fairs does not necessarily give you a higher probability
+                   of landing a job over mass applying online. The advantage is mainly networking and educating yourself about open
+                   opportunities.<br/><br/>
+                   <b>2. Bring several copies of your updated resume</b><br/>
+                   It is better to have too much than too little copies of your physical resume. The last thing you want is to run out of copies
+                   with the presence of potential employers you have yet to talk to. I normally bring at least 20 copies.<br/><br/>
+                   <b>3. Do your research on the companies attending</b><br/>
+                   Want to know about companies you are aiming to work for? Do your research on the given list of companies attending. 
+                   This also lets employers know that you are
+                   interested in them by taking the time to learn about their companies as well as give you something to talk about. When
+                   researching, it is best to start at their website. Look for the essentials; their mission statement, what they do, and who they
+                   serve. Read up on some articles to expand your research and/ or find a Wiki page or blog about them to expand your knowledge.
+                   Try to find out their technical background and process if you can as well as any soft skills and principles they value. After 
+                   you learned a thing or two, figure out how you can positively impact their company with the skill set you have to offer by
+                   looking for ties in your resume and their expectations. It also helps to apply online beforehand.<br/><br/>
+                   <b>4. Rank employers you want to meet</b><br/>
+                   It is good practice to keep a spreadsheet ranking the companies you want to meet. Do your research and prioritize what you are
+                   personally looking for. This can include culture, type of work, company perks, benefits, salary, location, etc. Ask yourself
+                   where you would want to work and why. Obviously don't actually talk about benefits. You are not yet in the position to be
+                   negotiating your compensation when talking to the employers. Also be sure to factor in the expected amount of time you will
+                   be in line for a company.<br/><br/>
+                   <b>5. Practice your elevator pitch</b><br/>
+                   Usually, employers will ask you to tell them a little about yourself. Being confident shows good character and helps the
+                   employers remember you later. This confidence comes with practice. Come up with an outline of your technical background,
+                   what you are looking for, and how you can contribute, and rehearse it. Learn to communicate it effectively and confidently
+                   but be humble. Practice your flow. It doesn't take that much time to practice a 30-45 second elevator pitch.<br/><br/>
+                   <b>6. Manage your time wisely</b><br/>
+                   Make sure you can meet as much of your higher prioritized companies. Show up as early as possible to get as much time as
+                   you need. Some lines take over an hour of waiting. Ask yourself whether it's worth it to wait that long. A long wait can be
+                   time wasted that could've been spent talking to other companies. Also, don't spend too much time talking to one company. Be
+                   brief in explaining your highlights. Remember that employers are trying to give everyone an equal chance to talk to them. Also,
+                   taking too long with a employer can have negative consequences. They may not appreciate you taking a significant chunk of their
+                   time in addition to wasting your own time.<br/><br/>
+                   <b>7. Dress for success</b><br/>
+                   The dress doesn't make the person but if you can, do it. I gives the employer a sense of respectability of your character
+                   knowing that you took the time to dress well to talk to them.<br/><br/>
+                   <b>8. Ask for contact information and follow up along with a "thank you"</b><br/>
+                   Increase your chances of getting an interview and the employers remembering you by asking for business cards and contact information
+                   with intention to follow up a week later. Be sure to mention anything significant from the past conversation that can help you land 
+                   an interview. Also, thank them for their time. It shows that you are respectable.<br/><br/>
+                   <b>9. Be prepared</b><br/>
+                   Have a folder handy to hold your resumes, a pen to write with (having a pen ready makes a good impression), and some paper to take
+                   important notes. Having a tablet at hand is a plus if you can use it to show the employers relevant work, perhaps your online portfolio
+                   if you have one.<br/><br/>
+                   Overall, be courteous, be professional, be prepared, and be humble. Make sure you are there for the right reasons.
+                </font>
+            </div>
+        </div>
+
+          <a name="24"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Resume tips from an expert<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>3 October 2018 | Experience</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                   This blog post is an extension of <a href="blog_2.html#13">Resume tips</a> if you have not read up on that post yet. I attended
+                   a career fair prep event where I got my resume critiqued thanks to <a href="https://act.ucsd.edu/directory/search?search-scope=directory&entry=melissa+hoon&site=career" target="_blank">
+                   Melissa Hoon</a>, a UCSD Career Center staff member. In addition to my previous post on Resumes, here are some more tips from her:<br/><br/>
+                   - include objective with buzz words (specific type of job you're looking for + location; be brief (1 - 2 phrases), enthusiastic, and state the skills you have to offer)<br/>
+                   &nbsp;&nbsp;&nbsp; This contradicts my previous post.<br/> 
+                   &nbsp;&nbsp;&nbsp; Objectives make it clear what job<br/> 
+                   &nbsp;&nbsp;&nbsp; you're looking for and serve as a<br/>
+                   &nbsp;&nbsp;&nbsp; small elevator pitch to sell yourself.<br/>
+                   &nbsp;&nbsp;&nbsp; However, there's no need to go<br/>
+                   &nbsp;&nbsp;&nbsp; overboard. Conserve space for the rest<br/>
+                   &nbsp;&nbsp;&nbsp; of your content.<br/>
+                   - make room for the content that sells you (expand margins; limit spaces and font sizes; use columns, footers, headers; etc. make it work on one page)<br/>
+                   - communicate effectively (make your content state the impact you made rather than it being task based)<br/>
+                   - descriptions typically start with verbs (actions) and are structured as (action making impact -> using these technical and or soft skills)<br/>
+                   - include buzz words for soft skills; important to compliment your tech skills (leadership, communication, collaboration, etc.)<br/>
+                   - include <b>HOW</b> the skills in your skill set section developed with projects<br/>
+                   - data/ metrics are a plus; try to include concrete numerical data where applicable<br/>
+                   - include relevant project subsection in employment section if directly relevant<br/>
+                   - any outside work, label as "relevant experience"<br/>
+                   - .pdf is an ideal format when including your resume to a job application (use <a href="https://pdftotext.com/" target="_blank">ATS</a> to see if it parses all your resume's text)<br/>
+                   - format hyperlinks to make it obvious they are links<br/>
+                   - organize sections of your resume in a way that is easy to differentiate each of them<br/>
+                   - be consistent in how you label/ indent sections and subsections of your resume based on its structure<br/>
+                   - prioritize top to bottom the following order (objective -> skills -> education -> work -> relevant experience etc.)<br/><br/>
+
+                   Here is the before and after of my current resume given my previous tips, and Melissa's tips respectively:<br/><br/>
+                   <b>Before:</b><br/>
+                   <object width="100%" height="1050px" data="IResume.pdf"></object><br/><br/>
+                   <b>After:</b><br/>
+                   <object width="100%" height="1050px" data="MyResume.pdf"></object><br/><br/>
+
+                   <b>Changes</b><br/>
+                   The most obvious one is that I found a way to move my skill set to the top with the use of columns. Also, listing them vertically
+                   makes it easier for a recruiter to see what all my skills are versus listing them horizontally. For the margins, they are now 
+                   expanded. Hyperlinks are now noticeable. For the content, I moved some of my projects to the experience section since they are
+                   directly related to the organization. "Projects" is now labeled with "Relevant" to emphasize the urgency for a recruiter consider them. I also focused on adding more metrics
+                   and communicating the impacts I made rather than the task I did in addition to my skill applications. The added content made
+                   me have to limit spaces and font sizes. The expanded margins also helped make space. Lastly, I added a brief objective stating
+                   the line of work I am looking for with what I have to offer.
+                </font>
+            </div>
+        </div>
+
+          <a name="23"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Including seperate HTML files<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>29 September 2018 | Web Development</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                   It is usually good practice to create a single HTML file for a specific component that will be used by multiple HTML files.
+                   This way, HTML source can be reused and the component will only need to be edited once for reliable consistency when other
+                   HTML files refer to it. There are two ways to do this:<br/><br/>
+                   <b>jQuery</b><br/>
+                   Your main file must include jQuery from the exact following url: 
+                   <font style="font-family:'Courier New'">http://code.jquery.com/jquery-1.10.2.js</font>. A div class or id should be placed
+                   where the content of the included file will be loaded. Include a script that uses the load function from jQuery. It takes
+                   the name of the included file as an argument. The calling reference will be the div tag's id or class attribute value. 
+                   Notice that in this example, the '#' character is used for the "id" attribute. Be sure to use '.' for "class".<br/>
+                   <img src="html1.png" width="100%"></img><br/><br/>
+                   The included file's body will be loaded to the main file's div tag attribute that called the load function.<br/>
+                   <img src="html2.png" width="100%"></img><br/><br/>
+                   <b>W3S</b><br/>
+                   Sometimes, jQuery doesn't work given certain frameworks as sources. W3S is an alternative choice of framework to accomplish
+                   this task. Similarly to jQuery, the body of the included file will be loaded to the main file. First off, W3S will need to be 
+                   included into your source.<br/>
+                   <img src="w3s.png" width="100%"></img><br/><br/>
+                   In order to specify where to place the components of the included file, use the "w3-include-html" attribute with the name of
+                   the included file as the value.
+                   <img src="w3include.png" width="100%"></img><br/><br/>
+                   To get the contents to load, you need the JavaScript source to load it as well as a script to call the JavaScript.
+                   <img src="includescript.png" width="100%"></img><br/><br/>
+                   <img src="caller.png" width="100%"></img><br/><br/>
+                   <b>Fianl result</b><br/>
+                   <img src="output.png" width="100%"></img>
+                </font>
+            </div>
+        </div>
+
+        <a name="22"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Roadblocks and solutions for Solar Interact<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>26 September 2018 | Engineering</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                   After a wonderful two years of balancing school, work, and side commitments, Solar Interact comes to a close; at least for its
+                   first release. With all members of the team graduated with the exception of one programmer, the final build is released and
+                   available for use at the UCSD Sustainability Resource Center. Currently, one programming student is planning to extend the 
+                   product's current capabilities and continue the project for the future generation of Engineers for a Sustainable World.<br/><br/>
+                   
+                   During
+                   the process of coming up with our first MVP, the software team has encountered several roadblocks. The way I like to think of
+                   this experience is by the motto, "You either win, or you learn". Given these roadblocks, the team definately learned a lot
+                   about Android development until we succeeded. Below, I document the software team's roadblocks and their solutions:<br/><br/>
+
+                   <b>1. Build failures</b><br/>
+                   This problem happened everytime Google released an update for Android Studio. Typically, the solution was to update the top
+                   level gradle that the build relies on. Updates come with release notes that typically document how to update the gradle
+                   file to work with the new dev environment. This would involve updating repositories, and the class path:<br/>
+                   <div class="codebox">
+                      <font style="font-family:'Courier New'" color="lime">
+                        buildscript {<br/>
+                        &nbsp;&nbsp;&nbsp;repositories {<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="grey">// keep these dependencies updated<br/></font>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jcenter()<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;google()<br/>
+                        &nbsp;&nbsp;&nbsp;}<br/>
+                        &nbsp;&nbsp;&nbsp;dependencies {<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="grey">// make sure the path is correct (typically the version #)<br/></font>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classpath 'com.android.tools.build:gradle:3.2.0'<br/>
+                        &nbsp;&nbsp;&nbsp;}<br/>
+                        }<br/>
+                        <br/>
+                        allprojects {<br/>
+                        &nbsp;&nbsp;&nbsp;repositories {<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="grey">// keep these dependencies updated<br/></font>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jcenter()<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;google()<br/>
+                        &nbsp;&nbsp;&nbsp;}<br/>
+                        }
+                      </font> 
+                   </div>
+                   <br/><br/>
+                   <b>2. Circular dependency</b><br/>
+                   We had problems building the APK due to a circular dependency. The graphview API was responsible for this as well as
+                   myself learning how to incorporate the API into our project. There are two ways to include the API and <b>ONLY</b> 
+                   one of them should be done:<br/>
+                   Add the following to the dependencies block in the build.gradle file from the "app" directory:<br/>
+                   <font style="font-family:'Courier New'">implementation 'com.jjoe64:graphview:4.2.2'</font><br/>
+                   -- or --<br/>
+                   Clone "https://github.com/jjoe64/GraphView.git", select File > Import Module followed by the folder that contains
+                   the repository, and add <font style="font-family:'Courier New'">implementation project(':GraphView')</font> into the dependencies block.<br/><br/>
+                   <b>3. Incorrect values for power outputs</b><br/>
+                   Bluetooth sockets accomplish communication of data in byte buffers which are framed and parsed by character making it problematic for
+                   values with multiple digits. Logic would need to be added to ensure that every digit of an individual value is considered before
+                   being read.<br/><br/>
+                   <b>4. Slow graph</b><br/>
+                   The problem was from calling the <font style="font-family:'Courier New'">AppendData(DataPoint, scrollToEnd, maxPoints, silent)</font> function.
+                   The maxPoints parameter is the maximum number of data points a line can have. The garbage collector deletes old data points. This value
+                   was set too high causing memory bloat. There has to be a limit to how many data points can be seen on the graph. Luckily, the graph automatically
+                   scales and moves along axes for the data.<br/><br/>
+                   <b>5. Bad USB cable/ port<br/></b>
+                   This has always been a problem for me as an Android developer. Emulators were the solution. However, emulators do not support Bluetooth connection.
+                   We had to repeatedly build an APK and email it to the device. However, debugging was unavailable rendering us required to put print
+                   statements within the app and going through several trial an error.<br/><br/>
+                   <b>6. Map crashing<br/></b>
+                   The .jpg file for the map was high-res. It turned out that the device did not have enough memory to load it. To make it work for our final
+                   build, we had to lower the resolution of the image despite an HD image being a nice feature.<br/><br/>
+                   <b>What's the plan now?<br/></b>
+                   As I stated earlier, there are plans to extend the product's current features that the future generation of ESW members can take care of. One of
+                   our programmers is planning on adding land marks to the map as well as the ability to store business hours and let users know whether something is
+                   closed or about to close. There is also room to make the app itself more aesthetically pleasing. For the Solar Interact game, it would be nice to
+                   be able to save the top scores. I originally wanted to work on this feature but class work and graduation beat me to it.<br/><br/> 
+                   Overall, I have learned
+                   a lot of Android development skills as well as knowledge of several API's from this project. I also learned soft skills involving leading the
+                   development cycle of software projects to ensure quality builds. Some of these soft skills involve unit testing, automation, code review,
+                   documentation, communication, and agile scrum. I plan to take note of everything I learned on the next chapter of my career as a software
+                   engineer.<br/><br/>
+                   <center><a href="solarinteract.html" target="_blank">View project</a></center>
+                </font>
+            </div>
+        </div>
+
+         	<a name="21"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Ambiguous 0 value in Socket buffers<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>9 September 2018 | Engineering</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+					          I was tasked with working on a Socket based cloud storage application when I encountered a file I/O error. I noticed a few
+                  	ASCII files being unread after certain areas in the text and binary files not being read at all. I also noticed several reading
+                  	errors on Unicode text files. Knowing that the char data type in C only supports 8-bit ASCII, I believed the lack of bit space
+                  	was causing the error. This was definitely the case for parsing Unicode files. However, this was irrelevant to the misread
+                  	issue on ASCII encoded files. Taking care of 16-bit characters would just be a later task for me but it didn't add up to me why some files encoded
+                  	with 8-bit character schemes were not being read. The issue was pointed out by a fellow senior software engineer at work. <b>The
+                  	'0' character is ambiguous. When inputting characters into my message buffers, there was no way to for a char array to tell
+                  	the difference between the numerical value 0 and the null character.</b> This explained why binary files were not being read at all
+                  	and why certain characters were not being read from ASCII files. They were null characters. I learned the following lessons from this error:<br/><br/>
+                  	1. <b>DO NOT</b> use char buffers when parsing files. Use the <font style="font-family:'Courier New'">stat</font> struct defined in the C library.<br/>
+                  	2. Use the <font style="font-family:'Courier New'">sendfile</font> system call to efficiently and reliably parse all file contents 
+                  	instead of using <font style="font-family:'Courier New'">fgetc</font> and <font style="font-family:'Courier New'">fputc</font> to parse
+                  	characters at a time.<br/></br>
+                  	This video taught me how to use the <font style="font-family:'Courier New'">sendfile</font> system call.<br/><br/>
+
+                  	<center><object data="https://www.youtube.com/embed/r4gTEPo9m10"
+   					   width="70%" height="500"></object></center>
+                </font>
+            </div>
+        </div>
 
          </div>
          </div>
@@ -731,8 +811,9 @@
                             <a href="blog.html">1</a>
                             <a href="blog_2.html" style="color: purple">2</a>
                             <a href="blog_3.html">3</a>
+                            <a href="blog_4.html">4</a>
                             <a href="blog_3.html">></a>
-                            <a href="blog_3.html">>></a>
+                            <a href="blog_4.html">>></a>
                          </div>
                       </div>
                    </center>
