@@ -144,7 +144,83 @@
          </div>
 
          <div class="col-lg-9">
+         <a name="35"></a>
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>&lt;/script&gt; is dangerous<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>29 April 2019 | Engineering</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                  One of my coworkers, also a backend developer, asked for my assistance in addressing a UI bug resulting from cross-site scripting.
+                  The first thing to address was the fact that there was no guard against cross-site scripting for the text field. This resulted
+                  into an HTML parse error whenever a user inputs "&lt;/script&gt;" and returns. The first thing I wanted to do was address the
+                  error that seems to be XSS related before moving on to what was planned as a UI bug fix task. However, the UI bug turned out to be the
+                  direct result of the parse error. JSON data would be displayed in the interface from a user input of "&lt;/script&gt;". What was
+                  happening was user-inputted data would be generated into raw HTML via the call 
+                  <font style="font-family:'Courier New'">@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model))</font>. An unintended consequence would result from the text "&lt;/script&gt;"
+                  getting generated as raw HTML where the browser would interpret the text as a terminating script tag. As a result, the browser 
+                  would interpret everything after the generated script tag as literal elements due to the parse error. Right after the 
+                  script tag within the area where raw HTML gets generated, there is generated JSON data intended to be parsed but is output instead.<br/><br/>
+                  <b>TAKEAWAYS</b><br/>
+                  1. Make guarding against known security vulnerabilities the first task to complete.<br/>
+                  2. Address any bugs found occurring before the originally planned bug to fix. That might be the source of the problem to begin with.<br/>
+                  3. Be aware of the possibility of HTML/ JavaScript syntactically correct text a user can input.<br/>
+                  4. Make sure that all user inputs that will be generated to raw HTML are properly encoded.  
+                </font>
+            </div>
+        </div>
+
+         <a name="33"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>File upload fiasco<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>20 April 2019 | Engineering</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                  At work, I was tasked with adding security enhancements to the resume upload feature on 
+                  <a href="http://www.ashcompanies.com" target="_blank">ASHCompanies</a>. Part of the additional features I was asked to implement involved
+                  verifying that the file signature matched with the file extension on the filename of the uploaded resume. To accomplish this, the first idea
+                  that came to my mind was using a stream object to read the bytes of the file, save the read contents to a variable, then use
+                  that variable for validation. Reading the file contents was where the fiasco began. It turned out that reading the file 
+                  contents through a stream was actually removing the specific bytes read thus corrupting the uploaded resumes. QA only tested
+                  the security features assuming that the uploaded resumes would be unchanged. Once deployed to production, it only took 24 hours
+                  for HR to notice this issue.<br/><br/>
+                  Looking into the code, I noticed the files being uploaded via <font style="font-family:'Courier New'">
+                  <a href="https://docs.microsoft.com/en-us/dotnet/api/system.web.httppostedfilebase?view=netframework-4.8" target="_blank">HTTPPostedFileBase</a></font>.
+                  This is a .NET class used to upload files to a server by transferring the bytes through the HTTP protocol. I verified that
+                  the specific bytes I'm reading to verify the file signature (only the first 4 bytes) were the only bytes being erased from the uploaded
+                  file. The fix was to reset the file stream position. This is typically not required for regular file stream objects but I'm
+                  guessing this is different for the <font style="font-family:'Courier New'">HTTPPostedFileBase</font> class. Since the file
+                  bytes are being transferred over a network, having a stream read over specific bytes seems to cause failure of said bytes to  
+                  be successfully uploaded unless the stream position is explicitly set back to the position of which bytes are expected to
+                  make it through the upload. We want all of the bytes so this meant setting the file stream position to 0.<br/><br/>
+                  <font style="font-family:'Courier New'">HTTPPostedFileBase</font> contains an <font style="font-family:'Courier New'">InputStream</font>
+                  object. The fix is done by the explicit initialization 
+                  <font style="font-family:'Courier New'">HTTPPostedFileBase_reference.InputStream.Position = 0;</font> after reading. Also, it is important to
+                  avoid the <font style="font-family:'Courier New'">HTTPPostedFileBase_reference.InputStream.Close()</font> call before setting the
+                  position to 0.
+                </font>
+            </div>
+        </div>
           <a name="29"></a>
+            <br />
+            <br />
+            <br />
+            <br />
             <br />
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->

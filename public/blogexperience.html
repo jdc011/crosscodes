@@ -151,8 +151,52 @@
                    </font>
                    </font>
                   </font>
+        <a name="32"></a>
+            <br />
+        <div class="box">
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="title">
+               <center><font size="7px" style="color:grey;font-family:Georgia"><b>Are comments necessary?<br /></b></font>
+               <p>
+                  <font size="4px" style="color:white"><b>18 April 2019 | Experience</b></font><br/>
+               </p></center>
+            </div>
+            <div style="text-align:left">
+                <font size="4px" style="color:black">
+                  At work, I ran into a code block that looked like the following:<br/>
+                  <font style="font-family:'Courier New'">
+                  if some_condition do<br/>
+                  &nbsp;&nbsp;&nbsp;something()<br/>
+                  &nbsp;&nbsp;&nbsp;// something_else()<br/>
+                  else do<br/>
+                  &nbsp;&nbsp;&nbsp;// something()<br/>
+                  &nbsp;&nbsp;&nbsp;something_else()<br/>
+                  </font>
+                  <br/>
+                  I thought this looked peculiar so I mentioned it on Slack. One of my coworkers gladly addressed my confusion. The reason for this
+                  code style is related to debugging. The if statement was checking whether the application is running locally, or on a network able
+                  to send email. If it ran locally, it would generate a text file of the email that would normally be sent and save it to a folder.
+                  The idea is to comment out the correct function call depending on whether the application is running locally or on a network. As a 
+                  college student, I was overtaught my commenting habits. It seems trivial and ideal to write in a high level exactly what the code 
+                  is doing. However, this
+                  can become micromanagement at times; having to write file/ function headers and inline comments. It seems subjective around
+                  software development teams however, commenting too much is possible and never optimal. I asked my coworker if it would be ideal to 
+                  comment the purpose of this code block to prevent confusion when someone else works on it in the future. He advised against it for a
+                  couple reasons. First off, development is constantly changing the code's structure possibly rendering any comments related to the
+                  current scenario to eventually be outdated. Second, the functions are named after exactly what they do. This eliminates the need for
+                  function headers above functions, and inline comments where the functions are called. Overall, even though commenting one's code is 
+                  important, it's not always the answer. This is an example of where it's not but instead, it's overkill. It is possible to reduce the 
+                  amount of labor and still maintain code cleanliness by following best practices when naming functions. This removes excess need to 
+                  comment, especially in cases such as this where the effort and possible lack of future relevance in commenting outweighs the need to 
+                  document a code block.
+                </font>
+            </div>
+        </div>
 
         <a name="31"></a>
+            <br />
+            <br />
+            <br />
             <br />
         <div class="box">
             <!-------------------------------------------------------------------------------------------------------------------------------------->
